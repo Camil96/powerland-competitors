@@ -86,7 +86,6 @@
   .pill2.hot{border-color:#d29922;color:#8a6400}
   .pill2.open{border-color:var(--pl-teal);color:#16483f}
   .sector-ico{width:20px;height:20px;vertical-align:middle;margin-right:5px}
-  .srcbtn{margin-top:auto;padding-top:8px}
   #whitespace,#pillars{display:none}
   @media(max-width:1100px){.mainnav{display:none}}
 </style>
@@ -180,7 +179,6 @@ function cardHTML(x){
     <div class="tags">${tags}</div>
     <div class="overlap">Overlap <div class="bar"><i style="width:${pct}%"></i></div> ${x.overlap_score_powerland}/5</div>
     <div class="row"><b>Positionering:</b> ${x.positioning||''}</div>
-    <div class="srcbtn"><a href="${x.domain}" target="_blank">${x.domain}</a>${x.sources?` · <a href="raw/${x.sources[0].split('/').pop()}" target="_blank">↗ bron</a>`:''}</div>
   </div>`;
 }
 function renderCards(){
