@@ -50,6 +50,12 @@
   main{max-width:1660px;margin:0 auto;padding:0 24px 60px}
   h2{font-size:22px;font-weight:900;color:var(--pl-blue);text-transform:uppercase;letter-spacing:.3px;margin:var(--gap) 0 20px;display:inline-block;border-bottom:3px solid var(--pl-teal);padding-bottom:8px}
   .sub{color:var(--muted);font-size:13px;margin-top:4px}
+  .roadmap{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:0 0 var(--gap) 0}
+  .roadmap .rs{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-btn);padding:12px 16px;flex:1;min-width:180px}
+  .roadmap .rs .n{font-size:12px;font-weight:800;color:var(--pl-teal);letter-spacing:.5px}
+  .roadmap .rs .t{font-size:14px;font-weight:800;color:var(--pl-blue);margin:2px 0 4px}
+  .roadmap .rs .a{font-size:12.5px;color:var(--muted);line-height:1.4}
+  .strip{background:var(--panel2);border-left:4px solid var(--pl-teal);border-radius:8px;padding:9px 16px;font-size:13.5px;color:var(--muted);margin-bottom:18px}
   .stat{display:flex;gap:20px;flex-wrap:wrap;margin:0 0 var(--gap) 0}
   .stat .kpi{display:flex;align-items:center;gap:18px;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--pl-blue);border-radius:var(--radius-card);padding:18px 28px;min-width:210px;box-shadow:0 2px 8px rgba(33,62,134,.06)}
   .stat .kpi .n{font-size:44px;font-weight:900;color:var(--pl-blue);line-height:1}
@@ -127,26 +133,44 @@
     <button class="sec" onclick="showSection('competitors')">Concurrenten</button>
     <button class="sec" onclick="showSection('whitespace')">Whitespace</button>
     <button class="sec" onclick="showSection('pillars')">Contentpijlers</button>
+    <button class="sec" onclick="showSection('weaknesses')">Zwaktes</button>
+    <button class="sec" onclick="showSection('action')">Voor Powerland</button>
     <span class="sub" id="count"></span>
   </div>
 
+  <!-- ROADMAP: de keten maakt de 'waarom' zichtbaar -->
+  <div class="roadmap" id="roadmap"></div>
+
   <section id="competitors">
     <h2>Concurrenten</h2>
+    <div class="strip">WIE ze zijn — de 8 spelers die een salespersoon noemde. Basis om de rest tegen af te zetten.</div>
     <div class="grid" id="cards"></div>
   </section>
 
   <section id="whitespace">
-    <h2>Whitespace-analyse</h2>
-    <div class="note">Gebaseerd op de 8 concurrenten: welke sectoren zijn "rood" (veel spelers) en welke zijn "open" (kans voor Powerland).</div>
+    <h2>Whitespace</h2>
+    <div class="strip">WAAR niemand van de 8 staat. Daar markeer je Powerland vóórdat je in een prijzenoorlog belandt.</div>
     <div id="wsOut" style="margin-top:12px"></div>
   </section>
 
   <section id="pillars">
-    <h2>Contentpijlers voor Powerland</h2>
-    <div class="note">Afgeleid van de whitespace + Powerland zijn sterktes (geïntegreerd ecosysteem: opwekken · stockeren · beheren · opladen).</div>
+    <h2>Contentpijlers</h2>
+    <div class="strip">WAT Powerland zegt om die lege ruimte te claimen. Elke pijler wijst naar één wit vak.</div>
     <div id="plOut" style="margin-top:12px"></div>
   </section>
-</main>
+
+  <section id="weaknesses">
+    <h2>Zwaktes</h2>
+    <div class="strip">WAAROM concurrenten die ruimte niet zelf kunnen invullen. Hun kwetsbaarheid = jouw openingszin.</div>
+    <div id="wkOut" style="margin-top:12px"></div>
+  </section>
+
+  <section id="action">
+    <h2>Voor Powerland</h2>
+    <div class="strip">DE ACTIE: welke 3 vakken je claimt, met welke pijler, in welke volgorde. Het rapport dat de la verlaat.</div>
+    <div id="acOut" style="margin-top:12px"></div>
+  </section>
+
 
 <script>
 let DATA=null;
@@ -154,7 +178,7 @@ const ICO={laadinfrastructuur:'assets/charging-station.svg',batterijopslag:'asse
 async function load(){
   try{const r=await fetch('data.json');DATA=await r.json();}
   catch(e){document.getElementById('cards').innerHTML='<p class="note">Kon data.json niet laden.</p>';return;}
-  renderStats();renderCards();renderWhitespace();renderPillars();
+  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderAction();
 }
 function renderStats(){
   const c=DATA.competitors;
@@ -192,30 +216,41 @@ function renderCards(){
   document.getElementById('count').textContent=`${list.length} van ${DATA.competitors.length} getoond`;
 }
 function renderWhitespace(){
-  const sec={};
-  DATA.competitors.forEach(c=>{(c.sectors||[]).forEach(s=>{sec[s]=(sec[s]||0)+1;});});
-  const rows=Object.entries(sec).sort((a,b)=>b[1]-a[1]);
-  const max=rows[0]?rows[0][1]:1;
-  let html='<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">';
-  rows.forEach(([s,n])=>{
-    const crowded=n>=4,open=n<=2,cls=crowded?'hot':(open?'open':'');
-    html+=`<div class="card"><h3>${ico(s)}${s}</h3><div class="overlap">${n} spelers <div class="bar"><i style="width:${n/max*100}%"></i></div></div><span class="pill2 ${cls}">${crowded?'ROOD':(open?'OPEN':'neutraal')}</span></div>`;
-  });
-  html+='</div>';
-  document.getElementById('wsOut').innerHTML=html;
+  const w=DATA.analysis.whitespace||[];
+  document.getElementById('wsOut').innerHTML=w.map(x=>`<div class="card"><h3>${ico(x.title.split(' ')[0])||''}${x.title}</h3><div class="row">${x.detail}</div><span class="pill2 open">OPEN KANS</span></div>`).join('');
 }
 function renderPillars(){
-  const pillars=[
-    {t:'1. Het geïntegreerde ecosysteem',d:'Opwekken · stockeren · beheren · opladen als één verhaal. Enkel MR Solar doet dit ook scherp — Powerland moet dit verhaal claimen als de enige echte totaalpartner.'},
-    {t:'2. B2B-diepgang & certificeringen',d:'ExtraPower toont VCA** + aannemersklasse 5. Powerland moet certificeringen & industrieel track-record prominenter tonen om KMO/industrie te winnen.'},
-    {t:'3. Maatschappelijk & lokaal',d:'IQ Solar scoort met zonnepanelen-schenking + ministeriële steun. Powerland kan inzetten op lokale impact en kmo-ontzorging.'},
-    {t:'4. Whitespace: energiemanagement als differentiator',d:'De meeste concurrenten focussen op zonne+laadpalen zónder slimme sturing. Powerlands EMS is de open positie om te claimen.'},
-    {t:'5. Laad-ecosysteem-partners',d:'Electra/Ionity exploiteren het netwerk dat Powerland installeert — content over samenwerking toont Powerland als serieuze installatiepartner.'}
-  ];
-  document.getElementById('plOut').innerHTML=pillars.map(p=>`<div class="card"><h3>${p.t}</h3><div class="row">${p.d}</div></div>`).join('');
+  const p=DATA.analysis.pillars||[];
+  document.getElementById('plOut').innerHTML=p.map(x=>`<div class="card"><h3>${x.title}</h3><div class="row"><b>Wit vak:</b> ${x.links_to.toUpperCase()}</div><div class="row">${x.detail}</div></div>`).join('');
+}
+function renderWeaknesses(){
+  let html='<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(340px,1fr))">';
+  DATA.competitors.forEach(c=>{
+    const wk=(c.weaknesses||[]);
+    if(!wk.length)return;
+    html+=`<div class="card"><h3>${c.name}</h3><div class="row"><b>${c.category==='indirect'?'Indirecte speler':'Kwetsbaarheid'}:</b></div><div class="tags">${wk.map(w=>`<span class="tag">${w}</span>`).join('')}</div></div>`;
+  });
+  html+='</div>';
+  document.getElementById('wkOut').innerHTML=html;
+}
+function renderAction(){
+  const r=DATA.analysis.recommendation;
+  let html='';
+  html+=`<div class="card"><h3>Claim deze pijlers</h3>`;
+  (r.claim||[]).forEach(c=>{
+    const p=DATA.analysis.pillars.find(x=>x.id===c.pillar);
+    html+=`<div class="row"><b>${p?p.title:''}</b> — ${c.why}</div>`;
+  });
+  html+=`<div class="row" style="margin-top:8px"><b>Volgorde:</b> ${r.order}</div>`;
+  html+=`<div class="strip" style="margin-top:10px;margin-bottom:0">${r.caveat}</div></div>`;
+  document.getElementById('acOut').innerHTML=html;
+}
+function renderRoadmap(){
+  const rm=DATA.analysis.roadmap||[];
+  document.getElementById('roadmap').innerHTML=rm.map(s=>`<div class="rs"><div class="n">STAP ${s.step}</div><div class="t">${s.tab}</div><div class="a">${s.answers}</div></div>`).join('');
 }
 function showSection(id){
-  ['competitors','whitespace','pillars'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
+  ['competitors','whitespace','pillars','weaknesses','action'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
 }
 let activeSector=null;
 function filterSector(btn){
