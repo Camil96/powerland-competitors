@@ -56,6 +56,11 @@
   .roadmap .rs .t{font-size:14px;font-weight:800;color:var(--pl-blue);margin:2px 0 4px}
   .roadmap .rs .a{font-size:12.5px;color:var(--muted);line-height:1.4}
   .strip{background:var(--panel2);border-left:4px solid var(--pl-teal);border-radius:8px;padding:9px 16px;font-size:13.5px;color:var(--muted);margin-bottom:18px}
+  .explain{background:var(--panel2);border-left:4px solid var(--pl-teal);border-radius:8px;padding:10px 16px;margin-bottom:18px}
+  .explain .q{font-size:13.5px;color:var(--muted);font-weight:600}
+  .explain .more{color:var(--pl-blue);cursor:pointer;font-size:12.5px;font-weight:700;margin-left:8px;user-select:none}
+  .explain .deep{display:none;margin-top:8px;font-size:13px;color:var(--muted);line-height:1.5}
+  .explain.open .deep{display:block}
   .stat{display:flex;gap:20px;flex-wrap:wrap;margin:0 0 var(--gap) 0}
   .stat .kpi{display:flex;align-items:center;gap:18px;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--pl-blue);border-radius:var(--radius-card);padding:18px 28px;min-width:210px;box-shadow:0 2px 8px rgba(33,62,134,.06)}
   .stat .kpi .n{font-size:44px;font-weight:900;color:var(--pl-blue);line-height:1}
@@ -143,31 +148,31 @@
 
   <section id="competitors">
     <h2>Concurrenten</h2>
-    <div class="strip">WIE ze zijn — de 8 spelers die een salespersoon noemde. Basis om de rest tegen af te zetten.</div>
+    <div class="explain" data-tab="competitors"></div>
     <div class="grid" id="cards"></div>
   </section>
 
   <section id="whitespace">
     <h2>Whitespace</h2>
-    <div class="strip">WAAR niemand van de 8 staat. Daar markeer je Powerland vóórdat je in een prijzenoorlog belandt.</div>
+    <div class="explain" data-tab="whitespace"></div>
     <div id="wsOut" style="margin-top:12px"></div>
   </section>
 
   <section id="pillars">
     <h2>Contentpijlers</h2>
-    <div class="strip">WAT Powerland zegt om die lege ruimte te claimen. Elke pijler wijst naar één wit vak.</div>
+    <div class="explain" data-tab="pillars"></div>
     <div id="plOut" style="margin-top:12px"></div>
   </section>
 
   <section id="weaknesses">
     <h2>Zwaktes</h2>
-    <div class="strip">WAAROM concurrenten die ruimte niet zelf kunnen invullen. Hun kwetsbaarheid = jouw openingszin.</div>
+    <div class="explain" data-tab="weaknesses"></div>
     <div id="wkOut" style="margin-top:12px"></div>
   </section>
 
   <section id="action">
     <h2>Voor Powerland</h2>
-    <div class="strip">DE ACTIE: welke 3 vakken je claimt, met welke pijler, in welke volgorde. Het rapport dat de la verlaat.</div>
+    <div class="explain" data-tab="action"></div>
     <div id="acOut" style="margin-top:12px"></div>
   </section>
 
@@ -178,7 +183,15 @@ const ICO={laadinfrastructuur:'assets/charging-station.svg',batterijopslag:'asse
 async function load(){
   try{const r=await fetch('data.json');DATA=await r.json();}
   catch(e){document.getElementById('cards').innerHTML='<p class="note">Kon data.json niet laden.</p>';return;}
-  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderAction();
+  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderAction();renderExplain();
+}
+function renderExplain(){
+  document.querySelectorAll('.explain').forEach(el=>{
+    const t=el.dataset.tab;
+    const e=DATA.analysis.explain && DATA.analysis.explain[t];
+    if(!e){el.style.display='none';return;}
+    el.innerHTML=`<span class="q">${e.short}</span><span class="more" onclick="this.parentNode.classList.toggle('open')">meer uitleg ▾</span><div class="deep">${e.deep}</div>`;
+  });
 }
 function renderStats(){
   const c=DATA.competitors;

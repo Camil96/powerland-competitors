@@ -140,6 +140,13 @@
     }
   ],
   "analysis": {
+    "explain": {
+      "competitors": {"short": "WIE ze zijn — de 8 spelers die een salespersoon noemde.", "deep": "Basis om de rest tegen af te zetten. Zonder deze lijst blijft elke uitspraak over 'de markt' vaag. De 8 zijn geen willekeurige steekproef maar een buiten-in trigger (sales-ervaring); de analyse maakt er een binnen-uit verhaal van."},
+      "whitespace": {"short": "WAAR niemand van de 8 staat.", "deep": "Whitespace = de lege vakken op het marktveld. Niet 'wat er niet is' als gemis, maar 'waar niemand zich positioneert' — daar markeer je Powerland vóórdat je in een prijzenoorlog belandt op bezette vakken (zonne+laadpaal). Elk wit vak is kans én valkuil: niet elk leeg vak is winstgevend."},
+      "pillars": {"short": "WAT Powerland zegt om die ruimte te claimen.", "deep": "Contentpijlers = de 3 thema's waarmee Powerland de whitespace claimt. Zonder pijlers verwatert de analyse tot losse posts die de concurrenten nadoen. Elke pijler wijst naar één wit vak — zo is de pagina één verhaal, niet twee losse widgets."},
+      "weaknesses": {"short": "WAAROM concurrenten die ruimte niet zelf vullen.", "deep": "Hun kwetsbaarheid = jouw openingszin. Als een concurrent wél EMS of industriële geloofwaardigheid had, was het witte vak dicht. Deze tab toont per concurrent wat ze niet kunnen — dat is precies waar Powerland kan scoren."},
+      "action": {"short": "DE ACTIE: welke 3 vakken je claimt, met welke pijler, in welke volgorde.", "deep": "Het rapport dat de la verlaat. Synthese van alles hierboven: claim p1/p2/p3 (gekoppeld aan de witte vakken), in volgorde van breedste onderscheid → grootste KMO-omzet → partner-verhaal. Caveat: validatie bij klanten vóór harde claims."}
+    },
     "roadmap": [
       {"step": 1, "tab": "Concurrenten", "answers": "WIE zijn de 8 spelers en wat doen ze?"},
       {"step": 2, "tab": "Whitespace", "answers": "WAAR staat niemand van hen — de open marktruimte."},
@@ -148,14 +155,14 @@
       {"step": 5, "tab": "Voor Powerland", "answers": "WAT is de actie: welke 3 vakken claim je, in welke volgorde?"}
     ],
     "whitespace": [
-      {"id": "w1", "title": "Energiemanagement als sturende laag", "detail": "Bijna niemand positioneert 'wij sturen je hele energieflow' als kern. Ze verkopen componenten (paneel, paal). Powerland haar stack (opwekken·stockeren·beheren·opladen) is wél ecosysteem-claim — maar moet marktproof gemaakt worden.", "open": true},
-      {"id": "w2", "title": "Industriële / B2B-zwaarte + certificeringen", "detail": "ExtraPower toont VCA** + aannemersklasse 5, maar de zware industrie (hoogspanning, fleet-depots) is grotendeels open. Ruimte voor Powerland als 'serieuze partner voor bedrijven die niet met een zonnelabeltje genoegen nemen'.", "open": true},
-      {"id": "w3", "title": "Bouwer van het netwerk (niet de exploitant)", "detail": "Electra/Ionity exploiteren het laadnetwerk dat Powerland installeert. Positioneer Powerland als de handen die bouwen — anders dan de 8 die enkel 'wij hebben laadpalen' zeggen.", "open": true}
+      {"id": "w1", "title": "Energiemanagement als kernverhaal (niet als optie)", "detail": "MR Solar en anderen hebben EMS wél in hun stack, maar als bijproduct. Niemand claimt 'wij sturen je hele energieflow' als primair verhaal. Dat is het witte vak: EMS als hoofdrol, niet als vinkje. Powerland haar stack (opwekken·stockeren·beheren·opladen) leent zich er wel voor — maar moet marktproof gemaakt worden.", "open": true},
+      {"id": "w2", "title": "Zware industrie + hoogspanning als één ecosysteem", "detail": "ExtraPower toont VCA** + aannemersklasse 5, maar de zware industrie (hoogspanning, fleet-depots, productie) als géïntegreerd energie-ecosysteem is grotendeels open. Ruimte voor Powerland als 'serieuze partner voor bedrijven die niet met een zonnelabeltje genoegen nemen'.", "open": true},
+      {"id": "w3", "title": "Bouwer van het netwerk (positionerings-voorsprong)", "detail": "Electra/Ionity exploiteren het laadnetwerk dat Powerland installeert. Dit is geen marktruimte maar een positie: positioneer Powerland als de handen die bouwen — anders dan de 8 die enkel 'wij hebben laadpalen' zeggen.", "open": false}
     ],
     "pillars": [
-      {"id": "p1", "title": "Energie die zichzelf stuurt", "links_to": "w1", "detail": "Pijler claimt het witte vak EMS: niet 'wij hebben een paneel' maar 'wij laten je verbruik, pieken en laadcapaciteit zichzelf regelen'."},
-      {"id": "p2", "title": "De industriële geloofwaardigheid", "links_to": "w2", "detail": "Cases van KMO's met meetbare daling in piekfactuur via sturing. Concreet bewijs, niet 'wij zijn betrouwbaar'."},
-      {"id": "p3", "title": "De handen achter het laadnetwerk", "links_to": "w3", "detail": "Content die toont Powerland bouwt wat Electra/Ionity exploiteren — onderscheidt van de 8 component-verkopers."}
+      {"id": "p1", "title": "Energie die zichzelf stuurt", "links_to": "w1", "detail": "Pijler claimt het witte vak: niet 'wij hebben een paneel' maar 'wij laten je verbruik, pieken en laadcapaciteit zichzelf regelen'. Sterkste differentiator vs MR Solar."},
+      {"id": "p2", "title": "De industriële geloofwaardigheid", "links_to": "w2", "detail": "Cases van KMO's met meetbare daling in piekfactuur via sturing. Concreet bewijs, niet 'wij zijn betrouwbaar'. Sluit de industriële KMO-gap."},
+      {"id": "p3", "title": "De handen achter het laadnetwerk", "links_to": "w3", "detail": "Ondersteunende pijler: content die toont Powerland bouwt wat Electra/Ionity exploiteren. Positioneert in de waardeketen, niet naast de 8 component-verkopers."}
     ],
     "recommendation": {
       "claim": [
@@ -164,7 +171,7 @@
         {"pillar": "p3", "why": "Positioneert Powerland in de waardeketen, niet naast de 8."}
       ],
       "order": "Eerst p1 (breedste onderscheid), dan p2 (grootste omzet-KMO), dan p3 (partner-verhaal).",
-      "caveat": "Whitespace is kans én valkuil: niet elk leeg vak is winstgevend (particulieren die geen EMS betalen). Validatie bij klanten vereist vóór claims hard gemaakt worden."
+      "caveat": "Whitespace is kans én valkuil: niet elk leeg vak is winstgevend (particulieren die geen EMS betalen). w3 is geen marktruimte maar een positioneringskeuze — pas die toe als differentiator, niet als 'nieuw segment'. Validatie bij klanten vereist vóór claims hard gemaakt worden."
     }
   },
   "meta": {
