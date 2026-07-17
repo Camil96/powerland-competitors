@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concurrentie-Intelligentie — Powerland</title>
+<link rel="icon" href="assets/favicon.png">
+<style>
+  :root{
+    --pl-blue:#213e86;       /* Powerland primair (buttons/CTA) */
+    --pl-logo:#355197;       /* Powerland logo-blauw (uit logo.svg) */
+    --pl-teal:#37b49e;       /* Powerland secundair */
+    --pl-teal-soft:#d7f0ec;
+    --pl-blue-soft:#d3d8e7;
+    --bg:#fafafa;
+    --panel:#ffffff;
+    --panel2:#f4f6f9;
+    --text:#212529;
+    --muted:#7c7c7c;
+    --line:#e3e8ef;
+    --radius-card:25px;
+    --radius-btn:15px;
+    --gap:40px;            /* consistente verticale ritme-ruimte */
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.55}
+
+  /* ===== HEADER — exact Powerland (wit, blauwe logo, zwarte nav) ===== */
+  header{background:#fff;border-bottom:1px solid var(--line)}
+  .hbar{max-width:1660px;margin:0 auto;display:flex;align-items:center;gap:24px;padding:18px 24px}
+  .brand{display:flex;flex-direction:column;line-height:1}
+  .brand .logo{height:46px;width:auto}
+  .brand .drive{font-size:12px;color:var(--pl-logo);font-style:italic;margin-top:3px;font-weight:500}
+  .mainnav{display:flex;gap:30px;margin:0 auto;flex:1;justify-content:center}
+  .mainnav button{background:none;border:none;color:#212529;font-family:var(--font);font-size:15px;font-weight:600;cursor:pointer;padding:6px 4px;transition:color .15s,border-color .15s;border-bottom:2px solid transparent}
+  .mainnav button:hover{color:var(--pl-blue);border-bottom-color:var(--pl-teal)}
+  .mainnav button.active{color:var(--pl-blue);border-bottom-color:var(--pl-blue)}
+  .ctrls{display:flex;align-items:center;gap:10px}
+  .ctrls .wbtn{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:var(--radius-btn);padding:9px 16px;font-size:13.5px;font-weight:600;cursor:pointer;font-family:var(--font)}
+  .ctrls .wbtn:hover{border-color:var(--pl-teal)}
+  .ctrls .lang{background:#fff;border:1px solid var(--line);border-radius:var(--radius-btn);padding:9px 12px;font-size:13.5px;font-weight:600;cursor:pointer}
+  .ctrls .bluebtn{background:var(--pl-blue);color:#fff;border:1px solid var(--pl-blue);border-radius:var(--radius-btn);padding:9px 20px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font)}
+  .ctrls .bluebtn:hover{background:var(--pl-teal);border-color:var(--pl-teal)}
+  .hamb{background:none;border:none;cursor:pointer;font-size:24px;color:var(--pl-blue);padding:4px 8px}
+
+  /* ===== HERO — exact Powerland render ===== */
+  .hero{position:relative;width:100%;max-height:620px;overflow:hidden;margin-bottom:var(--gap)}
+  .hero img{width:100%;display:block;object-fit:cover}
+  main{max-width:1660px;margin:0 auto;padding:0 24px 60px}
+  h2{font-size:22px;font-weight:900;color:var(--pl-blue);text-transform:uppercase;letter-spacing:.3px;margin:var(--gap) 0 20px;display:inline-block;border-bottom:3px solid var(--pl-teal);padding-bottom:8px}
+  .sub{color:var(--muted);font-size:13px;margin-top:4px}
+  .stat{display:flex;gap:20px;flex-wrap:wrap;margin:0 0 var(--gap) 0}
+  .stat .kpi{display:flex;align-items:center;gap:18px;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--pl-blue);border-radius:var(--radius-card);padding:18px 28px;min-width:210px;box-shadow:0 2px 8px rgba(33,62,134,.06)}
+  .stat .kpi .n{font-size:44px;font-weight:900;color:var(--pl-blue);line-height:1}
+  .stat .kpi .l{font-size:14px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.4px;line-height:1.2}
+  .stat .kpi.direct{border-left-color:var(--pl-teal)} .stat .kpi.direct .n{color:var(--pl-teal)}
+  .stat .kpi.partial{border-left-color:#e0a800} .stat .kpi.partial .n{color:#b8860b}
+  .stat .kpi.indirect{border-left-color:#8a7fd4} .stat .kpi.indirect .n{color:#6a5fb0}
+  .controls{display:flex;gap:20px;flex-wrap:wrap;margin:0 0 var(--gap) 0;align-items:center}
+  .controls .sec:first-of-type{margin-left:auto}
+  .controls .row{margin-right:2px}
+  select,button.flt{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:var(--radius-btn);padding:9px 16px;font-size:14px;cursor:pointer;font-family:var(--font);font-weight:600}
+  button.flt:hover,select:hover{border-color:var(--pl-teal)}
+  button.sec{background:var(--pl-blue);color:#fff;border-color:var(--pl-blue);font-weight:700;border-radius:var(--radius-btn);padding:9px 16px;cursor:pointer;font-family:var(--font);font-size:14px}
+  button.sec:hover{background:var(--pl-teal);border-color:var(--pl-teal)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:24px;display:flex;flex-direction:column;gap:12px;transition:box-shadow .15s,transform .15s}
+  .card:hover{box-shadow:0 6px 22px rgba(33,62,134,.14);transform:translateY(-2px)}
+  .card h3{margin:0;font-size:19px;font-weight:900;color:var(--pl-blue);text-transform:uppercase;letter-spacing:.2px}
+  .cat{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;padding:4px 11px;border-radius:33px;align-self:flex-start}
+  .cat.direct{background:var(--pl-teal-soft);color:#16483f}
+  .cat.partial{background:#fff3cd;color:#8a6400}
+  .cat.indirect{background:var(--pl-blue-soft);color:#0d1936}
+  .row{font-size:13.5px;color:var(--muted)}
+  .row b{color:var(--text);font-weight:700}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .tag{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:3px 10px;font-size:11.5px;color:var(--muted);font-weight:600}
+  .overlap{display:flex;align-items:center;gap:10px;font-size:13.5px;margin-top:8px;color:var(--text);font-weight:600}
+  .bar{height:10px;background:var(--panel2);border-radius:5px;flex:1;overflow:hidden}
+  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pl-blue),var(--pl-teal))}
+  a{color:var(--pl-teal);text-decoration:none;font-size:13.5px;font-weight:700}
+  a:hover{color:var(--pl-blue);text-decoration:underline}
+  .note{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--pl-teal);border-radius:var(--radius-card);padding:16px 22px;font-size:14.5px;color:var(--muted);margin-top:8px}
+  .pill2{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:33px;padding:5px 14px;margin:3px;font-size:12.5px;font-weight:600}
+  .pill2.hot{border-color:#d29922;color:#8a6400}
+  .pill2.open{border-color:var(--pl-teal);color:#16483f}
+  .sector-ico{width:20px;height:20px;vertical-align:middle;margin-right:5px}
+  .srcbtn{margin-top:auto;padding-top:8px}
+  #whitespace,#pillars{display:none}
+  @media(max-width:1100px){.mainnav{display:none}}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER (exact Powerland) ===== -->
+<header>
+  <div class="hbar">
+    <div class="brand">
+      <img class="logo" src="assets/logo.svg" alt="Powerland">
+      <span class="drive">we energize your drive</span>
+    </div>
+    <nav class="mainnav">
+      <button data-sector="laadinfrastructuur" onclick="filterSector(this)">Laadinfrastructuur</button>
+      <button data-sector="batterijopslag" onclick="filterSector(this)">Batterijopslag</button>
+      <button data-sector="zonnepanelen" onclick="filterSector(this)">Zonnepanelen</button>
+      <button data-sector="energiemanagement" onclick="filterSector(this)">Energiemanagement</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO (exact Powerland render) ===== -->
+<section class="hero">
+  <img src="assets/hero.jpg" alt="Powerland energie-ecosysteem">
+</section>
+<!-- ===== DASHBOARD CONTENT ===== -->
+<main>
+  <div class="stat" id="stats"></div>
+
+  <div class="controls">
+    <label class="row">Categorie:</label>
+    <select id="fCat">
+      <option value="all">Alle</option>
+      <option value="direct">Direct</option>
+      <option value="partial">Gedeeltelijk</option>
+      <option value="indirect">Indirect</option>
+    </select>
+    <button class="sec" onclick="showSection('competitors')">Concurrenten</button>
+    <button class="sec" onclick="showSection('whitespace')">Whitespace</button>
+    <button class="sec" onclick="showSection('pillars')">Contentpijlers</button>
+    <span class="sub" id="count"></span>
+  </div>
+
+  <section id="competitors">
+    <h2>Concurrenten</h2>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section id="whitespace">
+    <h2>Whitespace-analyse</h2>
+    <div class="note">Gebaseerd op de 8 concurrenten: welke sectoren zijn "rood" (veel spelers) en welke zijn "open" (kans voor Powerland).</div>
+    <div id="wsOut" style="margin-top:12px"></div>
+  </section>
+
+  <section id="pillars">
+    <h2>Contentpijlers voor Powerland</h2>
+    <div class="note">Afgeleid van de whitespace + Powerland zijn sterktes (geïntegreerd ecosysteem: opwekken · stockeren · beheren · opladen).</div>
+    <div id="plOut" style="margin-top:12px"></div>
+  </section>
+</main>
+
+<script>
+let DATA=null;
+const ICO={laadinfrastructuur:'assets/charging-station.svg',batterijopslag:'assets/battery.svg',zonnepanelen:'assets/solar-panel.svg',energiemanagement:'assets/network.svg'};
+async function load(){
+  try{const r=await fetch('data.json');DATA=await r.json();}
+  catch(e){document.getElementById('cards').innerHTML='<p class="note">Kon data.json niet laden.</p>';return;}
+  renderStats();renderCards();renderWhitespace();renderPillars();
+}
+function renderStats(){
+  const c=DATA.competitors;
+  const d=c.filter(x=>x.category==='direct').length,p=c.filter(x=>x.category==='partial').length,i=c.filter(x=>x.category==='indirect').length;
+  document.getElementById('stats').innerHTML=`
+    <div class="kpi"><div class="n">${c.length}</div><div class="l">Concurrenten</div></div>
+    <div class="kpi direct"><div class="n">${d}</div><div class="l">Direct</div></div>
+    <div class="kpi partial"><div class="n">${p}</div><div class="l">Gedeeltelijk</div></div>
+    <div class="kpi indirect"><div class="n">${i}</div><div class="l">Indirect</div></div>`;
+}
+function ico(s){return ICO[s]?`<img class="sector-ico" src="${ICO[s]}" alt="">`:''}
+function cardHTML(x){
+  const pct=(x.overlap_score_powerland/5*100);
+  const tags=(x.sectors||[]).map(s=>`<span class="tag">${ico(s)}${s}</span>`).join('');
+  const soc=Object.entries(x.social_channels||{}).filter(([k,v])=>v===true).map(([k])=>k).join(', ')||'n.v.t.';
+  return `<div class="card">
+    <span class="cat ${x.category}">${x.category}</span>
+    <h3>${x.name}</h3>
+    <div class="row"><b>Diensten:</b> ${(x.services||[]).join(', ')}</div>
+    <div class="row"><b>Doelgroep:</b> ${(x.target_audience||[]).join(', ')}</div>
+    <div class="row"><b>Kanalen:</b> ${soc}</div>
+    <div class="tags">${tags}</div>
+    <div class="overlap">Overlap <div class="bar"><i style="width:${pct}%"></i></div> ${x.overlap_score_powerland}/5</div>
+    <div class="row"><b>Positionering:</b> ${x.positioning||''}</div>
+    <div class="srcbtn"><a href="${x.domain}" target="_blank">${x.domain}</a>${x.sources?` · <a href="raw/${x.sources[0].split('/').pop()}" target="_blank">↗ bron</a>`:''}</div>
+  </div>`;
+}
+function renderCards(){
+  let list=DATA.competitors.slice();
+  const cat=document.getElementById('fCat').value;
+  if(cat!=='all')list=list.filter(x=>x.category===cat);
+  if(activeSector)list=list.filter(x=>(x.sectors||[]).includes(activeSector));
+  // default: overlap met Powerland (hoog->laag)
+  list.sort((a,b)=>b.overlap_score_powerland-a.overlap_score_powerland);
+  document.getElementById('cards').innerHTML=list.map(cardHTML).join('');
+  document.getElementById('count').textContent=`${list.length} van ${DATA.competitors.length} getoond`;
+}
+function renderWhitespace(){
+  const sec={};
+  DATA.competitors.forEach(c=>{(c.sectors||[]).forEach(s=>{sec[s]=(sec[s]||0)+1;});});
+  const rows=Object.entries(sec).sort((a,b)=>b[1]-a[1]);
+  const max=rows[0]?rows[0][1]:1;
+  let html='<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">';
+  rows.forEach(([s,n])=>{
+    const crowded=n>=4,open=n<=2,cls=crowded?'hot':(open?'open':'');
+    html+=`<div class="card"><h3>${ico(s)}${s}</h3><div class="overlap">${n} spelers <div class="bar"><i style="width:${n/max*100}%"></i></div></div><span class="pill2 ${cls}">${crowded?'ROOD':(open?'OPEN':'neutraal')}</span></div>`;
+  });
+  html+='</div>';
+  document.getElementById('wsOut').innerHTML=html;
+}
+function renderPillars(){
+  const pillars=[
+    {t:'1. Het geïntegreerde ecosysteem',d:'Opwekken · stockeren · beheren · opladen als één verhaal. Enkel MR Solar doet dit ook scherp — Powerland moet dit verhaal claimen als de enige echte totaalpartner.'},
+    {t:'2. B2B-diepgang & certificeringen',d:'ExtraPower toont VCA** + aannemersklasse 5. Powerland moet certificeringen & industrieel track-record prominenter tonen om KMO/industrie te winnen.'},
+    {t:'3. Maatschappelijk & lokaal',d:'IQ Solar scoort met zonnepanelen-schenking + ministeriële steun. Powerland kan inzetten op lokale impact en kmo-ontzorging.'},
+    {t:'4. Whitespace: energiemanagement als differentiator',d:'De meeste concurrenten focussen op zonne+laadpalen zónder slimme sturing. Powerlands EMS is de open positie om te claimen.'},
+    {t:'5. Laad-ecosysteem-partners',d:'Electra/Ionity exploiteren het netwerk dat Powerland installeert — content over samenwerking toont Powerland als serieuze installatiepartner.'}
+  ];
+  document.getElementById('plOut').innerHTML=pillars.map(p=>`<div class="card"><h3>${p.t}</h3><div class="row">${p.d}</div></div>`).join('');
+}
+function showSection(id){
+  ['competitors','whitespace','pillars'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
+}
+let activeSector=null;
+function filterSector(btn){
+  const sec=btn.dataset.sector;
+  // toggle: klik op actieve sector -> reset
+  if(activeSector===sec){activeSector=null;}
+  else{activeSector=sec;}
+  document.querySelectorAll('.mainnav button').forEach(b=>b.classList.toggle('active', b.dataset.sector===activeSector));
+  // reset categorie-dropdown zodat de sector-filter niet conflicteert
+  document.getElementById('fCat').value='all';
+  renderCards();
+}
+document.getElementById('fCat').addEventListener('change',renderCards);
+showSection('competitors');
+load();
+</script>
+</body>
+</html>
