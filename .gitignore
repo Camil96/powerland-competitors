@@ -1,0 +1,4 @@
+# Automatische wekelijkse capture (Taakplanner) — lokaal, niet in git
+snapshots/
+capture-report.txt
+powerland_capture.log
