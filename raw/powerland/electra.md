@@ -1,24 +1,32 @@
-# Electra (go-electra.com) — concurrent van Powerland (BE)
+# Electra — concurrent van Powerland (BE)
 
-**Domein:** https://www.go-electra.com/nl/
-**Uitgelezen:** 2026-07-16 via browser
+**Domein:** https://www.go-electra.com/nl/  
+**Laatst ververst:** 2026-08-10 14:42 UTC  
+**Categorie:** indirect  
 
-## Wat Electra doet
-Laadnetwerk-operator voor EV's (snellaadstations), geen installateur.
-- App + laadpas (opladen in heel Europa)
-- Electra+ abonnement (twee formules, geen vaste looptijd)
-- "Voor professionals" (B2B fleet-kaart)
-- 20 min voor 400 km, Autocharge, routeplanner
+## Diensten
+- Laadnetwerk-operator (768 stations beschikbaar, 65 in aanbouw)
+- Electra-laadpas
+- Electra+ abonnement
+- App (routeplanner, Autocharge)
+- Voor professionals (fleet / host een station)
 
-## Positionering
-"Revolutionaire oplaadervaring" — snel, stressvrij, "u staat op de eerste plaats".
-Grootste laadnetwerk van Europa.
+## Doelgroep
+- EV-rijders (B2C)
+- fleets (B2B)
+- hosts (B2B)
 
-## Overlap met Powerland
-INDIRECT. Electra is de operator/het netwerk; Powerland installeert
-laadinfrastructuur. Ze zitten in elkaars waardeketen (Powerland plaatst,
-Electra exploiteert), maar concurreren niet direct op installatie/zonne/batterij.
-In dashboard markeren als "indirect / laad-ecosysteem".
+## Kanalen / sociale aanwezigheid
+- website: True
+- app: True
+- facebook: True
+- instagram: True
+- linkedin: True
+- twitter: True
 
-## Sociale kanalen
-App-gedreven; niet expliciet uitgelezen op site.
+## Positionering (citeerbaar uit site)
+> Revolutionaire oplaadervaring — grootste laadnetwerk van Europa; heruitvinden van voertuigopladen, betrouwbaar en op de eerste plaats van de gebruiker.
+
+## Wat veranderde t.o.v. vorige verversing
+- **services**: `['Laadnetwerk-operator (snellaadstations)', 'Laadpas', 'Electra+ abonnement', 'App', 'Voor professionals (fleet/host een station)']` → `['Laadnetwerk-operator (768 stations beschikbaar, 65 in aanbouw)', 'Electra-laadpas', 'Electra+ abonnement', 'App (routeplanner, Autocharge)', 'Voor professionals (fleet / host een station)']`
+- **social_channels**: `{'website': True, 'app': True}` → `{'website': True, 'app': True, 'facebook': True, 'instagram': True, 'linkedin': True, 'twitter': True}`

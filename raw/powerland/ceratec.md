@@ -1,31 +1,33 @@
-# Ceratec — concurrent van Powerland (BE, FR-taalig)
+# Ceratec — concurrent van Powerland (BE)
 
-**Domein:** https://ceratec.eu/  (let op: .be redirect naar .eu)
-**Uitgelezen:** 2026-07-16 via browser
+**Domein:** https://ceratec.eu/  
+**Laatst ververst:** 2026-08-10 14:42 UTC  
+**Categorie:** partial  
 
-## Wat Ceratec doet (van site)
-Industriële engineering-groep (sinds 1986, familiebedrijf). Kern:
-- Heavyclay solutions / kleiverwerking
-- Handling machines / intralogistiek
-- Industrial automation / process
-- Génie électrique / Moyenne et Haute tension
-- Construction de tableaux
-- Prefab wall solutions
-- Solutions énergétiques et de chargement (energie + laad)
-- Sécuritéssystemen
+## Diensten
+- Génie électrique / Hoog- en middenspanning
+- Process en automation
+- Constructie van schakelborden
+- Solutions énergétiques et de chargement
+- Beveiligingssystemen
+- Handling machines / intralogistieke oplossingen
+- Prefab muuroplossingen
+- Producten in gebakken aarde (heavy clay)
 
-## Positionering
-"Revolutionizing the future with heavy clay solutions, handling machines,
-industrial automation..." — industriële techniek, geen consument/zonne-focus.
+## Doelgroep
+- industrie
+- KMO
 
-## Overlap met Powerland
-PARTIEEL. Ceratec doet hoogspanning + energie-oplossingen + laden, maar is
-geen pure laadinfrastructuur/zonne/batterij-speler. Overlap zit op
-hoogspanning/energie-techniek, niet op de residentiële/B2B-zonne-markt.
+## Kanalen / sociale aanwezigheid
+- website: True
+- facebook: True
+- linkedin: True
+- youtube: True
 
-## Sociale kanalen (zichtbaar op site)
-Facebook, LinkedIn, YouTube (expliciet gelinkt).
+## Positionering (citeerbaar uit site)
+> Revolutionizing the future with heavy clay solutions, handling machines, industrial automation.
 
-## Opmerking
-Niet de meest directe Powerland-concurrent — eerder een breed
-industrieel elektriciteitsbedrijf. In dashboard markeren als "lage overlap".
+## Wat veranderde t.o.v. vorige verversing
+- **services**: `['Génie électrique / Hoogspanning', 'Solutions énergétiques et de chargement', 'Industrial automation', 'Prefab walls']` → `['Génie électrique / Hoog- en middenspanning', 'Process en automation', 'Constructie van schakelborden', 'Solutions énergétiques et de chargement', 'Beveiligingssystemen', 'Handling machines / intralogistieke oplossingen', 'Prefab muuroplossingen', 'Producten in gebakken aarde (heavy clay)']`
+- **social_channels**: `{'website': True, 'facebook': True, 'linkedin': True, 'youtube': True, 'instagram': 'to_verify'}` → `{'website': True, 'facebook': True, 'linkedin': True, 'youtube': True}`
+- **sectors**: `['hoogspanning', 'energie', 'laadinfrastructuur']` → `['hoogspanning', 'energie', 'laadinfrastructuur', 'industriele automatisering']`

@@ -1,33 +1,33 @@
 # IQ Solar — concurrent van Powerland (BE)
 
-**Domein:** https://www.iq-solar.be
-**Uitgelezen:** 2026-07-16 via browser
+**Domein:** https://www.iq-solar.be  
+**Laatst ververst:** 2026-08-10 14:42 UTC  
+**Categorie:** direct  
 
-## Diensten (van site)
+## Diensten
 - Zonnepanelen
 - Thuisbatterijen
-- Laadpalen
-- Energie-audits
-- Monitoring van installaties
-
-## Positionering
-"Totaalpartner voor hernieuwbare energie" — ontzorgen van eerste advies tot
-installatie en dienst na verkoop. "Onze klant staat altijd op de eerste plaats!"
+- Batterijopslag (bedrijven)
+- Laadstations / laadpalen
+- Servicecontract
+- EPC NR - Energiescan
+- Solar carports
+- Financiering
+- Slimme energieoplossingen
 
 ## Doelgroep
-Particulieren ÉN bedrijven (B2B + B2C — net als Powerland).
+- particulieren
+- bedrijven (B2B + B2C)
 
-## Tone-of-voice
-Warm, maatschappelijk betrokken, mensgericht.
+## Kanalen / sociale aanwezigheid
+- website: True
+- facebook: True
+- linkedin: True
+- instagram: True
 
-## Opvallend
-- Schenkt zonnepanelen aan Gentse gezinnen (5-jarig jubileum), steun Vlaamse
-  minister van Energie (Melissa Depraetere).
-- 3.000+ plaatsingen, erkend installateur.
-- Installatie binnen 3-4 weken na goedkeuring offerte.
+## Positionering (citeerbaar uit site)
+> Jouw totaalpartner voor hernieuwbare energie — ontzorgen van advies tot installatie en dienst na verkoop.
 
-## Overlap met Powerland
-Zonne + batterij + laadpalen, B2B+B2C → directe concurrent.
-
-## Sociale kanalen
-Nog te verifiëren (site heeft Reviews/Blog/Acties — niet expliciet uitgelezen).
+## Wat veranderde t.o.v. vorige verversing
+- **services**: `['Zonnepanelen', 'Thuisbatterijen', 'Laadpalen', 'Energie-audits', 'Monitoring']` → `['Zonnepanelen', 'Thuisbatterijen', 'Batterijopslag (bedrijven)', 'Laadstations / laadpalen', 'Servicecontract', 'EPC NR - Energiescan', 'Solar carports', 'Financiering', 'Slimme energieoplossingen']`
+- **social_channels**: `{'website': True}` → `{'website': True, 'facebook': True, 'linkedin': True, 'instagram': True}`

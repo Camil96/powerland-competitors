@@ -4,8 +4,18 @@
       "type": "own",
       "name": "Powerland",
       "domain": "https://www.powerland.be",
-      "sectors": ["laadinfrastructuur", "batterijopslag", "zonnepanelen", "energiemanagement"],
-      "target_audience": ["bedrijven", "overheden", "VME", "projectontwikkelaars"],
+      "sectors": [
+        "laadinfrastructuur",
+        "batterijopslag",
+        "zonnepanelen",
+        "energiemanagement"
+      ],
+      "target_audience": [
+        "bedrijven",
+        "overheden",
+        "VME",
+        "projectontwikkelaars"
+      ],
       "stack": "Opwekken + Stockeren + Beheren + Opladen (geïntegreerd ecosysteem)"
     }
   },
@@ -16,15 +26,39 @@
       "domain": "https://reeload.eu/be/",
       "parent_brand": "powerland",
       "category": "direct",
-      "sectors": ["laadinfrastructuur", "hoogspanning", "batterijopslag"],
-      "services": ["Laadinfrastructuur / snellaaders", "Hoogspanning", "Batterijopslag", "Reeload CARE (onderhoud)"],
+      "sectors": [
+        "laadinfrastructuur",
+        "hoogspanning",
+        "batterijopslag"
+      ],
+      "services": [
+        "Hoogspanning",
+        "Laadinfrastructuur / snellaaders",
+        "Batterijopslag",
+        "Reeload CARE (onderhoud)"
+      ],
       "positioning": "Electrification, Delivered Without Compromise — complexe energie-installaties snel, betrouwbaar, zonder ruis of vertraging.",
-      "target_audience": ["bedrijven", "complexe installaties"],
-      "social_channels": {"website": true, "linkedin": "to_verify", "instagram": "to_verify", "facebook": "to_verify", "tiktok": "to_verify"},
-      "strengths": ["Hoogspanning-expertise", "Geïntegreerde aanpak laad+batterij+hoogspanning"],
-      "weaknesses": ["Geen zonne-focus (Powerland wel)", "Weinig zichtbaarheid bij KMO/retail", "Beperkte EMS-positionering"],
+      "target_audience": [
+        "bedrijven",
+        "complexe installaties"
+      ],
+      "social_channels": {
+        "website": true
+      },
+      "strengths": [
+        "Hoogspanning-expertise",
+        "Geïntegreerde aanpak laad+batterij+hoogspanning"
+      ],
+      "weaknesses": [
+        "Geen zonne-focus (Powerland wel)",
+        "Weinig zichtbaarheid bij KMO/retail",
+        "Beperkte EMS-positionering"
+      ],
       "overlap_score_powerland": 4,
-      "sources": ["raw/powerland/reeload.md"]
+      "sources": [
+        "raw/powerland/reeload.md"
+      ],
+      "_refreshed_at": "2026-08-10T14:33:32Z"
     },
     {
       "id": "iq-solar",
@@ -32,15 +66,49 @@
       "domain": "https://www.iq-solar.be",
       "parent_brand": "powerland",
       "category": "direct",
-      "sectors": ["zonnepanelen", "batterijopslag", "laadinfrastructuur"],
-      "services": ["Zonnepanelen", "Thuisbatterijen", "Laadpalen", "Energie-audits", "Monitoring"],
-      "positioning": "Totaalpartner voor hernieuwbare energie — ontzorgen van advies tot installatie en dienst na verkoop.",
-      "target_audience": ["particulieren", "bedrijven (B2B + B2C)"],
-      "social_channels": {"website": true, "linkedin": "to_verify", "instagram": "to_verify", "facebook": "to_verify", "tiktok": "to_verify"},
-      "strengths": ["Maatschappelijk engagement (zonnepanelen-schenking Gent)", "3.000+ plaatsingen", "Erkend installateur", "Snelle installatie (3-4 weken)"],
-      "weaknesses": ["Geen hoogspanning/industriële zwaarte", "EMS niet als kernverhaal", "B2C-zwaar (minder KMO-focus dan Powerland)"],
+      "sectors": [
+        "zonnepanelen",
+        "batterijopslag",
+        "laadinfrastructuur"
+      ],
+      "services": [
+        "Zonnepanelen",
+        "Thuisbatterijen",
+        "Batterijopslag (bedrijven)",
+        "Laadstations / laadpalen",
+        "Servicecontract",
+        "EPC NR - Energiescan",
+        "Solar carports",
+        "Financiering",
+        "Slimme energieoplossingen"
+      ],
+      "positioning": "Jouw totaalpartner voor hernieuwbare energie — ontzorgen van advies tot installatie en dienst na verkoop.",
+      "target_audience": [
+        "particulieren",
+        "bedrijven (B2B + B2C)"
+      ],
+      "social_channels": {
+        "website": true,
+        "facebook": true,
+        "linkedin": true,
+        "instagram": true
+      },
+      "strengths": [
+        "Maatschappelijk engagement (zonnepanelen-schenking Gent)",
+        "3.000+ plaatsingen",
+        "Erkend installateur",
+        "Snelle installatie (3-4 weken)"
+      ],
+      "weaknesses": [
+        "Geen hoogspanning/industriële zwaarte",
+        "EMS niet als kernverhaal",
+        "B2C-zwaar (minder KMO-focus dan Powerland)"
+      ],
       "overlap_score_powerland": 4,
-      "sources": ["raw/powerland/iq-solar.md"]
+      "sources": [
+        "raw/powerland/iq-solar.md"
+      ],
+      "_refreshed_at": "2026-08-10T14:42:08Z"
     },
     {
       "id": "ceratec",
@@ -48,15 +116,48 @@
       "domain": "https://ceratec.eu/",
       "parent_brand": "powerland",
       "category": "partial",
-      "sectors": ["hoogspanning", "energie", "laadinfrastructuur"],
-      "services": ["Génie électrique / Hoogspanning", "Solutions énergétiques et de chargement", "Industrial automation", "Prefab walls"],
+      "sectors": [
+        "hoogspanning",
+        "energie",
+        "laadinfrastructuur",
+        "industriele automatisering"
+      ],
+      "services": [
+        "Génie électrique / Hoog- en middenspanning",
+        "Process en automation",
+        "Constructie van schakelborden",
+        "Solutions énergétiques et de chargement",
+        "Beveiligingssystemen",
+        "Handling machines / intralogistieke oplossingen",
+        "Prefab muuroplossingen",
+        "Producten in gebakken aarde (heavy clay)"
+      ],
       "positioning": "Revolutionizing the future with heavy clay solutions, handling machines, industrial automation.",
-      "target_audience": ["industrie", "KMO"],
-      "social_channels": {"website": true, "facebook": true, "linkedin": true, "youtube": true, "instagram": "to_verify"},
-      "strengths": ["40 jaar ervaring", "Breed elektriciteitshuis", "Familiebedrijf"],
-      "weaknesses": ["Niet gefocust op zonne/batterij/EMS", "Geen residentiële focus", "Breed maar niet diep in energie-ecosysteem"],
+      "target_audience": [
+        "industrie",
+        "KMO"
+      ],
+      "social_channels": {
+        "website": true,
+        "facebook": true,
+        "linkedin": true,
+        "youtube": true
+      },
+      "strengths": [
+        "40 jaar ervaring",
+        "Breed elektriciteitshuis",
+        "Familiebedrijf"
+      ],
+      "weaknesses": [
+        "Niet gefocust op zonne/batterij/EMS",
+        "Geen residentiële focus",
+        "Breed maar niet diep in energie-ecosysteem"
+      ],
       "overlap_score_powerland": 2,
-      "sources": ["raw/powerland/ceratec.md"]
+      "sources": [
+        "raw/powerland/ceratec.md"
+      ],
+      "_refreshed_at": "2026-08-10T14:42:09Z"
     },
     {
       "id": "extrapower",
@@ -64,15 +165,41 @@
       "domain": "https://www.extrapower.be/",
       "parent_brand": "powerland",
       "category": "direct",
-      "sectors": ["zonnepanelen", "laadinfrastructuur"],
-      "services": ["Zonneparken (advies/ontwerp/uitvoering/opvolging)", "Laadinfrastructuur", "Sectoren: KMO/industrie/retail/landbouw"],
-      "positioning": "Optimizing your energy — professionele partner voor zonne-installaties op maat.",
-      "target_audience": ["KMO", "industrie", "retail", "landbouw (B2B)"],
-      "social_channels": {"website": true, "linkedin": "to_verify", "facebook": "to_verify", "instagram": "to_verify", "tiktok": "to_verify"},
-      "strengths": ["VCA**-certificaat", "Aannemersklasse 5", "Pan-Europese groei (Duitsland)", "Referenties: Decathlon, UZ Gent, CommScope"],
-      "weaknesses": ["Geen batterij/EMS in kernaanbod", "Laadpalen eerder bijproduct van zonne", "Geen geïntegreerd sturing-verhaal"],
+      "sectors": [
+        "zonnepanelen",
+        "laadinfrastructuur"
+      ],
+      "services": [
+        "Zonneparken (advies/ontwerp/uitvoering/opvolging)",
+        "Laadinfrastructuur"
+      ],
+      "positioning": "Optimizing your energy — professionele partner die zonne-energie-installaties op maat ontwerpt, bouwt en onderhoudt voor een rendabel en duurzaam energiebeleid.",
+      "target_audience": [
+        "KMO",
+        "industrie",
+        "retail",
+        "landbouw (B2B)"
+      ],
+      "social_channels": {
+        "website": true,
+        "facebook": true
+      },
+      "strengths": [
+        "VCA**-certificaat",
+        "Aannemersklasse 5",
+        "Pan-Europese groei (Duitsland)",
+        "Referenties: Decathlon, UZ Gent, CommScope"
+      ],
+      "weaknesses": [
+        "Geen batterij/EMS in kernaanbod",
+        "Laadpalen eerder bijproduct van zonne",
+        "Geen geïntegreerd sturing-verhaal"
+      ],
       "overlap_score_powerland": 4,
-      "sources": ["raw/powerland/extrapower.md"]
+      "sources": [
+        "raw/powerland/extrapower.md"
+      ],
+      "_refreshed_at": "2026-08-10T14:42:09Z"
     },
     {
       "id": "mr-solar",
@@ -80,15 +207,48 @@
       "domain": "https://www.mrsolar.be",
       "parent_brand": "powerland",
       "category": "direct",
-      "sectors": ["zonnepanelen", "batterijopslag", "energiemanagement", "laadinfrastructuur"],
-      "services": ["Zonnepanelen", "BESS (batterij)", "EMS (energiemanagement)", "Laadpalen", "Totaalproject"],
-      "positioning": "Duurzame energieoplossingen voor bedrijven — geïntegreerd ecosysteem (opwekken/stockeren/beheren/opladen).",
-      "target_audience": ["bedrijven (B2B + B2C)"],
-      "social_channels": {"website": true, "linkedin": "to_verify", "instagram": "to_verify", "facebook": "to_verify", "tiktok": "to_verify"},
-      "strengths": ["320+ Trustpilot-reviews", ">15 jaar bestaansgeschiedenis", ">25 jaar servicepartner", "Referenties: LCL, Codipack, Dovy, Vanhonsebrouck"],
-      "weaknesses": ["Sterke gelijkaardige positionering = directe dubbeling met Powerland", "Prijsdruk door zichtbaarheid"],
+      "sectors": [
+        "zonnepanelen",
+        "batterijopslag",
+        "energiemanagement",
+        "laadinfrastructuur"
+      ],
+      "services": [
+        "Industriële zonnepanelen",
+        "BESS (batterijopslag)",
+        "EMS (Energy Management System)",
+        "Industriële laadpalen",
+        "Operation & Maintenance contracten",
+        "Totaalproject"
+      ],
+      "positioning": "Ervaren partner in duurzame energie die bedrijven begeleidt in hun transitie naar groene energie — een geintegreerd ecosysteem van opwekken, stockeren, beheren en opladen.",
+      "target_audience": [
+        "bedrijven (B2B)",
+        "particulieren"
+      ],
+      "social_channels": {
+        "website": true,
+        "trustpilot": true,
+        "facebook": true,
+        "linkedin": true,
+        "instagram": true,
+        "youtube": true
+      },
+      "strengths": [
+        "320+ Trustpilot-reviews",
+        ">15 jaar bestaansgeschiedenis",
+        ">25 jaar servicepartner",
+        "Referenties: LCL, Codipack, Dovy, Vanhonsebrouck"
+      ],
+      "weaknesses": [
+        "Sterke gelijkaardige positionering = directe dubbeling met Powerland",
+        "Prijsdruk door zichtbaarheid"
+      ],
       "overlap_score_powerland": 5,
-      "sources": ["raw/powerland/mr-solar.md"]
+      "sources": [
+        "raw/powerland/mr-solar.md"
+      ],
+      "_refreshed_at": "2026-08-10T14:42:09Z"
     },
     {
       "id": "torre",
@@ -96,15 +256,43 @@
       "domain": "https://www.torremoerman.be/nl/",
       "parent_brand": "powerland",
       "category": "partial",
-      "sectors": ["zonnepanelen", "laadinfrastructuur", "elektriciteit"],
-      "services": ["Installatie zonnepanelen (LG Solar)", "Verwarming & warm water", "Elektriciteit & domotica (KNX)", "Laadpalen"],
-      "positioning": "Slim en ecologisch verwarmen / omgaan met energie — lokale installateur.",
-      "target_audience": ["particulier", "KMO"],
-      "social_channels": {"website": true, "facebook": true, "instagram": "to_verify", "linkedin": "to_verify", "tiktok": "to_verify"},
-      "strengths": ["Lokale aanwezigheid", "Breed installatiepakket"],
-      "weaknesses": ["Geen batterij/EMS-focus", "Kleinschaliger profiel", "Geen industriële geloofwaardigheid"],
+      "sectors": [
+        "zonnepanelen",
+        "laadinfrastructuur",
+        "elektriciteit",
+        "verwarming/sanitair"
+      ],
+      "services": [
+        "Installatie zonnepanelen (LG Solar)",
+        "Verwarming & warm water",
+        "Elektriciteit & domotica",
+        "Sanitaire installaties",
+        "Laadpalen",
+        "Hoxter inbouwhaarden"
+      ],
+      "positioning": "Slim en ecologisch omgaan met energie — lokale installateur.",
+      "target_audience": [
+        "particulier",
+        "KMO"
+      ],
+      "social_channels": {
+        "website": true,
+        "facebook": true
+      },
+      "strengths": [
+        "Lokale aanwezigheid",
+        "Breed installatiepakket"
+      ],
+      "weaknesses": [
+        "Geen batterij/EMS-focus",
+        "Kleinschaliger profiel",
+        "Geen industriële geloofwaardigheid"
+      ],
       "overlap_score_powerland": 3,
-      "sources": ["raw/powerland/torre.md"]
+      "sources": [
+        "raw/powerland/torre.md"
+      ],
+      "_refreshed_at": "2026-08-10T14:42:09Z"
     },
     {
       "id": "electra",
@@ -112,15 +300,43 @@
       "domain": "https://www.go-electra.com/nl/",
       "parent_brand": "powerland",
       "category": "indirect",
-      "sectors": ["laadinfrastructuur"],
-      "services": ["Laadnetwerk-operator (snellaadstations)", "Laadpas", "Electra+ abonnement", "App", "Voor professionals (fleet)"],
-      "positioning": "Revolutionaire oplaadervaring — grootste laadnetwerk van Europa.",
-      "target_audience": ["EV-rijders (B2C)", "fleets (B2B)"],
-      "social_channels": {"website": true, "app": true, "linkedin": "to_verify", "instagram": "to_verify", "facebook": "to_verify", "tiktok": "to_verify"},
-      "strengths": ["Groot Europees netwerk", "Sterke app-ervaring"],
-      "weaknesses": ["Geen installateur — andere schakel in keten", "Geen eigen energie-opwek"],
+      "sectors": [
+        "laadinfrastructuur"
+      ],
+      "services": [
+        "Laadnetwerk-operator (768 stations beschikbaar, 65 in aanbouw)",
+        "Electra-laadpas",
+        "Electra+ abonnement",
+        "App (routeplanner, Autocharge)",
+        "Voor professionals (fleet / host een station)"
+      ],
+      "positioning": "Revolutionaire oplaadervaring — grootste laadnetwerk van Europa; heruitvinden van voertuigopladen, betrouwbaar en op de eerste plaats van de gebruiker.",
+      "target_audience": [
+        "EV-rijders (B2C)",
+        "fleets (B2B)",
+        "hosts (B2B)"
+      ],
+      "social_channels": {
+        "website": true,
+        "app": true,
+        "facebook": true,
+        "instagram": true,
+        "linkedin": true,
+        "twitter": true
+      },
+      "strengths": [
+        "Groot Europees netwerk",
+        "Sterke app-ervaring"
+      ],
+      "weaknesses": [
+        "Geen installateur — andere schakel in keten",
+        "Geen eigen energie-opwek"
+      ],
       "overlap_score_powerland": 1,
-      "sources": ["raw/powerland/electra.md"]
+      "sources": [
+        "raw/powerland/electra.md"
+      ],
+      "_refreshed_at": "2026-08-10T14:42:09Z"
     },
     {
       "id": "ionity",
@@ -128,47 +344,150 @@
       "domain": "https://www.ionity.eu",
       "parent_brand": "powerland",
       "category": "indirect",
-      "sectors": ["laadinfrastructuur"],
-      "services": ["Europees snellaadnetwerk (874 locaties, 24 landen)", "Abonnementen Power/Motion", "App", "Partner program"],
+      "sectors": [
+        "laadinfrastructuur"
+      ],
+      "services": [
+        "Europees snellaadnetwerk (880 locaties, 24 landen, 66 in aanbouw)",
+        "Abonnementen IONITY Power 365 / Motion 365",
+        "IONITY App",
+        "IONITY Direct",
+        "Partner program / Fleets"
+      ],
       "positioning": "Seamless, fast & reliable EV charging across Europe — high-power charging.",
-      "target_audience": ["EV-rijders (B2C)", "autofabrikanten/B2B"],
-      "social_channels": {"website": true, "app": true, "linkedin": "to_verify", "instagram": "to_verify", "facebook": "to_verify", "tiktok": "to_verify"},
-      "strengths": ["874 locaties EU", "Autofabrikant-backing (VW/BMW/Mercedes/...)", "Kwaliteitsleider"],
-      "weaknesses": ["Geen installateur — andere schakel in keten", "Geen eigen opwek/sturing"],
+      "target_audience": [
+        "EV-rijders (B2C)",
+        "autofabrikanten/B2B",
+        "fleets"
+      ],
+      "social_channels": {
+        "website": true,
+        "app": true,
+        "facebook": true,
+        "instagram": true,
+        "linkedin": true,
+        "tiktok": true
+      },
+      "strengths": [
+        "874 locaties EU",
+        "Autofabrikant-backing (VW/BMW/Mercedes/...)",
+        "Kwaliteitsleider"
+      ],
+      "weaknesses": [
+        "Geen installateur — andere schakel in keten",
+        "Geen eigen opwek/sturing"
+      ],
       "overlap_score_powerland": 1,
-      "sources": ["raw/powerland/ionity.md"]
+      "sources": [
+        "raw/powerland/ionity.md"
+      ],
+      "_refreshed_at": "2026-08-10T14:42:09Z"
     }
   ],
   "analysis": {
     "explain": {
-      "competitors": {"short": "WIE ze zijn — de 8 spelers die een salespersoon noemde.", "deep": "Basis om de rest tegen af te zetten. Zonder deze lijst blijft elke uitspraak over 'de markt' vaag. De 8 zijn geen willekeurige steekproef maar een buiten-in trigger (sales-ervaring); de analyse maakt er een binnen-uit verhaal van."},
-      "whitespace": {"short": "WAAR niemand van de 8 staat.", "deep": "Whitespace = de lege vakken op het marktveld. Niet 'wat er niet is' als gemis, maar 'waar niemand zich positioneert' — daar markeer je Powerland vóórdat je in een prijzenoorlog belandt op bezette vakken (zonne+laadpaal). Elk wit vak is kans én valkuil: niet elk leeg vak is winstgevend."},
-      "pillars": {"short": "WAT Powerland zegt om die ruimte te claimen.", "deep": "Contentpijlers = de 3 thema's waarmee Powerland de whitespace claimt. Zonder pijlers verwatert de analyse tot losse posts die de concurrenten nadoen. Elke pijler wijst naar één wit vak — zo is de pagina één verhaal, niet twee losse widgets."},
-      "weaknesses": {"short": "WAAROM concurrenten die ruimte niet zelf vullen.", "deep": "Hun kwetsbaarheid = jouw openingszin. Als een concurrent wél EMS of industriële geloofwaardigheid had, was het witte vak dicht. Deze tab toont per concurrent wat ze niet kunnen — dat is precies waar Powerland kan scoren."},
-      "action": {"short": "DE ACTIE: welke 3 vakken je claimt, met welke pijler, in welke volgorde.", "deep": "Het rapport dat de la verlaat. Synthese van alles hierboven: claim p1/p2/p3 (gekoppeld aan de witte vakken), in volgorde van breedste onderscheid → grootste KMO-omzet → partner-verhaal. Caveat: validatie bij klanten vóór harde claims."}
+      "competitors": {
+        "short": "WIE ze zijn — de 8 spelers die een salespersoon noemde.",
+        "deep": "Basis om de rest tegen af te zetten. Zonder deze lijst blijft elke uitspraak over 'de markt' vaag. De 8 zijn geen willekeurige steekproef maar een buiten-in trigger (sales-ervaring); de analyse maakt er een binnen-uit verhaal van."
+      },
+      "whitespace": {
+        "short": "WAAR niemand van de 8 staat.",
+        "deep": "Whitespace = de lege vakken op het marktveld. Niet 'wat er niet is' als gemis, maar 'waar niemand zich positioneert' — daar markeer je Powerland vóórdat je in een prijzenoorlog belandt op bezette vakken (zonne+laadpaal). Elk wit vak is kans én valkuil: niet elk leeg vak is winstgevend."
+      },
+      "pillars": {
+        "short": "WAT Powerland zegt om die ruimte te claimen.",
+        "deep": "Contentpijlers = de 3 thema's waarmee Powerland de whitespace claimt. Zonder pijlers verwatert de analyse tot losse posts die de concurrenten nadoen. Elke pijler wijst naar één wit vak — zo is de pagina één verhaal, niet twee losse widgets."
+      },
+      "weaknesses": {
+        "short": "WAAROM concurrenten die ruimte niet zelf vullen.",
+        "deep": "Hun kwetsbaarheid = jouw openingszin. Als een concurrent wél EMS of industriële geloofwaardigheid had, was het witte vak dicht. Deze tab toont per concurrent wat ze niet kunnen — dat is precies waar Powerland kan scoren."
+      },
+      "action": {
+        "short": "DE ACTIE: welke 3 vakken je claimt, met welke pijler, in welke volgorde.",
+        "deep": "Het rapport dat de la verlaat. Synthese van alles hierboven: claim p1/p2/p3 (gekoppeld aan de witte vakken), in volgorde van breedste onderscheid → grootste KMO-omzet → partner-verhaal. Caveat: validatie bij klanten vóór harde claims."
+      }
     },
     "roadmap": [
-      {"step": 1, "tab": "Concurrenten", "answers": "WIE zijn de 8 spelers en wat doen ze?"},
-      {"step": 2, "tab": "Whitespace", "answers": "WAAR staat niemand van hen — de open marktruimte."},
-      {"step": 3, "tab": "Contentpijlers", "answers": "WAT zegt Powerland om die ruimte te claimen?"},
-      {"step": 4, "tab": "Zwaktes", "answers": "WAAROM kunnen zij die ruimte niet zelf invullen?"},
-      {"step": 5, "tab": "Voor Powerland", "answers": "WAT is de actie: welke 3 vakken claim je, in welke volgorde?"}
+      {
+        "step": 1,
+        "tab": "Concurrenten",
+        "answers": "WIE zijn de 8 spelers en wat doen ze?"
+      },
+      {
+        "step": 2,
+        "tab": "Whitespace",
+        "answers": "WAAR staat niemand van hen — de open marktruimte."
+      },
+      {
+        "step": 3,
+        "tab": "Contentpijlers",
+        "answers": "WAT zegt Powerland om die ruimte te claimen?"
+      },
+      {
+        "step": 4,
+        "tab": "Zwaktes",
+        "answers": "WAAROM kunnen zij die ruimte niet zelf invullen?"
+      },
+      {
+        "step": 5,
+        "tab": "Voor Powerland",
+        "answers": "WAT is de actie: welke 3 vakken claim je, in welke volgorde?"
+      }
     ],
     "whitespace": [
-      {"id": "w1", "title": "Energiemanagement als kernverhaal (niet als optie)", "detail": "MR Solar en anderen hebben EMS wél in hun stack, maar als bijproduct. Niemand claimt 'wij sturen je hele energieflow' als primair verhaal. Dat is het witte vak: EMS als hoofdrol, niet als vinkje. Powerland haar stack (opwekken·stockeren·beheren·opladen) leent zich er wel voor — maar moet marktproof gemaakt worden.", "open": true},
-      {"id": "w2", "title": "Zware industrie + hoogspanning als één ecosysteem", "detail": "ExtraPower toont VCA** + aannemersklasse 5, maar de zware industrie (hoogspanning, fleet-depots, productie) als géïntegreerd energie-ecosysteem is grotendeels open. Ruimte voor Powerland als 'serieuze partner voor bedrijven die niet met een zonnelabeltje genoegen nemen'.", "open": true},
-      {"id": "w3", "title": "Bouwer van het netwerk (positionerings-voorsprong)", "detail": "Electra/Ionity exploiteren het laadnetwerk dat Powerland installeert. Dit is geen marktruimte maar een positie: positioneer Powerland als de handen die bouwen — anders dan de 8 die enkel 'wij hebben laadpalen' zeggen.", "open": false}
+      {
+        "id": "w1",
+        "title": "Energiemanagement als kernverhaal (niet als optie)",
+        "detail": "MR Solar en anderen hebben EMS wél in hun stack, maar als bijproduct. Niemand claimt 'wij sturen je hele energieflow' als primair verhaal. Dat is het witte vak: EMS als hoofdrol, niet als vinkje. Powerland haar stack (opwekken·stockeren·beheren·opladen) leent zich er wel voor — maar moet marktproof gemaakt worden.",
+        "open": true
+      },
+      {
+        "id": "w2",
+        "title": "Zware industrie + hoogspanning als één ecosysteem",
+        "detail": "ExtraPower toont VCA** + aannemersklasse 5, maar de zware industrie (hoogspanning, fleet-depots, productie) als géïntegreerd energie-ecosysteem is grotendeels open. Ruimte voor Powerland als 'serieuze partner voor bedrijven die niet met een zonnelabeltje genoegen nemen'.",
+        "open": true
+      },
+      {
+        "id": "w3",
+        "title": "Bouwer van het netwerk (positionerings-voorsprong)",
+        "detail": "Electra/Ionity exploiteren het laadnetwerk dat Powerland installeert. Dit is geen marktruimte maar een positie: positioneer Powerland als de handen die bouwen — anders dan de 8 die enkel 'wij hebben laadpalen' zeggen.",
+        "open": false
+      }
     ],
     "pillars": [
-      {"id": "p1", "title": "Energie die zichzelf stuurt", "links_to": "w1", "detail": "Pijler claimt het witte vak: niet 'wij hebben een paneel' maar 'wij laten je verbruik, pieken en laadcapaciteit zichzelf regelen'. Sterkste differentiator vs MR Solar."},
-      {"id": "p2", "title": "De industriële geloofwaardigheid", "links_to": "w2", "detail": "Cases van KMO's met meetbare daling in piekfactuur via sturing. Concreet bewijs, niet 'wij zijn betrouwbaar'. Sluit de industriële KMO-gap."},
-      {"id": "p3", "title": "De handen achter het laadnetwerk", "links_to": "w3", "detail": "Ondersteunende pijler: content die toont Powerland bouwt wat Electra/Ionity exploiteren. Positioneert in de waardeketen, niet naast de 8 component-verkopers."}
+      {
+        "id": "p1",
+        "title": "Energie die zichzelf stuurt",
+        "links_to": "w1",
+        "detail": "Pijler claimt het witte vak: niet 'wij hebben een paneel' maar 'wij laten je verbruik, pieken en laadcapaciteit zichzelf regelen'. Sterkste differentiator vs MR Solar."
+      },
+      {
+        "id": "p2",
+        "title": "De industriële geloofwaardigheid",
+        "links_to": "w2",
+        "detail": "Cases van KMO's met meetbare daling in piekfactuur via sturing. Concreet bewijs, niet 'wij zijn betrouwbaar'. Sluit de industriële KMO-gap."
+      },
+      {
+        "id": "p3",
+        "title": "De handen achter het laadnetwerk",
+        "links_to": "w3",
+        "detail": "Ondersteunende pijler: content die toont Powerland bouwt wat Electra/Ionity exploiteren. Positioneert in de waardeketen, niet naast de 8 component-verkopers."
+      }
     ],
     "recommendation": {
       "claim": [
-        {"pillar": "p1", "why": "Enige echte differentiator vs MR Solar (die even breed is maar EMS niet als kern claimt)."},
-        {"pillar": "p2", "why": "Sluit de industriële KMO-gap die ExtraPower/Ceratec laten liggen."},
-        {"pillar": "p3", "why": "Positioneert Powerland in de waardeketen, niet naast de 8."}
+        {
+          "pillar": "p1",
+          "why": "Enige echte differentiator vs MR Solar (die even breed is maar EMS niet als kern claimt)."
+        },
+        {
+          "pillar": "p2",
+          "why": "Sluit de industriële KMO-gap die ExtraPower/Ceratec laten liggen."
+        },
+        {
+          "pillar": "p3",
+          "why": "Positioneert Powerland in de waardeketen, niet naast de 8."
+        }
       ],
       "order": "Eerst p1 (breedste onderscheid), dan p2 (grootste omzet-KMO), dan p3 (partner-verhaal).",
       "caveat": "Whitespace is kans én valkuil: niet elk leeg vak is winstgevend (particulieren die geen EMS betalen). w3 is geen marktruimte maar een positioneringskeuze — pas die toe als differentiator, niet als 'nieuw segment'. Validatie bij klanten vereist vóór claims hard gemaakt worden."
@@ -179,6 +498,10 @@
     "focus": "powerland",
     "status": "scrape_complete_8_of_8",
     "competitors_total": 8,
-    "categories": {"direct": 4, "partial": 2, "indirect": 2}
+    "categories": {
+      "direct": 4,
+      "partial": 2,
+      "indirect": 2
+    }
   }
 }

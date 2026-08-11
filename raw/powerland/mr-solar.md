@@ -1,31 +1,33 @@
 # MR Solar — concurrent van Powerland (BE)
 
-**Domein:** https://www.mrsolar.be  (deze pagina: /nl/professionals)
-**Uitgelezen:** 2026-07-16 via browser
+**Domein:** https://www.mrsolar.be  
+**Laatst ververst:** 2026-08-10 14:42 UTC  
+**Categorie:** direct  
 
-## Diensten (van site)
-- Zonnepanelen (opwekken)
-- BESS — Battery Energy Storage System (stockeren)
-- EMS — Energy Management System (beheren)
-- Laadpalen (opladen)
-- "Totaalproject aan duurzame energie" — geïntegreerd ecosysteem
-
-## Positionering
-"Duurzame energieoplossingen voor bedrijven" — partner in energietransitie.
-Ecosysteem: zonnepanelen + industriële batterij + EMS = maximaal rendement.
-
-## Sterktes
-- 320+ Trustpilot-reviews
-- >15 jaar bestaansgeschiedenis, >25 jaar servicepartner
-- Referenties: LCL Data Centers, Codipack, Dovy Keukens, Brouwerij
-  Vanhonsebrouck, Floren, Arco
+## Diensten
+- Industriële zonnepanelen
+- BESS (batterijopslag)
+- EMS (Energy Management System)
+- Industriële laadpalen
+- Operation & Maintenance contracten
+- Totaalproject
 
 ## Doelgroep
-B2B (professionals/bedrijven) — ook particulier (apart menu), dus B2B+B2C.
+- bedrijven (B2B)
+- particulieren
 
-## Overlap met Powerland
-Zeer hoog. Zelfde 4-stappen-verhaal: opwekken/stockeren/beheren/opladen.
-Directe, sterke concurrent.
+## Kanalen / sociale aanwezigheid
+- website: True
+- trustpilot: True
+- facebook: True
+- linkedin: True
+- instagram: True
+- youtube: True
 
-## Sociale kanalen
-Niet expliciet uitgelezen.
+## Positionering (citeerbaar uit site)
+> Ervaren partner in duurzame energie die bedrijven begeleidt in hun transitie naar groene energie — een geintegreerd ecosysteem van opwekken, stockeren, beheren en opladen.
+
+## Wat veranderde t.o.v. vorige verversing
+- **services**: `['Zonnepanelen', 'BESS (batterijopslag)', 'EMS (energiemanagement)', 'Laadpalen', 'Totaalproject']` → `['Industriële zonnepanelen', 'BESS (batterijopslag)', 'EMS (Energy Management System)', 'Industriële laadpalen', 'Operation & Maintenance contracten', 'Totaalproject']`
+- **target_audience**: `['bedrijven (B2B)']` → `['bedrijven (B2B)', 'particulieren']`
+- **social_channels**: `{'website': True, 'trustpilot': True}` → `{'website': True, 'trustpilot': True, 'facebook': True, 'linkedin': True, 'instagram': True, 'youtube': True}`

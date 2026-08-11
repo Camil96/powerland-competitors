@@ -87,6 +87,8 @@
   .row b{color:var(--text);font-weight:700}
   .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
   .tag{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:3px 10px;font-size:11.5px;color:var(--muted);font-weight:600}
+  .factbadge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.5px;color:#16483f;background:var(--pl-teal-soft);border-radius:6px;padding:2px 7px;margin-right:6px;vertical-align:middle}
+  .srcrow a{display:inline-block;margin-right:10px;margin-top:4px}
   .overlap{display:flex;align-items:center;gap:10px;font-size:13.5px;margin-top:8px;color:var(--text);font-weight:600}
   .bar{height:10px;background:var(--panel2);border-radius:5px;flex:1;overflow:hidden}
   .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pl-blue),var(--pl-teal))}
@@ -207,6 +209,12 @@ function cardHTML(x){
   const pct=(x.overlap_score_powerland/5*100);
   const tags=(x.sectors||[]).map(s=>`<span class="tag">${ico(s)}${s}</span>`).join('');
   const soc=Object.entries(x.social_channels||{}).filter(([k,v])=>v===true).map(([k])=>k).join(', ')||'n.v.t.';
+  // Bron(len): gelinkt aan het raw/*.md dossier dat de server serveert via /raw/<naam>
+  const srcLinks=(x.sources||[]).map(s=>{
+    const naam=s.split('/').pop();
+    return `<a href="raw/${naam}" target="_blank" rel="noopener">[dossier] ${naam.replace(/\.md$/,'')}</a>`;
+  }).join(' ');
+  const srcBlock=srcLinks?`<div class="row srcrow"><span class="factbadge">BRON</span> ${srcLinks}</div>`:'';
   return `<div class="card">
     <span class="cat ${x.category}">${x.category}</span>
     <h3>${x.name}</h3>
@@ -215,7 +223,8 @@ function cardHTML(x){
     <div class="row"><b>Kanalen:</b> ${soc}</div>
     <div class="tags">${tags}</div>
     <div class="overlap">Overlap <div class="bar"><i style="width:${pct}%"></i></div> ${x.overlap_score_powerland}/5</div>
-    <div class="row"><b>Positionering:</b> ${x.positioning||''}</div>
+    <div class="row"><span class="factbadge">FEIT</span> <b>Positionering:</b> ${x.positioning||''}</div>
+    ${srcBlock}
   </div>`;
 }
 function renderCards(){

@@ -1,31 +1,25 @@
 # ExtraPower — concurrent van Powerland (BE)
 
-**Domein:** https://www.extrapower.be/
-**Uitgelezen:** 2026-07-16 via browser
+**Domein:** https://www.extrapower.be/  
+**Laatst ververst:** 2026-08-10 14:42 UTC  
+**Categorie:** direct  
 
-## Diensten (van site)
-- Zonneparken (advies, ontwerp, uitvoering, opvolging zonne-installaties)
-- Laadinfrastructuur (als directe gebruiker van eigen zonne-energie)
-- Sectoren: KMO's, productiebedrijven, retail, landbouw
-
-## Positionering
-"Optimizing your energy" — professionele partner die zonne-energie-installaties
-op maat ontwerpt, bouwt en onderhoudt. Rendabel + duurzaam energiebeleid.
-
-## Klanten (referenties)
-Decathlon, UZ Gent, CommScope (Leuven), Beauvent, Centrauto, All Box Netwerk.
-
-## Sterktes
-- VCA**-certificaat (veiligheid)
-- Aannemersklasse 5
-- Pan-Europese groei (nieuw filiaal Duitsland, okt 2025)
+## Diensten
+- Zonneparken (advies/ontwerp/uitvoering/opvolging)
+- Laadinfrastructuur
 
 ## Doelgroep
-B2B: KMO + industrie (niet particulier).
+- KMO
+- industrie
+- retail
+- landbouw (B2B)
 
-## Overlap met Powerland
-Zonne + laadinfrastructuur, B2B → directe concurrent. Iets meer op
-grote daken/zonneparken dan op residentieel.
+## Kanalen / sociale aanwezigheid
+- website: True
+- facebook: True
 
-## Sociale kanalen
-Niet expliciet uitgelezen (footer heeft 2 icon-links — waarschijnlijk LinkedIn/FB).
+## Positionering (citeerbaar uit site)
+> Optimizing your energy — professionele partner die zonne-energie-installaties op maat ontwerpt, bouwt en onderhoudt voor een rendabel en duurzaam energiebeleid.
+
+## Wat veranderde t.o.v. vorige verversing
+- **social_channels**: `{'website': True}` → `{'website': True, 'facebook': True}`

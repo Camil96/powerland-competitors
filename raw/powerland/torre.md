@@ -1,25 +1,29 @@
-# Torré (Moerman Torre Technieken B.V.) — concurrent van Powerland (BE)
+# Torré (Moerman Torre Technieken) — concurrent van Powerland (BE)
 
-**Domein:** https://www.torremoerman.be/nl/
-**Uitgelezen:** 2026-07-16 via browser
+**Domein:** https://www.torremoerman.be/nl/  
+**Laatst ververst:** 2026-08-10 14:42 UTC  
+**Categorie:** partial  
 
-## Diensten (van site)
+## Diensten
 - Installatie zonnepanelen (LG Solar)
-- Verwarming en warm water (Hoxter inbouwhaarden, Vasco, Henrad)
-- Elektriciteit en domotica (KNX)
+- Verwarming & warm water
+- Elektriciteit & domotica
+- Sanitaire installaties
 - Laadpalen
-
-## Positionering
-"Slim en ecologisch verwarmen / omgaan met energie" — lokale installateur,
-kleinschaliger profiel (Sleidinge, BE).
+- Hoxter inbouwhaarden
 
 ## Doelgroep
-Vooral particulier + KMO (geen industriële grootprojecten zichtbaar).
+- particulier
+- KMO
 
-## Overlap met Powerland
-Gedeeltelijk: zonnepanelen + laadpalen + elektriciteit. GEEN batterijopslag /
-EMS-focus, wél verwarming/haarden. Concurrent op de residentiële/KMO-kant
-van zonne + laadpalen.
+## Kanalen / sociale aanwezigheid
+- website: True
+- facebook: True
 
-## Sociale kanalen
-Facebook + 1 ander icoon zichtbaar in header (waarschijnlijk Instagram).
+## Positionering (citeerbaar uit site)
+> Slim en ecologisch omgaan met energie — lokale installateur.
+
+## Wat veranderde t.o.v. vorige verversing
+- **services**: `['Installatie zonnepanelen (LG Solar)', 'Verwarming & warm water', 'Elektriciteit & domotica (KNX)', 'Laadpalen']` → `['Installatie zonnepanelen (LG Solar)', 'Verwarming & warm water', 'Elektriciteit & domotica', 'Sanitaire installaties', 'Laadpalen', 'Hoxter inbouwhaarden']`
+- **social_channels**: `{'website': True, 'facebook': True, 'linkedin': True, 'instagram': True}` → `{'website': True, 'facebook': True}`
+- **sectors**: `['zonnepanelen', 'laadinfrastructuur', 'elektriciteit']` → `['zonnepanelen', 'laadinfrastructuur', 'elektriciteit', 'verwarming/sanitair']`

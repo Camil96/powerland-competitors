@@ -1,27 +1,25 @@
 # Reeload — concurrent van Powerland (BE)
 
-**Domein:** https://reeload.eu/be/  (let op: .be redirect naar .eu/be)
-**Uitgelezen:** 2026-07-16 via browser
+**Domein:** https://reeload.eu/be/  
+**Laatst ververst:** 2026-08-10 14:33 UTC  
+**Categorie:** direct  
 
-## Diensten (van site)
-- Laadinfrastructuur / snellaaders
+## Diensten
 - Hoogspanning
+- Laadinfrastructuur / snellaaders
 - Batterijopslag
-- Reeload CARE (post-projectdiensten / onderhoud)
-
-## Positionering
-"Electrification, Delivered Without Compromise" — complexe energie-installaties
-snel, betrouwbaar en overzichtelijk realiseren, zonder ruis, zonder vertraging.
+- Reeload CARE (onderhoud)
 
 ## Doelgroep
-Bedrijven, complexe installaties (B2B-zwaar).
+- bedrijven
+- complexe installaties
 
-## Tone-of-voice
-Professioneel, technisch, geruststellend.
+## Kanalen / sociale aanwezigheid
+- website: True
 
-## Overlap met Powerland
-Laadinfrastructuur + batterijopslag + hoogspanning → directe concurrent.
-(Hoogspanning raakt ook Vandotec.)
+## Positionering (citeerbaar uit site)
+> Electrification, Delivered Without Compromise — complexe energie-installaties snel, betrouwbaar, zonder ruis of vertraging.
 
-## Sociale kanalen
-Nog te verifiëren (site heeft LinkedIn/Instagram/zoekbox — niet expliciet uitgelezen).
+## Wat veranderde t.o.v. vorige verversing
+- **services**: `['Laadinfrastructuur / snellaaders', 'Hoogspanning', 'Batterijopslag', 'Reeload CARE (onderhoud)']` → `['Hoogspanning', 'Laadinfrastructuur / snellaaders', 'Batterijopslag', 'Reeload CARE (onderhoud)']`
+- **social_channels**: `{'website': True, 'linkedin': 'to_verify', 'instagram': 'to_verify', 'facebook': 'to_verify', 'tiktok': 'to_verify'}` → `{'website': True}`

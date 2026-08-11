@@ -1,23 +1,33 @@
-# Ionity — concurrent van Powerland (BE, internationaal)
+# Ionity — concurrent van Powerland (BE)
 
-**Domein:** https://www.ionity.eu
-**Uitgelezen:** 2026-07-16 via browser
+**Domein:** https://www.ionity.eu  
+**Laatst ververst:** 2026-08-10 14:42 UTC  
+**Categorie:** indirect  
 
-## Wat Ionity doet
-Europees snellaadnetwerk (874 locaties, 24 landen). Joint-venture van
-BMW, Ford, Hyundai, Kia, Mercedes-Benz, Volkswagen, Audi, Porsche, BlackRock.
-- Abonnementen: IONITY Power / Motion
-- IONITY App, IONITY Direct
-- "Partner with us" (B2B)
+## Diensten
+- Europees snellaadnetwerk (880 locaties, 24 landen, 66 in aanbouw)
+- Abonnementen IONITY Power 365 / Motion 365
+- IONITY App
+- IONITY Direct
+- Partner program / Fleets
 
-## Positionering
-"Seamless, fast & reliable EV charging across Europe" — high-power charging,
-genoteerd als kwaliteitsleider in diverse rapporten.
+## Doelgroep
+- EV-rijders (B2C)
+- autofabrikanten/B2B
+- fleets
 
-## Overlap met Powerland
-INDIRECT (zoals Electra). Ionity exploiteert het netwerk; Powerland installeert
-laadinfrastructuur. Geen directe concurrent op installatie/zonne/batterij.
-In dashboard markeren als "indirect / laad-ecosysteem".
+## Kanalen / sociale aanwezigheid
+- website: True
+- app: True
+- facebook: True
+- instagram: True
+- linkedin: True
+- tiktok: True
 
-## Sociale kanalen
-App-gedreven; Stories-blog op site.
+## Positionering (citeerbaar uit site)
+> Seamless, fast & reliable EV charging across Europe — high-power charging.
+
+## Wat veranderde t.o.v. vorige verversing
+- **services**: `['Europees snellaadnetwerk (880 locaties, 24 landen)', 'Abonnementen Power/Motion', 'App', 'Partner program']` → `['Europees snellaadnetwerk (880 locaties, 24 landen, 66 in aanbouw)', 'Abonnementen IONITY Power 365 / Motion 365', 'IONITY App', 'IONITY Direct', 'Partner program / Fleets']`
+- **target_audience**: `['EV-rijders (B2C)', 'autofabrikanten/B2B']` → `['EV-rijders (B2C)', 'autofabrikanten/B2B', 'fleets']`
+- **social_channels**: `{'website': True, 'app': True}` → `{'website': True, 'app': True, 'facebook': True, 'instagram': True, 'linkedin': True, 'tiktok': True}`
