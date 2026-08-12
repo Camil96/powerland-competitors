@@ -96,7 +96,16 @@
   .evidence .ev-date{color:var(--muted);font-size:11px}
   .evidence .ev-quote{font-style:italic;color:var(--text);line-height:1.45;border-left:3px solid var(--pl-blue-soft);padding-left:10px;margin:4px 0}
   .evidence .ev-snap{font-size:11.5px}
-  .card.compact{cursor:pointer;gap:10px;padding:18px 22px}
+  card.compact{cursor:pointer;gap:12px;padding:18px 22px;display:flex;flex-direction:column;min-height:138px}
+  .card.compact:hover{box-shadow:0 8px 26px rgba(33,62,134,.16);transform:translateY(-2px);border-color:var(--pl-teal)}
+  .cc-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .cc-ov{display:flex;align-items:center;gap:7px}
+  .cc-ov-n{font-size:12px;font-weight:800;color:var(--ink)}
+  .cc-ov .bar{width:64px;height:6px;background:var(--line);border-radius:99px;overflow:hidden}
+  .cc-ov .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pl-navy),var(--pl-teal))}
+  .card.compact h3{margin:0;font-size:17px;line-height:1.2}
+  .card.compact .tags{margin-top:auto}
+  .cc-foot{font-size:11.5px;color:var(--pl-teal);font-weight:700;letter-spacing:.2px}
   .card.compact:hover{box-shadow:0 6px 22px rgba(33,62,134,.14);transform:translateY(-2px)}
   .card.compact .more-hint{font-size:11.5px;color:var(--pl-teal);font-weight:700;margin-top:2px}
   .modal{display:none;position:fixed;inset:0;background:rgba(20,30,50,.55);backdrop-filter:blur(3px);z-index:80;align-items:center;justify-content:center;padding:20px}
@@ -241,11 +250,13 @@ function cardHTML(x, compact){
   if(compact){
     // RUSTIGE weergave: enkel essentie + klikbaar naar detail
     return `<div class="card compact" onclick="openDetail('${x.id}')">
-      <span class="cat ${x.category}">${x.category}</span>
+      <div class="cc-head">
+        <span class="cat ${x.category}">${x.category}</span>
+        <div class="cc-ov"><span class="cc-ov-n">${x.overlap_score_powerland}/5</span><div class="bar"><i style="width:${pct}%"></i></div></div>
+      </div>
       <h3>${x.name}</h3>
       <div class="tags">${tags}</div>
-      <div class="overlap">Overlap <div class="bar"><i style="width:${pct}%"></i></div> ${x.overlap_score_powerland}/5</div>
-      <div class="more-hint">klik voor detail ▸</div>
+      <div class="cc-foot">klik voor detail ▸</div>
     </div>`;
   }
   return `<div class="card">
@@ -277,7 +288,6 @@ function renderCards(){
   // default: overlap met Powerland (hoog->laag)
   list.sort((a,b)=>b.overlap_score_powerland-a.overlap_score_powerland);
   document.getElementById('cards').innerHTML=list.map(c=>cardHTML(c, viewCompact)).join('');
-  document.getElementById('count').textContent=`${list.length} van ${DATA.competitors.length} getoond`;
 }
 let viewCompact=true; // RUSTIGE weergave standaard (schaalt naar 16+ concurrenten)
 function renderWhitespace(){
