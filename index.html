@@ -127,7 +127,7 @@
   <div class="hbar">
     <div class="brand">
       <img class="logo" src="assets/logo.svg" alt="Powerland">
-      <span class="drive">we energize your drive</span>
+      <span class="drive">Fight the average.</span>
     </div>
     <nav class="mainnav">
       <button data-sector="laadinfrastructuur" onclick="filterSector(this)">Laadinfrastructuur</button>
@@ -154,14 +154,11 @@
       <option value="partial">Gedeeltelijk</option>
       <option value="indirect">Indirect</option>
     </select>
-    <button class="sec" onclick="showSection('competitors')">Concurrenten</button>
-    <button class="sec" onclick="showSection('whitespace')">Whitespace</button>
-    <button class="sec" onclick="showSection('pillars')">Contentpijlers</button>
-    <button class="sec" onclick="showSection('weaknesses')">Zwaktes</button>
-    <button class="sec" onclick="showSection('battlecards')">Battlecards</button>
-    <button class="sec" onclick="showSection('action')">Voor Powerland</button>
-    <button class="wbtn" id="vBtn" onclick="toggleView()">Toon uitgebreid ▾</button>
-    <span class="sub" id="count"></span>
+    <button class="sec" onclick="showSection('competitors')">Wie het durven opnemen tegen ons</button>
+    <button class="sec" onclick="showSection('whitespace')">Waar niemand durft staan</button>
+    <button class="sec" onclick="showSection('pillars')">Waarmee we ons onderscheiden</button>
+    <button class="sec" onclick="showSection('weaknesses')">Waar zij bloeden</button>
+    <button class="sec" onclick="showSection('action')">Onze zet</button>
   </div>
 
   <!-- ROADMAP: de keten maakt de 'waarom' zichtbaar -->
@@ -191,9 +188,9 @@
     <div id="wkOut" style="margin-top:12px"></div>
   </section>
 
-  <section id="battlecards">
-    <h2>Battlecards</h2>
-    <div class="explain" data-tab="battlecards"></div>
+  <section id="waaromwij">
+    <h2>Waarom wij</h2>
+    <div class="explain" data-tab="waaromwij"></div>
     <div id="bcOut" style="margin-top:12px"></div>
   </section>
 
@@ -210,7 +207,7 @@ const ICO={laadinfrastructuur:'assets/charging-station.svg',batterijopslag:'asse
 async function load(){
   try{const r=await fetch('data.json');DATA=await r.json();}
   catch(e){document.getElementById('cards').innerHTML='<p class="note">Kon data.json niet laden.</p>';return;}
-  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderBattlecards();renderAction();renderExplain();
+  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderWaaromWij();renderAction();renderExplain();
 }
 function renderExplain(){
   document.querySelectorAll('.explain').forEach(el=>{
@@ -283,11 +280,6 @@ function renderCards(){
   document.getElementById('count').textContent=`${list.length} van ${DATA.competitors.length} getoond`;
 }
 let viewCompact=true; // RUSTIGE weergave standaard (schaalt naar 16+ concurrenten)
-function toggleView(){
-  viewCompact=!viewCompact;
-  document.getElementById('vBtn').textContent=viewCompact?'Toon uitgebreid ▾':'Toon compact ▴';
-  renderCards();
-}
 function renderWhitespace(){
   const w=DATA.analysis.whitespace||[];
   document.getElementById('wsOut').innerHTML=w.map(x=>`<div class="card"><h3>${ico(x.title.split(' ')[0])||''}${x.title}</h3><div class="row">${x.detail}</div><span class="pill2 open">OPEN KANS</span></div>`).join('');
@@ -306,7 +298,7 @@ function renderWeaknesses(){
   html+='</div>';
   document.getElementById('wkOut').innerHTML=html;
 }
-function renderBattlecards(){
+function renderWaaromWij(){
   let html='<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(340px,1fr))">';
   DATA.competitors.forEach(c=>{
     const b=c.battlecard; if(!b)return;
@@ -338,10 +330,10 @@ function renderAction(){
 }
 function renderRoadmap(){
   const rm=DATA.analysis.roadmap||[];
-  document.getElementById('roadmap').innerHTML=rm.map(s=>`<div class="rs"><div class="n">STAP ${s.step}</div><div class="t">${s.tab}</div><div class="a">${s.answers}</div></div>`).join('');
+  document.getElementById('roadmap').innerHTML=rm.map(s=>`<div class="rs"><div class="n">ZET ${s.step}</div><div class="t">${s.tab}</div><div class="a">${s.answers}</div></div>`).join('');
 }
 function showSection(id){
-  ['competitors','whitespace','pillars','weaknesses','battlecards','action'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
+  ['competitors','whitespace','pillars','weaknesses','waaromwij','action'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
 }
 let activeSector=null;
 function filterSector(btn){

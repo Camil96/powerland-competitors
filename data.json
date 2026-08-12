@@ -531,24 +531,24 @@
   "analysis": {
     "explain": {
       "competitors": {
-        "short": "WIE ze zijn — de 8 spelers die een salespersoon noemde.",
-        "deep": "Basis om de rest tegen af te zetten. Zonder deze lijst blijft elke uitspraak over 'de markt' vaag. De 8 zijn geen willekeurige steekproef maar een buiten-in trigger (sales-ervaring); de analyse maakt er een binnen-uit verhaal van."
+        "short": "Wie het durven opnemen tegen ons — 8 namen die je sales noemde.",
+        "deep": "Basis om de rest tegen af te zetten. Zonder deze lijst blijft elke uitspraak over 'de markt' vaag. De 8 zijn geen willekeur — het zijn de namen die in klantengesprekken vallen. Ken ze, dan ken je de vijand."
       },
       "whitespace": {
-        "short": "WAAR niemand van de 8 staat.",
-        "deep": "Whitespace = de lege vakken op het marktveld. Niet 'wat er niet is' als gemis, maar 'waar niemand zich positioneert' — daar markeer je Powerland vóórdat je in een prijzenoorlog belandt op bezette vakken (zonne+laadpaal). Elk wit vak is kans én valkuil: niet elk leeg vak is winstgevend."
+        "short": "Waar niemand durft staan.",
+        "deep": "Whitespace = de lege vakken op het marktveld. Niet 'wat er niet is' als gemis, maar 'waar niemand zich positioneert' — en dus waar wij wél kunnen staan. De grijze massa laat deze ruimte liggen. Winnen doe je door er wél te gaan staan."
       },
       "pillars": {
-        "short": "WAT Powerland zegt om die ruimte te claimen.",
-        "deep": "Contentpijlers = de 3 thema's waarmee Powerland de whitespace claimt. Zonder pijlers verwatert de analyse tot losse posts die de concurrenten nadoen. Elke pijler wijst naar één wit vak — zo is de pagina één verhaal, niet twee losse widgets."
+        "short": "Waarmee we ons onderscheiden.",
+        "deep": "Contentpijlers = de 3 thema's waarmee Powerland de whitespace claimt. Zonder pijlers verwatert de analyse tot losse posts. Met pijlers wordt het een verhaal dat niemand anders durft te vertellen."
       },
       "weaknesses": {
-        "short": "WAAROM concurrenten die ruimte niet zelf vullen.",
-        "deep": "Hun kwetsbaarheid = jouw openingszin. Als een concurrent wél EMS of industriële geloofwaardigheid had, was het witte vak dicht. Deze tab toont per concurrent wat ze niet kunnen — dat is precies waar Powerland kan scoren."
+        "short": "Waar zij bloeden.",
+        "deep": "Hun kwetsbaarheid = jouw openingszin. Als een concurrent wél EMS of industriële geloofwaardigheid had, was het witte vak dicht. Ze hebben het niet — dus jij opent het gesprek daar."
       },
       "action": {
-        "short": "DE ACTIE: welke 3 vakken je claimt, met welke pijler, in welke volgorde.",
-        "deep": "Het rapport dat de la verlaat. Synthese van alles hierboven: claim p1/p2/p3 (gekoppeld aan de witte vakken), in volgorde van breedste onderscheid → grootste KMO-omzet → partner-verhaal. Caveat: validatie bij klanten vóór harde claims."
+        "short": "Onze zet: welke 3 vakken je claimt, met welke pijler, in welke volgorde.",
+        "deep": "Het rapport dat de la verlaat. Synthese van alles hierboven: claim p1/p2/p3 (gekoppeld aan de witte vakken), in volgorde, met de pijler die past. Niet 'we zijn ook goed' — maar 'hier staan zij leeg, hier staan wij'."
       }
     },
     "roadmap": [
@@ -647,5 +647,6 @@
       "partial": 2,
       "indirect": 2
     }
-  }
+  },
+  "brand_tagline": "Fight the average."
 }
