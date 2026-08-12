@@ -61,10 +61,11 @@ class Handler(BaseHTTPRequestHandler):
                     with open(p, "rb") as f:
                         return self._send(200, f.read(), "text/markdown")
             self._send(404, b"not found")
-        elif u.path.startswith("/snapshot/"):
-            name = os.path.basename(u.path[len("/snapshot/"):])
-            p = os.path.join(BASE, "snapshots", name)
-            if os.path.exists(p):
+        elif u.path.startswith("/snapshots/"):
+            # link uit evidence is relatief: snapshots/<id>/<naam>.md
+            rel = u.path[len("/snapshots/"):]
+            p = os.path.join(BASE, "snapshots", rel)
+            if os.path.exists(p) and os.path.basename(p) != "LATEST.md":
                 with open(p, "rb") as f:
                     return self._send(200, f.read(), "text/markdown")
             self._send(404, b"not found")
