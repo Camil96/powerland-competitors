@@ -17,13 +17,22 @@ _lock = threading.Lock()
 
 
 def load_data():
-    with open(DATA, encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(DATA, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        # corrupt/ontbrekend -> geef lege structuur terug i.p.v. 500
+        print(f"[warn] data.json kon niet geladen worden: {e}")
+        return {"competitors": [], "brands": {}, "analysis": {}}
 
 
 def save_data(d):
-    with _lock, open(DATA, "w", encoding="utf-8") as f:
+    tmp = DATA + ".tmp"
+    with _lock, open(tmp, "w", encoding="utf-8") as f:
         json.dump(d, f, indent=2, ensure_ascii=False)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, DATA)  # atomair: geen halve writes
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -64,9 +73,15 @@ class Handler(BaseHTTPRequestHandler):
         elif u.path.startswith("/snapshots/"):
             # link uit evidence is relatief: snapshots/<id>/<naam>.md
             rel = u.path[len("/snapshots/"):]
-            p = os.path.join(BASE, "snapshots", rel)
-            if os.path.exists(p) and os.path.basename(p) != "LATEST.md":
-                with open(p, "rb") as f:
+            name = os.path.basename(rel)  # strip traversal: enkel bestandsnaam
+            # zoek recursief in snapshots/ (submappen per id), LATEST.md geblokkeerd
+            cand = None
+            for root, _, files in os.walk(os.path.join(BASE, "snapshots")):
+                if name in files and name != "LATEST.md":
+                    cand = os.path.join(root, name)
+                    break
+            if cand and os.path.realpath(cand).startswith(os.path.realpath(BASE)):
+                with open(cand, "rb") as f:
                     return self._send(200, f.read(), "text/markdown")
             self._send(404, b"not found")
         elif u.path == "/api/competitors":
@@ -85,17 +100,24 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         u = urlparse(self.path)
         if u.path == "/api/competitor":
-            length = int(self.headers.get("Content-Length", 0))
+            try:
+                length = int(self.headers.get("Content-Length", 0))
+            except ValueError:
+                return self._send(400, json.dumps({"error": "bad Content-Length"}))
+            if length <= 0 or length > 1_000_000:  # cap 1MB
+                return self._send(400, json.dumps({"error": "Content-Length out of range"}))
             raw = self.rfile.read(length) if length else b"{}"
             try:
                 new = json.loads(raw)
             except Exception as e:
                 return self._send(400, json.dumps({"error": str(e)}))
+            if not isinstance(new, dict):
+                return self._send(400, json.dumps({"error": "body must be a JSON object"}))
             data = load_data()
-            # unieke id afleiden
-            cid = new.get("id") or new.get("name", "").lower().replace(" ", "-")
+            cid = new.get("id") or str(new.get("name", "")).lower().replace(" ", "-")
+            if not cid:
+                return self._send(400, json.dumps({"error": "id or name required"}))
             new["id"] = cid
-            # voorkom duplicaat
             data["competitors"] = [c for c in data["competitors"] if c.get("id") != cid]
             data["competitors"].append(new)
             save_data(data)

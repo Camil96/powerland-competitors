@@ -18,6 +18,8 @@
     --text:#212529;
     --muted:#7c7c7c;
     --line:#e3e8ef;
+    --ink:#212529;            /* alias voor donkere tekst (overlap-meter) */
+    --pl-navy:#213e86;       /* Powerland navy (gradient overlap-bar) */
     --radius-card:25px;
     --radius-btn:15px;
     --gap:40px;            /* consistente verticale ritme-ruimte */
@@ -112,7 +114,14 @@
   .modal{display:none;position:fixed;inset:0;background:rgba(20,30,50,.55);backdrop-filter:blur(3px);z-index:80;align-items:center;justify-content:center;padding:20px}
   .modal.show{display:flex}
   .modal-card{background:var(--panel);border-radius:var(--radius-card);max-width:560px;width:100%;max-height:86vh;overflow:auto;padding:8px 8px 24px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)}
-  .modal-x{position:sticky;top:6px;float:right;background:#fff;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;font-size:20px;line-height:1;cursor:pointer;color:var(--muted);z-index:2}
+  .modal-x{position:sticky;top:6px;float:right;background:#fff;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;font-size:20px;line-height:1;cursor:pointer;color:var(--muted)}
+  /* Toegankelijkheid: zichtbare focus + reduced-motion */
+  a:focus-visible,button:focus-visible,.card.compact:focus-visible{outline:3px solid var(--pl-teal);outline-offset:2px}
+  .modal{overscroll-behavior:contain}
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none!important;animation:none!important}
+    .card.compact:hover{transform:none}
+  }
   .modal-x:hover{color:var(--pl-blue);border-color:var(--pl-teal)}
   .modal-body{padding:18px 22px}
   .modal-body .card{border:none;box-shadow:none;padding:0}
@@ -250,7 +259,7 @@ function cardHTML(x, compact){
   const evBlock=ev.length?`<div class="evidence"><div class="ev-head"><span class="factbadge">FEIT</span> <a class="ev-url" href="${ev[0].source_url}" target="_blank" rel="noopener">${ev[0].source_url}</a><span class="ev-date">· ${ev[0].retrieved}</span></div><div class="ev-quote">“${ev[0].quote}”</div>${ev[0].snapshot?`<a class="ev-snap" href="${ev[0].snapshot}" target="_blank" rel="noopener">[snapshot van die dag]</a>`:''}</div>`:'';
   if(compact){
     // RUSTIGE weergave: enkel essentie + klikbaar naar detail
-    return `<div class="card compact" onclick="openDetail('${x.id}')">
+    return `<button type="button" class="card compact" aria-label="Toon detail van ${x.name}" onclick="openDetail('${x.id}')">
       <div class="cc-head">
         <span class="cat ${x.category}">${x.category}</span>
         <div class="cc-ov"><span class="cc-ov-n">${x.overlap_score_powerland}/5</span><div class="bar"><i style="width:${pct}%"></i></div></div>
@@ -258,7 +267,7 @@ function cardHTML(x, compact){
       <h3>${x.name}</h3>
       <div class="tags">${tags}</div>
       <div class="cc-foot">klik voor detail ▸</div>
-    </div>`;
+    </button>`;
   }
   return `<div class="card">
     <span class="cat ${x.category}">${x.category}</span>
@@ -281,6 +290,7 @@ function openDetail(id){
   host.querySelector('.modal-body').scrollTop=0;
 }
 function closeModal(){document.getElementById('modal').classList.remove('show');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 function renderCards(){
   let list=DATA.competitors.slice();
   const cat=document.getElementById('fCat').value;
@@ -293,7 +303,7 @@ function renderCards(){
 let viewCompact=true; // RUSTIGE weergave standaard (schaalt naar 16+ concurrenten)
 function renderWhitespace(){
   const w=DATA.analysis.whitespace||[];
-  document.getElementById('wsOut').innerHTML=w.map(x=>`<div class="card"><h3>${ico(x.title.split(' ')[0])||''}${x.title}</h3><div class="row">${x.detail}</div><span class="pill2 open">OPEN KANS</span></div>`).join('');
+  document.getElementById('wsOut').innerHTML=w.map(x=>`<div class="card"><h3>${x.title}</h3><div class="row">${x.detail}</div><span class="pill2 open">OPEN KANS</span></div>`).join('');
 }
 function renderPillars(){
   const p=DATA.analysis.pillars||[];

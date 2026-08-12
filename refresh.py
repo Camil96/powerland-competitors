@@ -39,18 +39,35 @@ FACT_FIELDS = ["services", "target_audience", "social_channels", "positioning", 
 
 
 def load():
-    with open(DATA, encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(DATA, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"[warn] data.json kon niet geladen worden: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def _atomic_write(path, text):
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        f.write(text)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, path)  # atomair
 
 
 def save(d):
-    with open(DATA, "w", encoding="utf-8") as f:
-        json.dump(d, f, indent=2, ensure_ascii=False)
+    # serialiseer eerst in memory zodat een dump-fout geen half bestand schrijft
+    text = json.dumps(d, indent=2, ensure_ascii=False)
+    _atomic_write(DATA, text)
 
 
 def raw_path(competitor):
     brand = competitor.get("parent_brand", "powerland")
-    return os.path.join(RAW, brand, f"{competitor['id']}.md")
+    # sanitize: geen subdir-traversal via parent_brand
+    brand = os.path.basename(brand)
+    pid = os.path.basename(str(competitor["id"]))
+    return os.path.join(RAW, brand, f"{pid}.md")
 
 
 def write_raw(competitor, facts, changed):
@@ -82,8 +99,7 @@ def write_raw(competitor, facts, changed):
         for field, (old, new) in changed.items():
             lines.append(f"- **{field}**: `{old}` → `{new}`")
         lines.append("")
-    with open(p, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+    _atomic_write(p, "\n".join(lines))
 
 
 def render_report(d, entries):
@@ -100,8 +116,7 @@ def render_report(d, entries):
         else:
             out.append("- geen wijziging")
         out.append("")
-    with open(REPORT, "w", encoding="utf-8") as f:
-        f.write("\n".join(out))
+    _atomic_write(REPORT, "\n".join(out))
 
 
 def cmd_one(args):
