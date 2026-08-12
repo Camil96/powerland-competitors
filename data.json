@@ -37,7 +37,7 @@
         "Batterijopslag",
         "Reeload CARE (onderhoud)"
       ],
-      "positioning": "Electrification, Delivered Without Compromise — complexe energie-installaties snel, betrouwbaar, zonder ruis of vertraging.",
+      "positioning": "Reeload delivers full electrification services for fast-charging, high-voltage, BESS and civil works across the Benelux. From commissioning to handover — first time right.",
       "target_audience": [
         "bedrijven",
         "complexe installaties"
@@ -58,7 +58,25 @@
       "sources": [
         "raw/powerland/reeload.md"
       ],
-      "_refreshed_at": "2026-08-10T14:33:32Z"
+      "_refreshed_at": "2026-08-12T07:16:48Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://reeload.eu/be/",
+          "retrieved": "2026-08-12",
+          "quote": "Reeload delivers full electrification services for fast-charging, high-voltage, BESS and civil works across the Benelux. From commissioning to handover — first time right.",
+          "type": "fact",
+          "snapshot": "snapshots/reeload/20260811-1159.md"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Geen zonne-focus; weinig zichtbaar bij KMO/retail",
+        "our_play": "Zet Powerland zon + EMS in als verschil bij KMO/retail waar Reeload niet zit",
+        "type": "interpretation",
+        "confidence": "hoog",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": ""
+      }
     },
     {
       "id": "iq-solar",
@@ -82,7 +100,7 @@
         "Financiering",
         "Slimme energieoplossingen"
       ],
-      "positioning": "Jouw totaalpartner voor hernieuwbare energie — ontzorgen van advies tot installatie en dienst na verkoop.",
+      "positioning": "Ontdek hoogwaardige zonnepanelen en duurzame energieoplossingen bij IQ-Solar. Bespaar op uw energierekening en draag bij aan het klimaat.",
       "target_audience": [
         "particulieren",
         "bedrijven (B2B + B2C)"
@@ -108,7 +126,25 @@
       "sources": [
         "raw/powerland/iq-solar.md"
       ],
-      "_refreshed_at": "2026-08-10T14:42:08Z"
+      "_refreshed_at": "2026-08-12T07:16:48Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://www.iq-solar.be",
+          "retrieved": "2026-08-12",
+          "quote": "Ontdek hoogwaardige zonnepanelen en duurzame energieoplossingen bij IQ-Solar. Bespaar op uw energierekening en draag bij aan het klimaat.",
+          "type": "fact",
+          "snapshot": "snapshots/iq-solar/20260811-1155.md"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "B2C-zwaar, EMS niet als kernverhaal",
+        "our_play": "Benader IQ Solar op B2B/EMS-ecosysteem — zij hebben dat verhaal niet",
+        "type": "interpretation",
+        "confidence": "hoog",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": ""
+      }
     },
     {
       "id": "ceratec",
@@ -132,7 +168,7 @@
         "Prefab muuroplossingen",
         "Producten in gebakken aarde (heavy clay)"
       ],
-      "positioning": "Revolutionizing the future with heavy clay solutions, handling machines, industrial automation.",
+      "positioning": "Industriële automatisering, elektrotechniek, middenspanning en hoogspanning, process & automation (Ceratec)",
       "target_audience": [
         "industrie",
         "KMO"
@@ -157,7 +193,25 @@
       "sources": [
         "raw/powerland/ceratec.md"
       ],
-      "_refreshed_at": "2026-08-10T14:42:09Z"
+      "_refreshed_at": "2026-08-12T07:16:48Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://ceratec.eu/",
+          "retrieved": "2026-08-12",
+          "quote": "Ceratec est une entreprise dynamique et innovante qui recherche régulièrement de nouveaux talents. Découvrez nos offres d’emploi et venez agrandir notre",
+          "type": "fact",
+          "snapshot": "snapshots/ceratec/20260811-1155.md"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Breed maar niet diep in zonne/batterij/EMS",
+        "our_play": "Claim het geïntegreerde opwek+stockeer+beheer-verhaal; Ceratec is eerder elektro-huis",
+        "type": "interpretation",
+        "confidence": "midden",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": ""
+      }
     },
     {
       "id": "extrapower",
@@ -173,7 +227,7 @@
         "Zonneparken (advies/ontwerp/uitvoering/opvolging)",
         "Laadinfrastructuur"
       ],
-      "positioning": "Optimizing your energy — professionele partner die zonne-energie-installaties op maat ontwerpt, bouwt en onderhoudt voor een rendabel en duurzaam energiebeleid.",
+      "positioning": "ExtraPower ontwerpt, bouwt en onderhoudt zonne-energie installaties op maat. ExtraPower begeleidt bedrijven naar een rendabel en duurzaam energiebeleid.",
       "target_audience": [
         "KMO",
         "industrie",
@@ -199,7 +253,25 @@
       "sources": [
         "raw/powerland/extrapower.md"
       ],
-      "_refreshed_at": "2026-08-10T14:42:09Z"
+      "_refreshed_at": "2026-08-12T07:16:48Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://www.extrapower.be/",
+          "retrieved": "2026-08-12",
+          "quote": "ExtraPower ontwerpt, bouwt en onderhoudt zonne-energie installaties op maat. ExtraPower begeleidt bedrijven naar een rendabel en duurzaam energiebeleid.",
+          "type": "fact",
+          "snapshot": "snapshots/extrapower/20260811-1155.md"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Laadpalen bijproduct van zonne; geen sturing-verhaal",
+        "our_play": "Positioneer Powerland als de enige die laad + sturing + opwek écht integreert",
+        "type": "interpretation",
+        "confidence": "hoog",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": ""
+      }
     },
     {
       "id": "mr-solar",
@@ -221,7 +293,7 @@
         "Operation & Maintenance contracten",
         "Totaalproject"
       ],
-      "positioning": "Ervaren partner in duurzame energie die bedrijven begeleidt in hun transitie naar groene energie — een geintegreerd ecosysteem van opwekken, stockeren, beheren en opladen.",
+      "positioning": "Investeringen in zonnepanelen en andere energiezuinige energietechnieken renderen meer dan ooit. Dat bewijst MR Solar iedere dag opnieuw.",
       "target_audience": [
         "bedrijven (B2B)",
         "particulieren"
@@ -248,7 +320,25 @@
       "sources": [
         "raw/powerland/mr-solar.md"
       ],
-      "_refreshed_at": "2026-08-10T14:42:09Z"
+      "_refreshed_at": "2026-08-12T07:16:48Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://www.mrsolar.be",
+          "retrieved": "2026-08-12",
+          "quote": "Investeringen in zonnepanelen en andere energiezuinige energietechnieken renderen meer dan ooit. Dat bewijst MR Solar iedere dag opnieuw.",
+          "type": "fact",
+          "snapshot": "snapshots/mr-solar/20260811-1155.md"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Directe dubbeling van Powerland + prijsdruk",
+        "our_play": "Differentieer op industriële zwaarte & EMS die MR Solar niet levert",
+        "type": "interpretation",
+        "confidence": "midden",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": ""
+      }
     },
     {
       "id": "torre",
@@ -270,7 +360,7 @@
         "Laadpalen",
         "Hoxter inbouwhaarden"
       ],
-      "positioning": "Slim en ecologisch omgaan met energie — lokale installateur.",
+      "positioning": "Moerman Torre levert zonnepanelen, verwarming & warm water, elektriciteit en domotica (eigen site)",
       "target_audience": [
         "particulier",
         "KMO"
@@ -292,7 +382,25 @@
       "sources": [
         "raw/powerland/torre.md"
       ],
-      "_refreshed_at": "2026-08-10T14:42:09Z"
+      "_refreshed_at": "2026-08-12T07:16:48Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://www.torremoerman.be/nl/",
+          "retrieved": "2026-08-12",
+          "quote": "We zorgen ervoor dat je slim en ecologisch omgaat met energie. Contacteer ons voor meer informatie.",
+          "type": "fact",
+          "snapshot": "snapshots/torre/20260811-1155.md"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Kleinschalig, geen industriële geloofwaardigheid",
+        "our_play": "Zet in op projecten >KMO waar Torré niet thuis hoort",
+        "type": "interpretation",
+        "confidence": "midden",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": ""
+      }
     },
     {
       "id": "electra",
@@ -310,7 +418,7 @@
         "App (routeplanner, Autocharge)",
         "Voor professionals (fleet / host een station)"
       ],
-      "positioning": "Revolutionaire oplaadervaring — grootste laadnetwerk van Europa; heruitvinden van voertuigopladen, betrouwbaar en op de eerste plaats van de gebruiker.",
+      "positioning": "Lokaliseer onze Electra laadstations en laad uw elektrisch voertuig bliksemsnel op. Gemakkelijk te gebruiken, betrouwbare Superchargers.",
       "target_audience": [
         "EV-rijders (B2C)",
         "fleets (B2B)",
@@ -336,7 +444,25 @@
       "sources": [
         "raw/powerland/electra.md"
       ],
-      "_refreshed_at": "2026-08-10T14:42:09Z"
+      "_refreshed_at": "2026-08-12T07:16:49Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://www.go-electra.com/nl/",
+          "retrieved": "2026-08-12",
+          "quote": "Lokaliseer onze Electra laadstations en laad uw elektrisch voertuig bliksemsnel op. Gemakkelijk te gebruiken, betrouwbare Superchargers.",
+          "type": "fact",
+          "snapshot": "snapshots/electra/20260811-1155.md"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Geen installateur — andere schakel in keten",
+        "our_play": "Niet bevechten; partner mogelijk (zij netwerk, wij installatie)",
+        "type": "interpretation",
+        "confidence": "hoog",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": "indirect — eerder partner dan vijand"
+      }
     },
     {
       "id": "ionity",
@@ -354,7 +480,7 @@
         "IONITY Direct",
         "Partner program / Fleets"
       ],
-      "positioning": "Seamless, fast & reliable EV charging across Europe — high-power charging.",
+      "positioning": "Power your electric journey with IONITY’s high-speed charging network. Serving 24 European countries, we offer convenient, reliable, and sustainable EV charging stations for seamless long-distance travel.",
       "target_audience": [
         "EV-rijders (B2C)",
         "autofabrikanten/B2B",
@@ -381,7 +507,25 @@
       "sources": [
         "raw/powerland/ionity.md"
       ],
-      "_refreshed_at": "2026-08-10T14:42:09Z"
+      "_refreshed_at": "2026-08-12T07:16:49Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://www.ionity.eu",
+          "retrieved": "2026-08-12",
+          "quote": "Power your electric journey with IONITY’s high-speed charging network. Serving 24 European countries, we offer convenient, reliable, and sustainable EV charging stations for seamless long-distance travel.",
+          "type": "fact",
+          "snapshot": "snapshots/ionity/20260811-1155.md"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Geen eigen opwek/sturing",
+        "our_play": "Niet bevechten; focus op wat zij niet doen (opwek+sturing)",
+        "type": "interpretation",
+        "confidence": "hoog",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": "indirect — infra-speler"
+      }
     }
   ],
   "analysis": {
@@ -439,7 +583,7 @@
         "id": "w1",
         "title": "Energiemanagement als kernverhaal (niet als optie)",
         "detail": "MR Solar en anderen hebben EMS wél in hun stack, maar als bijproduct. Niemand claimt 'wij sturen je hele energieflow' als primair verhaal. Dat is het witte vak: EMS als hoofdrol, niet als vinkje. Powerland haar stack (opwekken·stockeren·beheren·opladen) leent zich er wel voor — maar moet marktproof gemaakt worden.",
-        "open": true
+        "open": "als primair verhaal (niet als aanwezigheid)"
       },
       {
         "id": "w2",

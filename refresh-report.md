@@ -1,34 +1,27 @@
-# Refresh-report — 2026-08-10 14:42 UTC
+# Refresh-report — 2026-08-12 07:16 UTC
 
-7 concurrent(en) ververst.
+8 concurrent(en) ververst.
+
+## Reeload (`reeload`)
+- **positioning**: `Electrification, Delivered Without Compromise — complexe energie-installaties snel, betrouwbaar, zonder ruis of vertraging.` → `Reeload delivers full electrification services for fast-charging, high-voltage, BESS and civil works across the Benelux. From commissioning to handover — first time right.`
 
 ## IQ Solar (`iq-solar`)
-- **services**: `['Zonnepanelen', 'Thuisbatterijen', 'Laadpalen', 'Energie-audits', 'Monitoring']` → `['Zonnepanelen', 'Thuisbatterijen', 'Batterijopslag (bedrijven)', 'Laadstations / laadpalen', 'Servicecontract', 'EPC NR - Energiescan', 'Solar carports', 'Financiering', 'Slimme energieoplossingen']`
-- **social_channels**: `{'website': True}` → `{'website': True, 'facebook': True, 'linkedin': True, 'instagram': True}`
+- **positioning**: `Jouw totaalpartner voor hernieuwbare energie — ontzorgen van advies tot installatie en dienst na verkoop.` → `Ontdek hoogwaardige zonnepanelen en duurzame energieoplossingen bij IQ-Solar. Bespaar op uw energierekening en draag bij aan het klimaat.`
 
 ## Ceratec (`ceratec`)
-- **services**: `['Génie électrique / Hoogspanning', 'Solutions énergétiques et de chargement', 'Industrial automation', 'Prefab walls']` → `['Génie électrique / Hoog- en middenspanning', 'Process en automation', 'Constructie van schakelborden', 'Solutions énergétiques et de chargement', 'Beveiligingssystemen', 'Handling machines / intralogistieke oplossingen', 'Prefab muuroplossingen', 'Producten in gebakken aarde (heavy clay)']`
-- **social_channels**: `{'website': True, 'facebook': True, 'linkedin': True, 'youtube': True, 'instagram': 'to_verify'}` → `{'website': True, 'facebook': True, 'linkedin': True, 'youtube': True}`
-- **sectors**: `['hoogspanning', 'energie', 'laadinfrastructuur']` → `['hoogspanning', 'energie', 'laadinfrastructuur', 'industriele automatisering']`
+- **positioning**: `Revolutionizing the future with heavy clay solutions, handling machines, industrial automation.` → `Industriële automatisering, elektrotechniek, middenspanning en hoogspanning, process & automation (Ceratec)`
 
 ## ExtraPower (`extrapower`)
-- **social_channels**: `{'website': True}` → `{'website': True, 'facebook': True}`
+- **positioning**: `Optimizing your energy — professionele partner die zonne-energie-installaties op maat ontwerpt, bouwt en onderhoudt voor een rendabel en duurzaam energiebeleid.` → `ExtraPower ontwerpt, bouwt en onderhoudt zonne-energie installaties op maat. ExtraPower begeleidt bedrijven naar een rendabel en duurzaam energiebeleid.`
 
 ## MR Solar (`mr-solar`)
-- **services**: `['Zonnepanelen', 'BESS (batterijopslag)', 'EMS (energiemanagement)', 'Laadpalen', 'Totaalproject']` → `['Industriële zonnepanelen', 'BESS (batterijopslag)', 'EMS (Energy Management System)', 'Industriële laadpalen', 'Operation & Maintenance contracten', 'Totaalproject']`
-- **target_audience**: `['bedrijven (B2B)']` → `['bedrijven (B2B)', 'particulieren']`
-- **social_channels**: `{'website': True, 'trustpilot': True}` → `{'website': True, 'trustpilot': True, 'facebook': True, 'linkedin': True, 'instagram': True, 'youtube': True}`
+- **positioning**: `Ervaren partner in duurzame energie die bedrijven begeleidt in hun transitie naar groene energie — een geintegreerd ecosysteem van opwekken, stockeren, beheren en opladen.` → `Investeringen in zonnepanelen en andere energiezuinige energietechnieken renderen meer dan ooit. Dat bewijst MR Solar iedere dag opnieuw.`
 
 ## Torré (Moerman Torre Technieken) (`torre`)
-- **services**: `['Installatie zonnepanelen (LG Solar)', 'Verwarming & warm water', 'Elektriciteit & domotica (KNX)', 'Laadpalen']` → `['Installatie zonnepanelen (LG Solar)', 'Verwarming & warm water', 'Elektriciteit & domotica', 'Sanitaire installaties', 'Laadpalen', 'Hoxter inbouwhaarden']`
-- **social_channels**: `{'website': True, 'facebook': True, 'linkedin': True, 'instagram': True}` → `{'website': True, 'facebook': True}`
-- **sectors**: `['zonnepanelen', 'laadinfrastructuur', 'elektriciteit']` → `['zonnepanelen', 'laadinfrastructuur', 'elektriciteit', 'verwarming/sanitair']`
+- **positioning**: `Slim en ecologisch omgaan met energie — lokale installateur.` → `Moerman Torre levert zonnepanelen, verwarming & warm water, elektriciteit en domotica (eigen site)`
 
 ## Electra (`electra`)
-- **services**: `['Laadnetwerk-operator (snellaadstations)', 'Laadpas', 'Electra+ abonnement', 'App', 'Voor professionals (fleet/host een station)']` → `['Laadnetwerk-operator (768 stations beschikbaar, 65 in aanbouw)', 'Electra-laadpas', 'Electra+ abonnement', 'App (routeplanner, Autocharge)', 'Voor professionals (fleet / host een station)']`
-- **social_channels**: `{'website': True, 'app': True}` → `{'website': True, 'app': True, 'facebook': True, 'instagram': True, 'linkedin': True, 'twitter': True}`
+- **positioning**: `Revolutionaire oplaadervaring — grootste laadnetwerk van Europa; heruitvinden van voertuigopladen, betrouwbaar en op de eerste plaats van de gebruiker.` → `Lokaliseer onze Electra laadstations en laad uw elektrisch voertuig bliksemsnel op. Gemakkelijk te gebruiken, betrouwbare Superchargers.`
 
 ## Ionity (`ionity`)
-- **services**: `['Europees snellaadnetwerk (880 locaties, 24 landen)', 'Abonnementen Power/Motion', 'App', 'Partner program']` → `['Europees snellaadnetwerk (880 locaties, 24 landen, 66 in aanbouw)', 'Abonnementen IONITY Power 365 / Motion 365', 'IONITY App', 'IONITY Direct', 'Partner program / Fleets']`
-- **target_audience**: `['EV-rijders (B2C)', 'autofabrikanten/B2B']` → `['EV-rijders (B2C)', 'autofabrikanten/B2B', 'fleets']`
-- **social_channels**: `{'website': True, 'app': True}` → `{'website': True, 'app': True, 'facebook': True, 'instagram': True, 'linkedin': True, 'tiktok': True}`
+- **positioning**: `Seamless, fast & reliable EV charging across Europe — high-power charging.` → `Power your electric journey with IONITY’s high-speed charging network. Serving 24 European countries, we offer convenient, reliable, and sustainable EV charging stations for seamless long-distance travel.`

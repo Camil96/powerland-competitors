@@ -61,6 +61,13 @@ class Handler(BaseHTTPRequestHandler):
                     with open(p, "rb") as f:
                         return self._send(200, f.read(), "text/markdown")
             self._send(404, b"not found")
+        elif u.path.startswith("/snapshot/"):
+            name = os.path.basename(u.path[len("/snapshot/"):])
+            p = os.path.join(BASE, "snapshots", name)
+            if os.path.exists(p):
+                with open(p, "rb") as f:
+                    return self._send(200, f.read(), "text/markdown")
+            self._send(404, b"not found")
         elif u.path == "/api/competitors":
             self._send(200, json.dumps(load_data().get("competitors", []), ensure_ascii=False))
         elif u.path.startswith("/assets/"):

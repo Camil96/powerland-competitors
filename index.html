@@ -89,7 +89,24 @@
   .tag{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:3px 10px;font-size:11.5px;color:var(--muted);font-weight:600}
   .factbadge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.5px;color:#16483f;background:var(--pl-teal-soft);border-radius:6px;padding:2px 7px;margin-right:6px;vertical-align:middle}
   .srcrow a{display:inline-block;margin-right:10px;margin-top:4px}
-  .overlap{display:flex;align-items:center;gap:10px;font-size:13.5px;margin-top:8px;color:var(--text);font-weight:600}
+  .evidence{background:var(--panel2);border:1px solid var(--line);border-left:4px solid var(--pl-teal);border-radius:10px;padding:10px 14px;margin-top:4px;font-size:12.5px;color:var(--muted)}
+  .evidence .ev-head{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+  .evidence .ev-url{color:var(--pl-blue);font-weight:700;text-decoration:none;word-break:break-all}
+  .evidence .ev-url:hover{text-decoration:underline}
+  .evidence .ev-date{color:var(--muted);font-size:11px}
+  .evidence .ev-quote{font-style:italic;color:var(--text);line-height:1.45;border-left:3px solid var(--pl-blue-soft);padding-left:10px;margin:4px 0}
+  .evidence .ev-snap{font-size:11.5px}
+  .card.compact{cursor:pointer;gap:10px;padding:18px 22px}
+  .card.compact:hover{box-shadow:0 6px 22px rgba(33,62,134,.14);transform:translateY(-2px)}
+  .card.compact .more-hint{font-size:11.5px;color:var(--pl-teal);font-weight:700;margin-top:2px}
+  .modal{display:none;position:fixed;inset:0;background:rgba(20,30,50,.55);backdrop-filter:blur(3px);z-index:80;align-items:center;justify-content:center;padding:20px}
+  .modal.show{display:flex}
+  .modal-card{background:var(--panel);border-radius:var(--radius-card);max-width:560px;width:100%;max-height:86vh;overflow:auto;padding:8px 8px 24px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+  .modal-x{position:sticky;top:6px;float:right;background:#fff;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;font-size:20px;line-height:1;cursor:pointer;color:var(--muted);z-index:2}
+  .modal-x:hover{color:var(--pl-blue);border-color:var(--pl-teal)}
+  .modal-body{padding:18px 22px}
+  .modal-body .card{border:none;box-shadow:none;padding:0}
+
   .bar{height:10px;background:var(--panel2);border-radius:5px;flex:1;overflow:hidden}
   .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pl-blue),var(--pl-teal))}
   a{color:var(--pl-teal);text-decoration:none;font-size:13.5px;font-weight:700}
@@ -141,7 +158,9 @@
     <button class="sec" onclick="showSection('whitespace')">Whitespace</button>
     <button class="sec" onclick="showSection('pillars')">Contentpijlers</button>
     <button class="sec" onclick="showSection('weaknesses')">Zwaktes</button>
+    <button class="sec" onclick="showSection('battlecards')">Battlecards</button>
     <button class="sec" onclick="showSection('action')">Voor Powerland</button>
+    <button class="wbtn" id="vBtn" onclick="toggleView()">Toon uitgebreid ▾</button>
     <span class="sub" id="count"></span>
   </div>
 
@@ -172,6 +191,12 @@
     <div id="wkOut" style="margin-top:12px"></div>
   </section>
 
+  <section id="battlecards">
+    <h2>Battlecards</h2>
+    <div class="explain" data-tab="battlecards"></div>
+    <div id="bcOut" style="margin-top:12px"></div>
+  </section>
+
   <section id="action">
     <h2>Voor Powerland</h2>
     <div class="explain" data-tab="action"></div>
@@ -185,7 +210,7 @@ const ICO={laadinfrastructuur:'assets/charging-station.svg',batterijopslag:'asse
 async function load(){
   try{const r=await fetch('data.json');DATA=await r.json();}
   catch(e){document.getElementById('cards').innerHTML='<p class="note">Kon data.json niet laden.</p>';return;}
-  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderAction();renderExplain();
+  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderBattlecards();renderAction();renderExplain();
 }
 function renderExplain(){
   document.querySelectorAll('.explain').forEach(el=>{
@@ -205,16 +230,27 @@ function renderStats(){
     <div class="kpi indirect"><div class="n">${i}</div><div class="l">Indirect</div></div>`;
 }
 function ico(s){return ICO[s]?`<img class="sector-ico" src="${ICO[s]}" alt="">`:''}
-function cardHTML(x){
+function cardHTML(x, compact){
   const pct=(x.overlap_score_powerland/5*100);
   const tags=(x.sectors||[]).map(s=>`<span class="tag">${ico(s)}${s}</span>`).join('');
   const soc=Object.entries(x.social_channels||{}).filter(([k,v])=>v===true).map(([k])=>k).join(', ')||'n.v.t.';
-  // Bron(len): gelinkt aan het raw/*.md dossier dat de server serveert via /raw/<naam>
   const srcLinks=(x.sources||[]).map(s=>{
     const naam=s.split('/').pop();
     return `<a href="raw/${naam}" target="_blank" rel="noopener">[dossier] ${naam.replace(/\.md$/,'')}</a>`;
   }).join(' ');
   const srcBlock=srcLinks?`<div class="row srcrow"><span class="factbadge">BRON</span> ${srcLinks}</div>`:'';
+  const ev=x.evidence||[];
+  const evBlock=ev.length?`<div class="evidence"><div class="ev-head"><span class="factbadge">FEIT</span> <a class="ev-url" href="${ev[0].source_url}" target="_blank" rel="noopener">${ev[0].source_url}</a><span class="ev-date">· ${ev[0].retrieved}</span></div><div class="ev-quote">“${ev[0].quote}”</div>${ev[0].snapshot?`<a class="ev-snap" href="${ev[0].snapshot}" target="_blank" rel="noopener">[snapshot van die dag]</a>`:''}</div>`:'';
+  if(compact){
+    // RUSTIGE weergave: enkel essentie + klikbaar naar detail
+    return `<div class="card compact" onclick="openDetail('${x.id}')">
+      <span class="cat ${x.category}">${x.category}</span>
+      <h3>${x.name}</h3>
+      <div class="tags">${tags}</div>
+      <div class="overlap">Overlap <div class="bar"><i style="width:${pct}%"></i></div> ${x.overlap_score_powerland}/5</div>
+      <div class="more-hint">klik voor detail ▸</div>
+    </div>`;
+  }
   return `<div class="card">
     <span class="cat ${x.category}">${x.category}</span>
     <h3>${x.name}</h3>
@@ -224,9 +260,18 @@ function cardHTML(x){
     <div class="tags">${tags}</div>
     <div class="overlap">Overlap <div class="bar"><i style="width:${pct}%"></i></div> ${x.overlap_score_powerland}/5</div>
     <div class="row"><span class="factbadge">FEIT</span> <b>Positionering:</b> ${x.positioning||''}</div>
+    ${evBlock}
     ${srcBlock}
   </div>`;
 }
+function openDetail(id){
+  const x=DATA.competitors.find(c=>c.id===id); if(!x)return;
+  const host=document.getElementById('modal');
+  host.querySelector('.modal-body').innerHTML=cardHTML(x,false);
+  host.classList.add('show');
+  host.querySelector('.modal-body').scrollTop=0;
+}
+function closeModal(){document.getElementById('modal').classList.remove('show');}
 function renderCards(){
   let list=DATA.competitors.slice();
   const cat=document.getElementById('fCat').value;
@@ -234,8 +279,14 @@ function renderCards(){
   if(activeSector)list=list.filter(x=>(x.sectors||[]).includes(activeSector));
   // default: overlap met Powerland (hoog->laag)
   list.sort((a,b)=>b.overlap_score_powerland-a.overlap_score_powerland);
-  document.getElementById('cards').innerHTML=list.map(cardHTML).join('');
+  document.getElementById('cards').innerHTML=list.map(c=>cardHTML(c, viewCompact)).join('');
   document.getElementById('count').textContent=`${list.length} van ${DATA.competitors.length} getoond`;
+}
+let viewCompact=true; // RUSTIGE weergave standaard (schaalt naar 16+ concurrenten)
+function toggleView(){
+  viewCompact=!viewCompact;
+  document.getElementById('vBtn').textContent=viewCompact?'Toon uitgebreid ▾':'Toon compact ▴';
+  renderCards();
 }
 function renderWhitespace(){
   const w=DATA.analysis.whitespace||[];
@@ -255,6 +306,24 @@ function renderWeaknesses(){
   html+='</div>';
   document.getElementById('wkOut').innerHTML=html;
 }
+function renderBattlecards(){
+  let html='<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(340px,1fr))">';
+  DATA.competitors.forEach(c=>{
+    const b=c.battlecard; if(!b)return;
+    const conf=b.confidence||'midden';
+    const weakLabel=c.category==='indirect'?'Andere schakel in keten':'Hun zwakte';
+    html+=`<div class="card bc">
+      <span class="cat ${c.category}">${c.category}</span>
+      <h3>${c.name}</h3>
+      <div class="row"><span class="factbadge" style="background:#fde8e8;color:#9b2c2c">${weakLabel}</span> ${b.their_weak}</div>
+      <div class="row"><span class="factbadge">ONS SPEL</span> ${b.our_play}</div>
+      ${b.note?`<div class="row" style="font-size:11.5px;color:var(--muted)">${b.note}</div>`:''}
+      <div class="row" style="font-size:11px;color:var(--muted)">Onderbouwing: ${b.based_on} · vertrouwen: ${conf}</div>
+    </div>`;
+  });
+  html+='</div>';
+  document.getElementById('bcOut').innerHTML=html;
+}
 function renderAction(){
   const r=DATA.analysis.recommendation;
   let html='';
@@ -272,7 +341,7 @@ function renderRoadmap(){
   document.getElementById('roadmap').innerHTML=rm.map(s=>`<div class="rs"><div class="n">STAP ${s.step}</div><div class="t">${s.tab}</div><div class="a">${s.answers}</div></div>`).join('');
 }
 function showSection(id){
-  ['competitors','whitespace','pillars','weaknesses','action'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
+  ['competitors','whitespace','pillars','weaknesses','battlecards','action'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
 }
 let activeSector=null;
 function filterSector(btn){
@@ -289,5 +358,11 @@ document.getElementById('fCat').addEventListener('change',renderCards);
 showSection('competitors');
 load();
 </script>
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-card">
+    <button class="modal-x" onclick="closeModal()">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
 </body>
 </html>

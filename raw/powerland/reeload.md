@@ -1,7 +1,7 @@
 # Reeload — concurrent van Powerland (BE)
 
 **Domein:** https://reeload.eu/be/  
-**Laatst ververst:** 2026-08-10 14:33 UTC  
+**Laatst ververst:** 2026-08-12 07:16 UTC  
 **Categorie:** direct  
 
 ## Diensten
@@ -18,8 +18,7 @@
 - website: True
 
 ## Positionering (citeerbaar uit site)
-> Electrification, Delivered Without Compromise — complexe energie-installaties snel, betrouwbaar, zonder ruis of vertraging.
+> Reeload delivers full electrification services for fast-charging, high-voltage, BESS and civil works across the Benelux. From commissioning to handover — first time right.
 
 ## Wat veranderde t.o.v. vorige verversing
-- **services**: `['Laadinfrastructuur / snellaaders', 'Hoogspanning', 'Batterijopslag', 'Reeload CARE (onderhoud)']` → `['Hoogspanning', 'Laadinfrastructuur / snellaaders', 'Batterijopslag', 'Reeload CARE (onderhoud)']`
-- **social_channels**: `{'website': True, 'linkedin': 'to_verify', 'instagram': 'to_verify', 'facebook': 'to_verify', 'tiktok': 'to_verify'}` → `{'website': True}`
+- **positioning**: `Electrification, Delivered Without Compromise — complexe energie-installaties snel, betrouwbaar, zonder ruis of vertraging.` → `Reeload delivers full electrification services for fast-charging, high-voltage, BESS and civil works across the Benelux. From commissioning to handover — first time right.`

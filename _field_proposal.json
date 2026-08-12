@@ -1,0 +1,150 @@
+{
+  "generated": "2026-08-12 07:15 UTC",
+  "note": "VOORSTEL — data.json NIET gewijzigd. Keur goed via refresh.py --one per concurrent.",
+  "competitors": [
+    {
+      "id": "reeload",
+      "status": "voorstel",
+      "changes": [
+        {
+          "veld": "positionering",
+          "oud": "",
+          "nieuw": "Reeload delivers full electrification services for fast-charging, high-voltage, BESS and civil works across the Benelux. From commissioning to handover — first time right.",
+          "type": "fact (meta-beschrijving)",
+          "bron": "20260811-1159.md"
+        }
+      ],
+      "signaal": {
+        "title": "Electrification, Delivered Without Compromise | Reeload",
+        "description": "Reeload delivers full electrification services for fast-charging, high-voltage, BESS and civil works across the Benelux. From commissioning to handover — first time right.",
+        "body_woorden": 521
+      }
+    },
+    {
+      "id": "iq-solar",
+      "status": "voorstel",
+      "changes": [
+        {
+          "veld": "positionering",
+          "oud": "",
+          "nieuw": "Ontdek hoogwaardige zonnepanelen en duurzame energieoplossingen bij IQ-Solar. Bespaar op uw energierekening en draag bij aan het klimaat.",
+          "type": "fact (meta-beschrijving)",
+          "bron": "20260811-1155.md"
+        }
+      ],
+      "signaal": {
+        "title": "Zonnepanelen en energieoplossingen | IQ Solar",
+        "description": "Ontdek hoogwaardige zonnepanelen en duurzame energieoplossingen bij IQ-Solar. Bespaar op uw energierekening en draag bij aan het klimaat.",
+        "body_woorden": 593
+      }
+    },
+    {
+      "id": "ceratec",
+      "status": "voorstel",
+      "changes": [
+        {
+          "veld": "positionering",
+          "oud": "",
+          "nieuw": "Industriële automatisering, elektrotechniek, middenspanning en hoogspanning, process & automation (Ceratec)",
+          "type": "fact (body-diensten, eigen woorden)",
+          "bron": "20260811-1155.md"
+        }
+      ],
+      "signaal": {
+        "title": "Accueil - Ceratec",
+        "description": "Ceratec est une entreprise dynamique et innovante qui recherche régulièrement de nouveaux talents. Découvrez nos offres d’emploi et venez agrandir notre",
+        "body_woorden": 460
+      }
+    },
+    {
+      "id": "extrapower",
+      "status": "voorstel",
+      "changes": [
+        {
+          "veld": "positionering",
+          "oud": "",
+          "nieuw": "ExtraPower ontwerpt, bouwt en onderhoudt zonne-energie installaties op maat. ExtraPower begeleidt bedrijven naar een rendabel en duurzaam energiebeleid.",
+          "type": "fact (meta-beschrijving)",
+          "bron": "20260811-1155.md"
+        }
+      ],
+      "signaal": {
+        "title": "Optimizing your energy | Extrapower",
+        "description": "ExtraPower ontwerpt, bouwt en onderhoudt zonne-energie installaties op maat. ExtraPower begeleidt bedrijven naar een rendabel en duurzaam energiebeleid.",
+        "body_woorden": 410
+      }
+    },
+    {
+      "id": "mr-solar",
+      "status": "voorstel",
+      "changes": [
+        {
+          "veld": "positionering",
+          "oud": "",
+          "nieuw": "Investeringen in zonnepanelen en andere energiezuinige energietechnieken renderen meer dan ooit. Dat bewijst MR Solar iedere dag opnieuw.",
+          "type": "fact (meta-beschrijving)",
+          "bron": "20260811-1155.md"
+        }
+      ],
+      "signaal": {
+        "title": "MR Solar | Duurzame energieoplossingen voor bedrijven",
+        "description": "Investeringen in zonnepanelen en andere energiezuinige energietechnieken renderen meer dan ooit. Dat bewijst MR Solar iedere dag opnieuw.",
+        "body_woorden": 499
+      }
+    },
+    {
+      "id": "torre",
+      "status": "voorstel",
+      "changes": [
+        {
+          "veld": "positionering",
+          "oud": "",
+          "nieuw": "Moerman Torre levert zonnepanelen, verwarming & warm water, elektriciteit en domotica (eigen site)",
+          "type": "fact (body-diensten, eigen woorden)",
+          "bron": "20260811-1155.md"
+        }
+      ],
+      "signaal": {
+        "title": "Torre Moerman: Slim en ecologisch verwarmen",
+        "description": "We zorgen ervoor dat je slim en ecologisch omgaat met energie. Contacteer ons voor meer informatie.",
+        "body_woorden": 175
+      }
+    },
+    {
+      "id": "electra",
+      "status": "voorstel",
+      "changes": [
+        {
+          "veld": "positionering",
+          "oud": "",
+          "nieuw": "Lokaliseer onze Electra laadstations en laad uw elektrisch voertuig bliksemsnel op. Gemakkelijk te gebruiken, betrouwbare Superchargers.",
+          "type": "fact (meta-beschrijving)",
+          "bron": "20260811-1155.md"
+        }
+      ],
+      "signaal": {
+        "title": "Snelle oplaadstations en een revolutionaire ervaring",
+        "description": "Lokaliseer onze Electra laadstations en laad uw elektrisch voertuig bliksemsnel op. Gemakkelijk te gebruiken, betrouwbare Superchargers.",
+        "body_woorden": 652
+      }
+    },
+    {
+      "id": "ionity",
+      "status": "voorstel",
+      "changes": [
+        {
+          "veld": "positionering",
+          "oud": "",
+          "nieuw": "Power your electric journey with IONITY’s high-speed charging network. Serving 24 European countries, we offer convenient, reliable, and sustainable EV charging stations for seamless long-distance travel.",
+          "type": "fact (meta-beschrijving)",
+          "bron": "20260811-1155.md"
+        }
+      ],
+      "signaal": {
+        "title": "IONITY – Seamless, fast & reliable EV charging across Europe",
+        "description": "Power your electric journey with IONITY’s high-speed charging network. Serving 24 European countries, we offer convenient, reliable, and sustainable EV charging stations for seamless long-distance travel.",
+        "body_woorden": 650
+      }
+    }
+  ]
+}
