@@ -1,0 +1,1 @@
+C:/Users/camil.sahnoune/competitive-intel/publish\snapshots\extrapower\20260811-1155.md

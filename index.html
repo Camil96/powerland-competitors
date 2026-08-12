@@ -105,7 +105,7 @@
   .cc-ov{display:flex;align-items:center;gap:7px}
   .cc-ov-n{font-size:12px;font-weight:800;color:var(--ink)}
   .cc-ov .bar{width:64px;height:6px;background:var(--line);border-radius:99px;overflow:hidden}
-  .cc-ov .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pl-navy),var(--pl-teal))}
+  .cc-ov .bar i{display:block;height:100%;background:var(--pl-teal)}
   .card.compact h3{margin:0;font-size:17px;line-height:1.2}
   .card.compact .tags{margin-top:auto}
   .cc-foot{font-size:11.5px;color:var(--pl-teal);font-weight:700;letter-spacing:.2px}
@@ -127,7 +127,7 @@
   .modal-body .card{border:none;box-shadow:none;padding:0}
 
   .bar{height:10px;background:var(--panel2);border-radius:5px;flex:1;overflow:hidden}
-  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pl-blue),var(--pl-teal))}
+  .bar i{display:block;height:100%;background:var(--pl-teal)}
   a{color:var(--pl-teal);text-decoration:none;font-size:13.5px;font-weight:700}
   a:hover{color:var(--pl-blue);text-decoration:underline}
   .note{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--pl-teal);border-radius:var(--radius-card);padding:16px 22px;font-size:14.5px;color:var(--muted);margin-top:8px}
@@ -250,10 +250,13 @@ function cardHTML(x, compact){
   const pct=(x.overlap_score_powerland/5*100);
   const tags=(x.sectors||[]).map(s=>`<span class="tag">${ico(s)}${s}</span>`).join('');
   const soc=Object.entries(x.social_channels||{}).filter(([k,v])=>v===true).map(([k])=>k).join(', ')||'n.v.t.';
-  const srcLinks=(x.sources||[]).map(s=>{
-    const naam=s.split('/').pop();
-    return `<a href="raw/${naam}" target="_blank" rel="noopener">[dossier] ${naam.replace(/\.md$/,'')}</a>`;
-  }).join(' ');
+  const srcLinks=(()=>{
+    // eigen dossier = raw/<parent_brand>/<id>.md (bestaat altijd, zie refresh.py)
+    const brand=x.parent_brand||'powerland';
+    const dossier=`raw/${brand}/${x.id}.md`;
+    const naam=x.id;
+    return `<a href="${dossier}" target="_blank" rel="noopener">[dossier] ${naam}</a>`;
+  })();
   const srcBlock=srcLinks?`<div class="row srcrow"><span class="factbadge">BRON</span> ${srcLinks}</div>`:'';
   const ev=x.evidence||[];
   const evBlock=ev.length?`<div class="evidence"><div class="ev-head"><span class="factbadge">FEIT</span> <a class="ev-url" href="${ev[0].source_url}" target="_blank" rel="noopener">${ev[0].source_url}</a><span class="ev-date">· ${ev[0].retrieved}</span></div><div class="ev-quote">“${ev[0].quote}”</div>${ev[0].snapshot?`<a class="ev-snap" href="${ev[0].snapshot}" target="_blank" rel="noopener">[snapshot van die dag]</a>`:''}</div>`:'';

@@ -1,0 +1,1 @@
+C:/Users/camil.sahnoune/competitive-intel/publish\snapshots\reeload\20260811-1159.md

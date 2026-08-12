@@ -1,4 +1,4 @@
 # Automatische wekelijkse capture (Taakplanner) — lokaal, niet in git
-snapshots/
+# snapshots/ WEL in git: de evidence-laag (snapshot-van-die-dag links) moet live op Pages staan
 capture-report.txt
 powerland_capture.log
