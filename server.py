@@ -4,10 +4,11 @@ Stdlib-only. Geen externe packages. Draai: python3.12 server.py
 """
 import json
 import os
+import re
 import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
-
+from pages import render_detail, render_analysis, render_evidence, render_dossier
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(BASE, "data.json")
 HTML = os.path.join(BASE, "index.html")
@@ -60,7 +61,36 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(200, b"<h1>dashboard.html nog niet gebouwd</h1><p>Start de scrape, dan bouw ik het.</p>", "text/html")
         elif u.path == "/data.json":
             self._send(200, json.dumps(load_data(), ensure_ascii=False))
-        elif u.path.startswith("/raw/"):
+        elif u.path == "/analyse":
+            self._send(200, render_analysis(load_data()), "text/html")
+        elif u.path.startswith("/concurrent/"):
+            cid = u.path[len("/concurrent/"):].strip("/")
+            if not re.fullmatch(r"[a-z0-9-]+", cid):
+                self._send(404, b"bad id")
+            else:
+                c = next((x for x in load_data()["competitors"] if x["id"] == cid), None)
+                self._send(200, render_detail(c) if c else "<h1>niet gevonden</h1>", "text/html")
+        elif u.path.startswith("/dossier/"):
+            cid = u.path[len("/dossier/"):].strip("/")
+            if not re.fullmatch(r"[a-z0-9-]+", cid):
+                self._send(404, b"bad id")
+            else:
+                c = next((x for x in load_data()["competitors"] if x["id"] == cid), None)
+                self._send(200, render_dossier(c) if c else "<h1>niet gevonden</h1>", "text/html")
+        elif u.path.startswith("/evidence/"):
+            # /evidence/<id>/<datum>
+            parts = u.path[len("/evidence/"):].split("/")
+            if len(parts) != 2 or not re.fullmatch(r"[a-z0-9-]+", parts[0]) or not re.fullmatch(r"[0-9_-]+", parts[1]):
+                self._send(404, b"bad id")
+            else:
+                d = load_data()
+                c = next((x for x in d["competitors"] if x["id"] == parts[0]), None)
+                if not c:
+                    self._send(404, b"niet gevonden")
+                else:
+                    ev = next((e for e in c.get("evidence", []) if e.get("retrieved","").replace(" ","_").replace(":","").replace("-","_") == parts[1].replace("-","_")), None)
+                    self._send(200, render_evidence(c, ev) if ev else "<h1>geen bewijs</h1>", "text/html")
+        elif u.path.startswith("/raw/") or u.path.startswith("/snapshots/"):
             name = u.path[len("/raw/"):]
             # veilig pad: alleen bestandsnaam, geen traversaal
             name = os.path.basename(name)
