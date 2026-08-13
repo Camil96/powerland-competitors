@@ -2,3 +2,5 @@
 # snapshots/ WEL in git: de evidence-laag (snapshot-van-die-dag links) moet live op Pages staan
 capture-report.txt
 powerland_capture.log
+# Hermes plan-mode notities (lokaal, niet deel van dashboard)
+.hermes/
