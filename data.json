@@ -43,7 +43,22 @@
         "complexe installaties"
       ],
       "social_channels": {
-        "website": true
+        "website": {
+          "present": true,
+          "url": "https://reeload.eu/be/"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://www.linkedin.com/company/reeload-ev"
+        },
+        "instagram": {
+          "present": true,
+          "url": "https://www.instagram.com/reeload.be"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/reeload.ev"
+        }
       },
       "strengths": [
         "Hoogspanning-expertise",
@@ -106,10 +121,22 @@
         "bedrijven (B2B + B2C)"
       ],
       "social_channels": {
-        "website": true,
-        "facebook": true,
-        "linkedin": true,
-        "instagram": true
+        "website": {
+          "present": true,
+          "url": "https://www.iq-solar.be"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://www.linkedin.com/company/iq-solar-be"
+        },
+        "instagram": {
+          "present": true,
+          "url": "https://www.instagram.com/iq.solar"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/IQSolarBV"
+        }
       },
       "strengths": [
         "Maatschappelijk engagement (zonnepanelen-schenking Gent)",
@@ -174,10 +201,22 @@
         "KMO"
       ],
       "social_channels": {
-        "website": true,
-        "facebook": true,
-        "linkedin": true,
-        "youtube": true
+        "website": {
+          "present": true,
+          "url": "https://ceratec.eu/"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/Ceratectechnology"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://www.linkedin.com/company/ceratec"
+        },
+        "youtube": {
+          "present": true,
+          "url": "https://www.youtube.com/user/CeratecPloegsteert"
+        }
       },
       "strengths": [
         "40 jaar ervaring",
@@ -235,8 +274,18 @@
         "landbouw (B2B)"
       ],
       "social_channels": {
-        "website": true,
-        "facebook": true
+        "website": {
+          "present": true,
+          "url": "https://www.extrapower.be/"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/ExtraPower-715165685231091"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://be.linkedin.com/company/extrapower"
+        }
       },
       "strengths": [
         "VCA**-certificaat",
@@ -299,12 +348,30 @@
         "particulieren"
       ],
       "social_channels": {
-        "website": true,
-        "trustpilot": true,
-        "facebook": true,
-        "linkedin": true,
-        "instagram": true,
-        "youtube": true
+        "website": {
+          "present": true,
+          "url": "https://www.mrsolar.be"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://www.linkedin.com/company/mr-solar-zonnepanelen"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/mrsolarbenelux"
+        },
+        "trustpilot": {
+          "present": true,
+          "url": "https://nl-be.trustpilot.com/review/mrsolar.be"
+        },
+        "instagram": {
+          "present": true,
+          "url": "https://www.instagram.com/mrsolarbenelux"
+        },
+        "youtube": {
+          "present": true,
+          "url": "https://www.youtube.com/channel/UCoWxMZmGjyw46zbUyHvw8_g"
+        }
       },
       "strengths": [
         "320+ Trustpilot-reviews",
@@ -366,8 +433,14 @@
         "KMO"
       ],
       "social_channels": {
-        "website": true,
-        "facebook": true
+        "website": {
+          "present": true,
+          "url": "https://www.torremoerman.be/nl/"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/torremoermanbvba"
+        }
       },
       "strengths": [
         "Lokale aanwezigheid",
@@ -425,12 +498,26 @@
         "hosts (B2B)"
       ],
       "social_channels": {
-        "website": true,
-        "app": true,
-        "facebook": true,
-        "instagram": true,
-        "linkedin": true,
-        "twitter": true
+        "website": {
+          "present": true,
+          "url": "https://www.go-electra.com/nl/"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/electra.stations"
+        },
+        "twitter": {
+          "present": true,
+          "url": "https://twitter.com/go_Electra"
+        },
+        "instagram": {
+          "present": true,
+          "url": "https://www.instagram.com/electra.officiel"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://www.linkedin.com/company/electra-charge"
+        }
       },
       "strengths": [
         "Groot Europees netwerk",
@@ -487,12 +574,30 @@
         "fleets"
       ],
       "social_channels": {
-        "website": true,
-        "app": true,
-        "facebook": true,
-        "instagram": true,
-        "linkedin": true,
-        "tiktok": true
+        "website": {
+          "present": true,
+          "url": "https://www.ionity.eu"
+        },
+        "appstore": {
+          "present": true,
+          "url": "https://apps.apple.com/us/app/ionity/id1551448692"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://www.linkedin.com/company/ionity"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/ionity.eu"
+        },
+        "instagram": {
+          "present": true,
+          "url": "https://www.instagram.com/ionity"
+        },
+        "tiktok": {
+          "present": true,
+          "url": "https://www.tiktok.com/@ionity.official"
+        }
       },
       "strengths": [
         "874 locaties EU",

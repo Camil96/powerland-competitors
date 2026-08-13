@@ -248,7 +248,7 @@ function ico(s){return ICO[s]?`<img class="sector-ico" src="${ICO[s]}" alt="">`:
 function cardHTML(x, compact){
   const pct=(x.overlap_score_powerland/5*100);
   const tags=(x.sectors||[]).map(s=>`<span class="tag">${ico(s)}${s}</span>`).join('');
-  const soc=Object.entries(x.social_channels||{}).filter(([k,v])=>v===true).map(([k])=>k).join(', ')||'n.v.t.';
+  const soc=Object.entries(x.social_channels||{}).filter(([k,v])=>v&&v.url).map(([k,v])=>`<a href="${v.url}" target="_blank" rel="noopener">${k}</a>`).join(' · ')||'n.v.t.';
   const srcLinks=(()=>{
     // eigen dossier = raw/<parent_brand>/<id>.md (bestaat altijd, zie refresh.py)
     const brand=x.parent_brand||'powerland';

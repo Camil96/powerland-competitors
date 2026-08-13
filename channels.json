@@ -1,0 +1,120 @@
+{
+  "reeload": {
+    "website": "https://reeload.eu/be/",
+    "channels": {
+      "linkedin": [
+        "https://www.linkedin.com/company/reeload-ev"
+      ],
+      "instagram": [
+        "https://www.instagram.com/reeload.be"
+      ],
+      "facebook": [
+        "https://www.facebook.com/reeload.ev"
+      ]
+    }
+  },
+  "iq-solar": {
+    "website": "https://www.iq-solar.be",
+    "channels": {
+      "linkedin": [
+        "https://www.linkedin.com/company/iq-solar-be"
+      ],
+      "instagram": [
+        "https://www.instagram.com/iq.solar"
+      ],
+      "facebook": [
+        "https://www.facebook.com/IQSolarBV"
+      ]
+    }
+  },
+  "ceratec": {
+    "website": "https://ceratec.eu/",
+    "channels": {
+      "facebook": [
+        "https://www.facebook.com/Ceratectechnology"
+      ],
+      "linkedin": [
+        "https://www.linkedin.com/company/ceratec"
+      ],
+      "youtube": [
+        "https://www.youtube.com/user/CeratecPloegsteert"
+      ]
+    }
+  },
+  "extrapower": {
+    "website": "https://www.extrapower.be/",
+    "channels": {
+      "facebook": [
+        "https://www.facebook.com/ExtraPower-715165685231091"
+      ],
+      "linkedin": [
+        "https://be.linkedin.com/company/extrapower"
+      ]
+    }
+  },
+  "mr-solar": {
+    "website": "https://www.mrsolar.be",
+    "channels": {
+      "linkedin": [
+        "https://www.linkedin.com/company/mr-solar-zonnepanelen"
+      ],
+      "facebook": [
+        "https://www.facebook.com/mrsolarbenelux"
+      ],
+      "trustpilot": [
+        "https://nl-be.trustpilot.com/review/mrsolar.be"
+      ],
+      "instagram": [
+        "https://www.instagram.com/mrsolarbenelux"
+      ],
+      "youtube": [
+        "https://www.youtube.com/channel/UCoWxMZmGjyw46zbUyHvw8_g"
+      ]
+    }
+  },
+  "torre": {
+    "website": "https://www.torremoerman.be/nl/",
+    "channels": {
+      "facebook": [
+        "https://www.facebook.com/torremoermanbvba"
+      ]
+    }
+  },
+  "electra": {
+    "website": "https://www.go-electra.com/nl/",
+    "channels": {
+      "facebook": [
+        "https://www.facebook.com/electra.stations"
+      ],
+      "twitter": [
+        "https://twitter.com/go_Electra"
+      ],
+      "instagram": [
+        "https://www.instagram.com/electra.officiel"
+      ],
+      "linkedin": [
+        "https://www.linkedin.com/company/electra-charge"
+      ]
+    }
+  },
+  "ionity": {
+    "website": "https://www.ionity.eu",
+    "channels": {
+      "appstore": [
+        "https://apps.apple.com/us/app/ionity/id1551448692"
+      ],
+      "linkedin": [
+        "https://www.linkedin.com/company/ionity"
+      ],
+      "facebook": [
+        "https://www.facebook.com/ionity.eu"
+      ],
+      "instagram": [
+        "https://www.instagram.com/ionity"
+      ],
+      "tiktok": [
+        "https://www.tiktok.com/@ionity.official"
+      ]
+    }
+  }
+}
