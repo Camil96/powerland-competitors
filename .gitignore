@@ -4,3 +4,5 @@ capture-report.txt
 powerland_capture.log
 # Hermes plan-mode notities (lokaal, niet deel van dashboard)
 .hermes/
+# Python bytecode cache
+__pycache__/

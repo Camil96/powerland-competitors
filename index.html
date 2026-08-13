@@ -257,9 +257,6 @@ function cardHTML(x, compact){
     <b>Aanbiedingen:</b> ${(pa.offers&&pa.offers.length)?pa.offers.join(' | '):'geen gevonden'}<br>
     <b>Frequentie:</b> ${pa.frequency||'?'}</div>`:'';
   const srcLinks=(()=>{
-    // eigen dossier = raw/<parent_brand>/<id>.md (bestaat altijd, zie refresh.py)
-    const brand=x.parent_brand||'powerland';
-    const dossier=`raw/${brand}/${x.id}.md`;
     const naam=x.id;
     return `<a href="/dossier/${x.id}" target="_blank" rel="noopener">[dossier] ${naam}</a>`;
   })();
