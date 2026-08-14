@@ -78,7 +78,8 @@ class Handler(BaseHTTPRequestHandler):
                 c = next((x for x in load_data()["competitors"] if x["id"] == cid), None)
                 self._send(200, render_dossier(c) if c else "<h1>niet gevonden</h1>", "text/html")
         elif u.path.startswith("/evidence/"):
-            # /evidence/<id>/<datum>
+            # /evidence/<id>/<snapshot-bestandsnaam-zonder-ext>
+            # matcht op het snapshot-pad uit de evidence-entry (bijv. snapshots/reeload/20260811-1159)
             parts = u.path[len("/evidence/"):].split("/")
             if len(parts) != 2 or not re.fullmatch(r"[a-z0-9-]+", parts[0]) or not re.fullmatch(r"[0-9_-]+", parts[1]):
                 self._send(404, b"bad id")
@@ -88,7 +89,8 @@ class Handler(BaseHTTPRequestHandler):
                 if not c:
                     self._send(404, b"niet gevonden")
                 else:
-                    ev = next((e for e in c.get("evidence", []) if e.get("retrieved","").replace(" ","_").replace(":","").replace("-","_") == parts[1].replace("-","_")), None)
+                    want = f"{parts[0]}/{parts[1]}"  # id/naam zoals in snapshot-veld
+                    ev = next((e for e in c.get("evidence", []) if (e.get("snapshot") or "").replace("snapshots/","").replace(".md","").replace("\\","/") == want), None)
                     self._send(200, render_evidence(c, ev) if ev else "<h1>geen bewijs</h1>", "text/html")
         elif u.path.startswith("/raw/") or u.path.startswith("/snapshots/"):
             name = u.path[len("/raw/"):]
@@ -99,20 +101,6 @@ class Handler(BaseHTTPRequestHandler):
                 if os.path.exists(p):
                     with open(p, "rb") as f:
                         return self._send(200, f.read(), "text/markdown")
-            self._send(404, b"not found")
-        elif u.path.startswith("/snapshots/"):
-            # link uit evidence is relatief: snapshots/<id>/<naam>.md
-            rel = u.path[len("/snapshots/"):]
-            name = os.path.basename(rel)  # strip traversal: enkel bestandsnaam
-            # zoek recursief in snapshots/ (submappen per id), LATEST.md geblokkeerd
-            cand = None
-            for root, _, files in os.walk(os.path.join(BASE, "snapshots")):
-                if name in files and name != "LATEST.md":
-                    cand = os.path.join(root, name)
-                    break
-            if cand and os.path.realpath(cand).startswith(os.path.realpath(BASE)):
-                with open(cand, "rb") as f:
-                    return self._send(200, f.read(), "text/markdown")
             self._send(404, b"not found")
         elif u.path == "/api/competitors":
             self._send(200, json.dumps(load_data().get("competitors", []), ensure_ascii=False))

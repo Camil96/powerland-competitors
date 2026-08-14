@@ -192,9 +192,17 @@ def battlecard_text(bc, key):
         return esc(val)
     return placeholder("nog niet ingevuld")
 
+def weaknesses_list(c):
+    """weaknesses is een LIJST in data.json (geen string). Render als <li>-lijst."""
+    items = c.get("weaknesses") or []
+    if isinstance(items, str):
+        items = [items]  # oude string-vorm afvangen
+    if not items:
+        return placeholder("nog niet ingevuld")
+    return "<ul>" + "".join(f"<li>{esc(x)}</li>" for x in items) + "</ul>"
+
 def render_detail(c):
     analysis = c.get("post_analysis") or {}
-    weaknesses = (c.get("weaknesses") or "").strip()
     battlecard = c.get("battlecard") or {}
     pct = int(c.get("overlap_score_powerland", 0) / 5 * 100)
 
@@ -203,7 +211,7 @@ def render_detail(c):
     offers = analysis.get("offers", [])
     frequency = analysis.get("frequency", "")
 
-    weaknesses_display = esc(weaknesses) if weaknesses and weaknesses != "—" else placeholder("nog niet ingevuld")
+    weaknesses_display = weaknesses_list(c)
     positioning = c.get("positioning", "").strip()
     positioning_display = positioning if positioning else "geen"
     positioning_display = esc(positioning_display)
@@ -299,8 +307,8 @@ def render_analysis(data):
             f"<tr><td><b>{name}</b></td><td>{themes_cell}</td><td>{tone_cell}</td><td>{offers_cell}</td><td>{freq_cell}</td></tr>"
         )
 
-        weaknesses = (c.get("weaknesses") or "").strip()
-        weak_cell = esc(weaknesses) if weaknesses and weaknesses != "—" else placeholder("nog niet ingevuld")
+        weaknesses = weaknesses_list(c)
+        weak_cell = weaknesses
         weak_body.append(f"<tr><td><b>{name}</b></td><td>{weak_cell}</td></tr>")
 
     rows_str = "\n".join(table_body)
