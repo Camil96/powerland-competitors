@@ -6,3 +6,5 @@ powerland_capture.log
 .hermes/
 # Python bytecode cache
 __pycache__/
+# GSD planning-structuur — NIET publiceren op GitHub Pages (repo-root = Pages-root)
+.planning/
