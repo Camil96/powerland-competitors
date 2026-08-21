@@ -6,6 +6,38 @@ import os, json, html, re
 PUBLISH = r"C:/Users/camil.sahnoune/competitive-intel/publish"
 DATA = os.path.join(PUBLISH, "data.json")
 
+# REL = True bij statische build: alle links relatief maken (werkt onder GitHub Pages
+# subdirectory EN lokaal). Zet op False voor server-side rendering (server.py op root /).
+REL = False
+
+def mklink(href):
+    """Zet een server-route-link om in een relatief statisch-bestandspad (alleen als REL)."""
+    if not REL:
+        return href
+    if not href or href.startswith(("http", "#", "mailto:")):
+        return href
+    if href == "/":
+        return "index.html"
+    if href == "/analyse":
+        return "analyse.html"
+    if href.startswith("/concurrent/"):
+        cid = href[len("/concurrent/"):].strip("/")
+        return f"concurrent-{cid}.html"
+    if href.startswith("/evidence/"):
+        rest = href[len("/evidence/"):].strip("/")
+        cid, _, snap = rest.partition("/")
+        return f"evidence-{cid}-{snap}.html"
+    if href.startswith("/dossier/"):
+        cid = href[len("/dossier/"):].strip("/")
+        return f"dossier-{cid}.html"
+    if href.startswith("/assets/"):
+        return href[1:]  # assets/<x>
+    if href.startswith("/raw/"):
+        return href[1:]   # raw/<x>
+    if href.startswith("/snapshots/"):
+        return href[1:]   # snapshots/<x>
+    return href
+
 def load():
     with open(DATA, encoding="utf-8") as f:
         return json.load(f)
@@ -172,9 +204,9 @@ def page(title, body):
     return f"""<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} — Powerland Concurrentie</title>
-<link rel="icon" href="/assets/favicon.png">
+<link rel="icon" href="{mklink('/assets/favicon.png')}">
 <style>{STYLE}</style></head><body>
-<header><img src="/assets/logo.svg" alt="Powerland"><b>Concurrentie-Intelligentie</b><span class="tag">Fight the average.</span></header>
+<header><img src="{mklink('/assets/logo.svg')}" alt="Powerland"><b>Concurrentie-Intelligentie</b><span class="tag">Fight the average.</span></header>
 <div class="wrap">{body}</div></body></html>"""
 
 def channel_links(c):
@@ -217,7 +249,7 @@ def render_detail(c):
     positioning_display = esc(positioning_display)
 
     parts = []
-    parts.append('<a class="back" href="/">← Terug naar overzicht</a>')
+    parts.append('<a class="back" href="{mklink(\'/\')}">← Terug naar overzicht</a>')
     parts.append(f"<h1>{esc(c['name'])}</h1>")
 
     parts.append('<div class="card">')
@@ -273,7 +305,7 @@ def evidence_links(competitor):
         snap_name = (ev_item.get("snapshot") or "").split("/")[-1].replace(".md", "")
 
         source_url = ev_item.get("source_url", "#")
-        pointer = f'<a class="ev-link" href="/evidence/{cid}/{esc(snap_name)}" target="_blank" rel="noopener">Bewijs bekijken →</a>'
+        pointer = f'<a class="ev-link" href="{mklink("/evidence/"+cid+"/"+snap_name)}" target="_blank" rel="noopener">Bewijs bekijken →</a>'
 
         parts.append('<div class="quote">“' + esc(ev_item.get("quote", "")) + '”</div>')
         parts.append(
@@ -315,14 +347,16 @@ def render_analysis(data):
     weak_str = "\n".join(weak_body)
 
     parts = []
-    parts.append('<a class="back" href="/">← Terug naar overzicht</a>')
+    parts.append('<a class="back" href="{mklink(\'/\')}">← Terug naar overzicht</a>')
     parts.append("<h1>Analyse-hoofdstukken</h1>")
     parts.append(f'<p class="row">Synthese over alle {n} concurrenten — patronen die je in één oogopslag ziet.</p>')
     parts.append("<h2>Wat posten ze? (thema / toon / aanbod / frequentie)</h2>")
     parts.append(f'<div class="card"><table><tr><th>Concurrent</th><th>Thema\'s</th><th>Toon</th><th>Aanbod</th><th>Frequentie</th></tr>{rows_str}</table></div>')
     parts.append("<h2>Waar bloeden ze? (zwaktes naast elkaar)</h2>")
     parts.append(f'<div class="card"><table><tr><th>Concurrent</th><th>Zwakte</th></tr>{weak_str}</table></div>')
-    parts.append(f'<div class="nav"><a href="/">Overzicht</a> · <a href="/concurrent/{esc(comp[0]["id"])}">Eerste concurrent</a></div>')
+    nav_overzicht = mklink("/")
+    nav_eerste = mklink("/concurrent/" + comp[0]["id"])
+    parts.append(f'<div class="nav"><a href="{nav_overzicht}">Overzicht</a> · <a href="{nav_eerste}">Eerste concurrent</a></div>')
 
     return page("Analyse", "\n".join(parts))
 
@@ -336,7 +370,8 @@ def render_evidence(c, ev):
     snap = ev.get("snapshot", "")
 
     parts = []
-    parts.append(f'<a class="back" href="/concurrent/{cid}">← Terug naar {esc(c["name"])}</a>')
+    bl = mklink("/concurrent/" + cid)
+    parts.append(f'<a class="back" href="{bl}">← Terug naar {esc(c["name"])}</a>')
     parts.append(f"<h1>Bewijs — {esc(c['name'])}</h1>")
     parts.append('<div class="card">')
     parts.append(
@@ -377,7 +412,8 @@ def render_dossier(c):
         md_body = "\n".join(lines)
 
     parts = []
-    parts.append(f'<a class="back" href="/concurrent/{c["id"]}">← Terug naar {esc(c["name"])}</a>')
+    bl = mklink("/concurrent/" + c["id"])
+    parts.append(f'<a class="back" href="{bl}">← Terug naar {esc(c["name"])}</a>')
     parts.append(f"<h1>Dossier — {esc(c['name'])}</h1>")
     parts.append(f'<div class="card">{md_body}</div>')
     return page(f"Dossier {c['name']}", "\n".join(parts))

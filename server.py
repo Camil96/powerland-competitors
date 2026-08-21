@@ -92,6 +92,14 @@ class Handler(BaseHTTPRequestHandler):
                     want = f"{parts[0]}/{parts[1]}"  # id/naam zoals in snapshot-veld
                     ev = next((e for e in c.get("evidence", []) if (e.get("snapshot") or "").replace("snapshots/","").replace(".md","").replace("\\","/") == want), None)
                     self._send(200, render_evidence(c, ev) if ev else "<h1>geen bewijs</h1>", "text/html")
+        elif u.path.endswith(".html"):
+            # statische HTML-pagina's (build_static.py output) — werkt lokaal + live
+            name = os.path.basename(u.path)
+            p = os.path.join(BASE, name)
+            if os.path.isfile(p):
+                with open(p, "rb") as f:
+                    return self._send(200, f.read(), "text/html")
+            self._send(404, b"not found")
         elif u.path.startswith("/raw/"):
             name = os.path.basename(u.path)
             for sub in ("powerland", "vandotec"):

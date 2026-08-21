@@ -166,7 +166,7 @@
     <button class="sec" onclick="showSection('pillars')">Waarmee we ons onderscheiden</button>
     <button class="sec" onclick="showSection('weaknesses')">Waar zij bloeden</button>
     <button class="sec" onclick="showSection('action')">Onze zet</button>
-    <a class="sec analyse-link" onclick="showSection('action')" style="text-decoration:none;cursor:pointer">Analyse-hoofdstukken →</a>
+    <a class="sec analyse-link" href="analyse.html" target="_blank" rel="noopener" style="text-decoration:none">Analyse-hoofdstukken →</a>
   </div>
 
   <!-- ROADMAP: de keten maakt de 'waarom' zichtbaar -->
@@ -245,7 +245,7 @@ function cardHTML(x, compact){
     <b>Frequentie:</b> ${pa.frequency||'?'}</div>`:'';
   const srcLinks=(()=>{
     const naam=x.id;
-    return `<a href="raw/powerland/${x.id}.md" target="_blank" rel="noopener">[dossier] ${naam}</a>`;
+    return `<a href="dossier-${x.id}.html" target="_blank" rel="noopener">[dossier] ${naam}</a>`;
   })();
   const srcBlock=srcLinks?`<div class="row srcrow"><span class="factbadge">BRON</span> ${srcLinks}</div>`:'';
   const ev=x.evidence||[];
@@ -275,7 +275,7 @@ function cardHTML(x, compact){
     ${paHtml}
     ${evBlock}
     ${srcBlock}
-    <div class="row"><a class="detail-link" onclick="openDetail('${x.id}')" style="cursor:pointer">→ Volledige analyse van ${x.name}</a></div>
+    <div class="row"><a class="detail-link" href="concurrent-${x.id}.html" target="_blank" rel="noopener">→ Volledige analyse van ${x.name}</a></div>
   </div>`;
 }
 function openDetail(id){
