@@ -92,15 +92,21 @@ class Handler(BaseHTTPRequestHandler):
                     want = f"{parts[0]}/{parts[1]}"  # id/naam zoals in snapshot-veld
                     ev = next((e for e in c.get("evidence", []) if (e.get("snapshot") or "").replace("snapshots/","").replace(".md","").replace("\\","/") == want), None)
                     self._send(200, render_evidence(c, ev) if ev else "<h1>geen bewijs</h1>", "text/html")
-        elif u.path.startswith("/raw/") or u.path.startswith("/snapshots/"):
-            name = u.path[len("/raw/"):]
-            # veilig pad: alleen bestandsnaam, geen traversaal
-            name = os.path.basename(name)
+        elif u.path.startswith("/raw/"):
+            name = os.path.basename(u.path)
             for sub in ("powerland", "vandotec"):
                 p = os.path.join(RAW, sub, name)
                 if os.path.exists(p):
                     with open(p, "rb") as f:
                         return self._send(200, f.read(), "text/markdown")
+            self._send(404, b"not found")
+        elif u.path.startswith("/snapshots/"):
+            # serve het geneste snapshots/<id>/<ts>.md bestand (geen basename — behoud submap)
+            rel = u.path[len("/snapshots/"):].lstrip("/")
+            p = os.path.join(BASE, "snapshots", rel)
+            if os.path.isfile(p):
+                with open(p, "rb") as f:
+                    return self._send(200, f.read(), "text/markdown")
             self._send(404, b"not found")
         elif u.path == "/api/competitors":
             self._send(200, json.dumps(load_data().get("competitors", []), ensure_ascii=False))
