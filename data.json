@@ -88,7 +88,7 @@
         "their_weak": "Geen zonne-focus; weinig zichtbaar bij KMO/retail",
         "our_play": "Zet Powerland zon + EMS in als verschil bij KMO/retail waar Reeload niet zit",
         "type": "interpretation",
-        "confidence": "hoog",
+        "confidence": "midden",
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
         "note": ""
       },
@@ -276,7 +276,7 @@
         "their_weak": "B2C-zwaar, EMS niet als kernverhaal",
         "our_play": "Benader IQ Solar op B2B/EMS-ecosysteem — zij hebben dat verhaal niet",
         "type": "interpretation",
-        "confidence": "hoog",
+        "confidence": "midden",
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
         "note": ""
       },
@@ -630,7 +630,7 @@
         "their_weak": "Laadpalen bijproduct van zonne; geen sturing-verhaal",
         "our_play": "Positioneer Powerland als de enige die laad + sturing + opwek écht integreert",
         "type": "interpretation",
-        "confidence": "hoog",
+        "confidence": "midden",
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
         "note": ""
       },
@@ -919,9 +919,7 @@
           "duurzaamheid"
         ],
         "tone": "76% familiaar",
-        "offers": [
-          "Bij het eerste contact voor een offerte kreeg ik vrij snel reactie en een thuisb"
-        ],
+        "offers": [],
         "frequency": "zeer actief (20+ berichten gescand)",
         "scanned_channels": [
           "linkedin",
@@ -1156,7 +1154,7 @@
         "their_weak": "Geen installateur — andere schakel in keten",
         "our_play": "Niet bevechten; partner mogelijk (zij netwerk, wij installatie)",
         "type": "interpretation",
-        "confidence": "hoog",
+        "confidence": "midden",
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
         "note": "indirect — eerder partner dan vijand"
       },
@@ -1379,7 +1377,7 @@
         "their_weak": "Geen eigen opwek/sturing",
         "our_play": "Niet bevechten; focus op wat zij niet doen (opwek+sturing)",
         "type": "interpretation",
-        "confidence": "hoog",
+        "confidence": "midden",
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
         "note": "indirect — infra-speler"
       },
@@ -1507,9 +1505,7 @@
           "klantverhaal"
         ],
         "tone": "100% familiaar",
-        "offers": [
-          "• Track your charging progress in real-time and receive a push notification when"
-        ],
+        "offers": [],
         "frequency": "zeer actief (20+ berichten gescand)",
         "scanned_channels": [
           "appstore",
