@@ -250,7 +250,11 @@ def render_detail(c):
 
     parts.append('<h2>Bewijs</h2>')
     parts.append('<div class="card">')
-    parts.append(f"<div class='row'><span class='factbadge'>FEIT</span> <b>Positionering:</b> {positioning_display}</div>")
+    # voorkom dubbele tekst: als positionering identiek is aan de eerste evidence-quote,
+    # toon enkel de quote (niet ook de Positionering-regel)
+    first_quote = (c.get("evidence") or [{}])[0].get("quote", "")
+    if positioning_display and first_quote and positioning_display.strip() != first_quote.strip():
+        parts.append(f"<div class='row'><span class='factbadge'>FEIT</span> <b>Positionering:</b> {positioning_display}</div>")
     parts.append(evidence_links(c))
     parts.append('</div>')
 
@@ -266,14 +270,10 @@ def evidence_links(competitor):
     for ev_item in ev_list:
         if not ev_item:
             continue
-        datum_id = re.sub(
-            r"[^0-9]",
-            "",
-            ev_item.get("retrieved", "").replace(" ", "").replace(":", "").replace("-", ""),
-        )
+        snap_name = (ev_item.get("snapshot") or "").split("/")[-1].replace(".md", "")
 
         source_url = ev_item.get("source_url", "#")
-        pointer = f'<a href="/evidence/{cid}/{esc(datum_id)}" target="_blank" rel="noopener">[bewijspagina]</a>'
+        pointer = f'<a class="ev-link" href="/evidence/{cid}/{esc(snap_name)}" target="_blank" rel="noopener">Bewijs bekijken →</a>'
 
         parts.append('<div class="quote">“' + esc(ev_item.get("quote", "")) + '”</div>')
         parts.append(
@@ -322,18 +322,14 @@ def render_analysis(data):
     parts.append(f'<div class="card"><table><tr><th>Concurrent</th><th>Thema\'s</th><th>Toon</th><th>Aanbod</th><th>Frequentie</th></tr>{rows_str}</table></div>')
     parts.append("<h2>Waar bloeden ze? (zwaktes naast elkaar)</h2>")
     parts.append(f'<div class="card"><table><tr><th>Concurrent</th><th>Zwakte</th></tr>{weak_str}</table></div>')
-    parts.append(f'<div class="nav"><a href="/">Overzicht</a><a href="/concurrent/{esc(comp[0]["id"])}">Eerste concurrent</a></div>')
+    parts.append(f'<div class="nav"><a href="/">Overzicht</a> · <a href="/concurrent/{esc(comp[0]["id"])}">Eerste concurrent</a></div>')
 
     return page("Analyse", "\n".join(parts))
 
 def render_evidence(c, ev):
     cid = c["id"]
 
-    datum_id = re.sub(
-        r"[^0-9]",
-        "",
-        ev.get("retrieved", "").replace(" ", "").replace(":", "").replace("-", ""),
-    )
+    snap_name = (ev.get("snapshot") or "").split("/")[-1].replace(".md", "")
 
     source_url = ev.get("source_url", "#")
     quote = ev.get("quote", "")

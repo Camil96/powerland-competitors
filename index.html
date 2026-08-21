@@ -264,7 +264,7 @@ function cardHTML(x, compact){
   })();
   const srcBlock=srcLinks?`<div class="row srcrow"><span class="factbadge">BRON</span> ${srcLinks}</div>`:'';
   const ev=x.evidence||[];
-  const evBlock=ev.length?`<div class="evidence"><div class="ev-head"><span class="factbadge">FEIT</span> <a class="ev-url" href="${ev[0].source_url}" target="_blank" rel="noopener">${ev[0].source_url}</a><span class="ev-date">· ${ev[0].retrieved}</span></div><div class="ev-quote">“${ev[0].quote}”</div>${ev[0].snapshot?`<a class="ev-snap" href="/evidence/${(ev[0].snapshot||'').replace(/^snapshots\//,'').replace(/\.md$/,'')}" target="_blank" rel="noopener">[bewijspagina van die dag]</a>`:''}</div>`:'';
+  const evBlock=ev.length?`<div class="evidence"><div class="ev-head"><span class="factbadge">FEIT</span> <a class="ev-url" href="${ev[0].source_url}" target="_blank" rel="noopener">${ev[0].source_url}</a><span class="ev-date">· ${ev[0].retrieved}</span></div><div class="ev-quote">“${ev[0].quote}”</div>${ev[0].snapshot?`<a class="ev-snap" href="/evidence/${(ev[0].snapshot||'').replace(/^snapshots\//,'').replace(/\.md$/,'')}" target="_blank" rel="noopener">Bewijs bekijken →</a>`:''}</div>`:'';
   if(compact){
     // RUSTIGE weergave: enkel essentie + klikbaar naar detail
     return `<button type="button" class="card compact" aria-label="Toon detail van ${x.name}" onclick="openDetail('${x.id}')">
