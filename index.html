@@ -245,7 +245,7 @@ function cardHTML(x, compact){
     <b>Frequentie:</b> ${pa.frequency||'?'}</div>`:'';
   const srcLinks=(()=>{
     const naam=x.id;
-    return `<a href="/dossier/${x.id}" target="_blank" rel="noopener">[dossier] ${naam}</a>`;
+    return `<a href="raw/powerland/${x.id}.md" target="_blank" rel="noopener">[dossier] ${naam}</a>`;
   })();
   const srcBlock=srcLinks?`<div class="row srcrow"><span class="factbadge">BRON</span> ${srcLinks}</div>`:'';
   const ev=x.evidence||[];
