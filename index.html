@@ -38,12 +38,6 @@
   .mainnav button{background:none;border:none;color:#212529;font-family:var(--font);font-size:15px;font-weight:600;cursor:pointer;padding:6px 4px;transition:color .15s,border-color .15s;border-bottom:2px solid transparent}
   .mainnav button:hover{color:var(--pl-blue);border-bottom-color:var(--pl-teal)}
   .mainnav button.active{color:var(--pl-blue);border-bottom-color:var(--pl-blue)}
-  .ctrls{display:flex;align-items:center;gap:10px}
-  .ctrls .wbtn{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:var(--radius-btn);padding:9px 16px;font-size:13.5px;font-weight:600;cursor:pointer;font-family:var(--font)}
-  .ctrls .wbtn:hover{border-color:var(--pl-teal)}
-  .ctrls .lang{background:#fff;border:1px solid var(--line);border-radius:var(--radius-btn);padding:9px 12px;font-size:13.5px;font-weight:600;cursor:pointer}
-  .ctrls .bluebtn{background:var(--pl-blue);color:#fff;border:1px solid var(--pl-blue);border-radius:var(--radius-btn);padding:9px 20px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--font)}
-  .ctrls .bluebtn:hover{background:var(--pl-teal);border-color:var(--pl-teal)}
   .hamb{background:none;border:none;cursor:pointer;font-size:24px;color:var(--pl-blue);padding:4px 8px}
 
   /* ===== HERO — exact Powerland render ===== */
@@ -135,7 +129,12 @@
   .pill2.open{border-color:var(--pl-teal);color:#16483f}
   .sector-ico{width:20px;height:20px;vertical-align:middle;margin-right:5px}
   #whitespace,#pillars{display:none}
-  @media(max-width:1100px){.mainnav{display:none}}
+  .hamb{display:none}
+  @media(max-width:1100px){
+    .mainnav{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:12px 24px;gap:10px;z-index:50}
+    .mainnav.open{display:flex}
+    .hamb{display:block}
+  }
 </style>
 </head>
 <body>
@@ -153,6 +152,7 @@
       <button data-sector="zonnepanelen" onclick="filterSector(this)">Zonnepanelen</button>
       <button data-sector="energiemanagement" onclick="filterSector(this)">Energiemanagement</button>
     </nav>
+    <button class="hamb" aria-label="Toon sector-filters" onclick="toggleNav()">☰</button>
   </div>
 </header>
 
@@ -262,7 +262,7 @@ function cardHTML(x, compact){
   })();
   const srcBlock=srcLinks?`<div class="row srcrow"><span class="factbadge">BRON</span> ${srcLinks}</div>`:'';
   const ev=x.evidence||[];
-  const evBlock=ev.length?`<div class="evidence"><div class="ev-head"><span class="factbadge">FEIT</span> <a class="ev-url" href="${ev[0].source_url}" target="_blank" rel="noopener">${ev[0].source_url}</a><span class="ev-date">· ${ev[0].retrieved}</span></div><div class="ev-quote">“${ev[0].quote}”</div>${ev[0].snapshot?`<a class="ev-snap" href="/evidence/${x.id}/${ev[0].retrieved}" target="_blank" rel="noopener">[bewijspagina van die dag]</a>`:''}</div>`:'';
+  const evBlock=ev.length?`<div class="evidence"><div class="ev-head"><span class="factbadge">FEIT</span> <a class="ev-url" href="${ev[0].source_url}" target="_blank" rel="noopener">${ev[0].source_url}</a><span class="ev-date">· ${ev[0].retrieved}</span></div><div class="ev-quote">“${ev[0].quote}”</div>${ev[0].snapshot?`<a class="ev-snap" href="/evidence/${(ev[0].snapshot||'').replace(/^snapshots\//,'').replace(/\.md$/,'')}" target="_blank" rel="noopener">[bewijspagina van die dag]</a>`:''}</div>`:'';
   if(compact){
     // RUSTIGE weergave: enkel essentie + klikbaar naar detail
     return `<button type="button" class="card compact" aria-label="Toon detail van ${x.name}" onclick="openDetail('${x.id}')">
@@ -365,7 +365,9 @@ function showSection(id){
   ['competitors','whitespace','pillars','weaknesses','waaromwij','action'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
 }
 let activeSector=null;
+function toggleNav(){document.querySelector('.mainnav').classList.toggle('open');}
 function filterSector(btn){
+    document.querySelector('.mainnav').classList.remove('open');
   const sec=btn.dataset.sector;
   // toggle: klik op actieve sector -> reset
   if(activeSector===sec){activeSector=null;}
