@@ -34,12 +34,10 @@
   .brand{display:flex;flex-direction:column;line-height:1}
   .brand .logo{height:46px;width:auto}
   .brand .drive{font-size:12px;color:var(--pl-logo);font-style:italic;margin-top:3px;font-weight:500}
-  .mainnav{display:flex;gap:30px;margin:0 auto;flex:1;justify-content:center}
-  .mainnav button{background:none;border:none;color:#212529;font-family:var(--font);font-size:15px;font-weight:600;cursor:pointer;padding:6px 4px;transition:color .15s,border-color .15s;border-bottom:2px solid transparent}
+    .mainnav button{background:none;border:none;color:#212529;font-family:var(--font);font-size:15px;font-weight:600;cursor:pointer;padding:6px 4px;transition:color .15s,border-color .15s;border-bottom:2px solid transparent}
   .mainnav button:hover{color:var(--pl-blue);border-bottom-color:var(--pl-teal)}
   .mainnav button.active{color:var(--pl-blue);border-bottom-color:var(--pl-blue)}
-  .hamb{background:none;border:none;cursor:pointer;font-size:24px;color:var(--pl-blue);padding:4px 8px}
-
+  
   /* ===== HERO — exact Powerland render ===== */
   .hero{position:relative;width:100%;max-height:620px;overflow:hidden;margin-bottom:var(--gap)}
   .hero img{width:100%;display:block;object-fit:cover}
@@ -129,14 +127,10 @@
   .pill2{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:33px;padding:5px 14px;margin:3px;font-size:12.5px;font-weight:600}
   .pill2.hot{border-color:#d29922;color:#8a6400}
   .pill2.open{border-color:var(--pl-teal);color:#16483f}
-  .sector-ico{width:20px;height:20px;vertical-align:middle;margin-right:5px}
   #whitespace,#pillars{display:none}
-  .hamb{display:none}
-  @media(max-width:1100px){
-    .mainnav{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;padding:12px 24px;gap:10px;z-index:50}
-    .mainnav.open{display:flex}
-    .hamb{display:block}
-  }
+    @media(max-width:1100px){
+        .mainnav.open{display:flex}
+      }
 </style>
 </head>
 <body>
@@ -148,13 +142,6 @@
       <img class="logo" src="assets/logo.svg" alt="Powerland">
       <span class="drive">Fight the average.</span>
     </div>
-    <nav class="mainnav">
-      <button data-sector="laadinfrastructuur" onclick="filterSector(this)">Laadinfrastructuur</button>
-      <button data-sector="batterijopslag" onclick="filterSector(this)">Batterijopslag</button>
-      <button data-sector="zonnepanelen" onclick="filterSector(this)">Zonnepanelen</button>
-      <button data-sector="energiemanagement" onclick="filterSector(this)">Energiemanagement</button>
-    </nav>
-    <button class="hamb" aria-label="Toon sector-filters" onclick="toggleNav()">☰</button>
   </div>
 </header>
 
@@ -224,7 +211,6 @@
 
 <script>
 let DATA=null;
-const ICO={laadinfrastructuur:'assets/charging-station.svg',batterijopslag:'assets/battery.svg',zonnepanelen:'assets/solar-panel.svg',energiemanagement:'assets/network.svg'};
 async function load(){
   try{const r=await fetch('data.json');DATA=await r.json();}
   catch(e){document.getElementById('cards').innerHTML='<p class="note">Kon data.json niet laden.</p>';return;}
@@ -247,10 +233,9 @@ function renderStats(){
     <div class="kpi partial"><div class="n">${p}</div><div class="l">Gedeeltelijk</div></div>
     <div class="kpi indirect"><div class="n">${i}</div><div class="l">Indirect</div></div>`;
 }
-function ico(s){return ICO[s]?`<img class="sector-ico" src="${ICO[s]}" alt="">`:''}
 function cardHTML(x, compact){
   const pct=(x.overlap_score_powerland/5*100);
-  const tags=(x.sectors||[]).map(s=>`<span class="tag">${ico(s)}${s}</span>`).join('');
+  const tags=(x.sectors||[]).map(s=>`<span class="tag">${s}</span>`).join('');
   const soc=Object.entries(x.social_channels||{}).filter(([k,v])=>v&&v.url).map(([k,v])=>`<a href="${v.url}" target="_blank" rel="noopener">${k}</a>`).join(' · ')||'n.v.t.';
   const pa=x.post_analysis||{};
   const paHtml=pa.themes?`<div class="row srcrow"><span class="factbadge">POSTS</span>
@@ -306,7 +291,6 @@ function renderCards(){
   let list=DATA.competitors.slice();
   const cat=document.getElementById('fCat').value;
   if(cat!=='all')list=list.filter(x=>x.category===cat);
-  if(activeSector)list=list.filter(x=>(x.sectors||[]).includes(activeSector));
   // default: overlap met Powerland (hoog->laag)
   list.sort((a,b)=>b.overlap_score_powerland-a.overlap_score_powerland);
   document.getElementById('cards').innerHTML=list.map(c=>cardHTML(c, viewCompact)).join('');
@@ -366,19 +350,6 @@ function renderRoadmap(){
 }
 function showSection(id){
   ['competitors','whitespace','pillars','weaknesses','waaromwij','action'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
-}
-let activeSector=null;
-function toggleNav(){document.querySelector('.mainnav').classList.toggle('open');}
-function filterSector(btn){
-    document.querySelector('.mainnav').classList.remove('open');
-  const sec=btn.dataset.sector;
-  // toggle: klik op actieve sector -> reset
-  if(activeSector===sec){activeSector=null;}
-  else{activeSector=sec;}
-  document.querySelectorAll('.mainnav button').forEach(b=>b.classList.toggle('active', b.dataset.sector===activeSector));
-  // reset categorie-dropdown zodat de sector-filter niet conflicteert
-  document.getElementById('fCat').value='all';
-  renderCards();
 }
 document.getElementById('fCat').addEventListener('change',renderCards);
 showSection('competitors');
