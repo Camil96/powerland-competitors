@@ -1,4 +1,4 @@
-# Electra — nieuws/acties extract (2026-08-12 08:00 UTC)
+# Electra — nieuws/acties extract (2026-08-17 06:05 UTC)
 
 - Host een station en genereer nieuwe inkomsten.
 - Electra-laadstations zijn compatibel met alle elektrische voertuigen, van compacte stadsauto’s tot SUV’s en de nieuwste elektrische modellen.

@@ -1,1 +1,1 @@
-C:/Users/camil.sahnoune/competitive-intel/publish\snapshots\electra\20260811-1155.md
+C:/Users/camil.sahnoune/competitive-intel/publish\snapshots\electra\20260817-0605.md
