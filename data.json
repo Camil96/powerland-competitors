@@ -199,6 +199,249 @@
           "facebook"
         ],
         "n_real_posts": 16
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "Zonder toestemming werken sommige functies mogelijk niet goed.",
+            "length": 8,
+            "hook": "Zonder toestemming werken sommige functies mogelijk niet goe",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Reeload realiseert energiezekerheid en capaciteit waarop bedrijven kunnen bouwen Een Vlotte Installatie, Correct Uitgevoerd Wij ondersteunen u als klant bij het snel, betrouwbaar en overzichtelijk realiseren van complexe energie-installaties – zonder ruis, zonder vertraging.",
+            "length": 34,
+            "hook": "Reeload realiseert energiezekerheid en capaciteit waarop bed",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Reeload ondersteunt de energietransitie met betrouwbare technische uitvoering voor laadoplossingen, hoogspanning en batterijopslag.",
+            "length": 13,
+            "hook": "Reeload ondersteunt de energietransitie met betrouwbare tech",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Efficiënt geplaatst, correct opgeleverd en afgestemd op de noden van uw project.",
+            "length": 12,
+            "hook": "Efficiënt geplaatst, correct opgeleverd en afgestemd op de n",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Neem Contact Wat ons dé keuze maakt voor uw project.",
+            "length": 10,
+            "hook": "Neem Contact Wat ons dé keuze maakt voor uw project.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Reeload is uw technische partner voor een correcte en volledige uitvoering van energieprojecten.",
+            "length": 13,
+            "hook": "Reeload is uw technische partner voor een correcte en volled",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Wij werken nauw samen met onze klanten en zorgen voor een betrouwbare installatie van snelladers, batterijsystemen en hoogspanningsstations — afgestemd op uw planning en locatie.",
+            "length": 25,
+            "hook": "Wij werken nauw samen met onze klanten en zorgen voor een be",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Van eerste analyse tot langdurige ondersteuning: wij zorgen voor overzicht, kwaliteit en heldere communicatie.",
+            "length": 14,
+            "hook": "Van eerste analyse tot langdurige ondersteuning: wij zorgen ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "01 Analyse & Haalbaarheid We starten met een plaatsbezoek en eventuele netstudie om de technische mogelijkheden te evalueren en het projectkader scherp te definiëren.",
+            "length": 24,
+            "hook": "01 Analyse & Haalbaarheid We starten met een plaatsbezoek en",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "02 Voorstel & Technisch Plan Na engineering ontvangt u een concreet voorstel en een uitgewerkt plan met alle nodige technische details.",
+            "length": 21,
+            "hook": "02 Voorstel & Technisch Plan Na engineering ontvangt u een c",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "03 Uitvoering & Afwerking Onze eigen teams staan in voor de volledige uitvoering – van de civiele werken tot en met de oplevering – met opvolging en rapportering op elk moment.",
+            "length": 31,
+            "hook": "03 Uitvoering & Afwerking Onze eigen teams staan in voor de ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "04 Reeload Care Na installatie zorgen we voor betrouwbare opvolging en onderhoud, aangepast aan uw specifieke situatie.",
+            "length": 17,
+            "hook": "04 Reeload Care Na installatie zorgen we voor betrouwbare op",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Neem Contact of bel +32 2 669 66 33 Van plan tot praktijk: enkele van onze referenties Samen met ontwikkelaars en experts bouwen we aan deze projecten – en aan de energietransitie van morgen.",
+            "length": 34,
+            "hook": "Neem Contact of bel +32 2 669 66 33 Van plan tot praktijk: e",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "2026 byReeload Waarom Uw Elektrificatieproject Al Vastloopt Vóór De Werken Starten Maart 12.",
+            "length": 13,
+            "hook": "2026 byReeload Waarom Uw Elektrificatieproject Al Vastloopt ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "2026 byReeload Duitsland Neemt 25,1% Belang In TenneT Februari 28.",
+            "length": 10,
+            "hook": "2026 byReeload Duitsland Neemt 25,1% Belang In TenneT Februa",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Het Nieuwe Regelkader Voor Laadinfrastructuur Februari 18.",
+            "length": 7,
+            "hook": "Het Nieuwe Regelkader Voor Laadinfrastructuur Februari 18.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "2026 byReeload EU-Netcapaciteit Onder Druk.",
+            "length": 5,
+            "hook": "2026 byReeload EU-Netcapaciteit Onder Druk.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "EV-Depots Voorbereiden Op 2027 Januari 08.",
+            "length": 6,
+            "hook": "EV-Depots Voorbereiden Op 2027 Januari 08.",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "2026 byReeload FAQ Wat is de terugverdientijd van een hoogspanningsinstallatie?",
+            "length": 10,
+            "hook": "2026 byReeload FAQ Wat is de terugverdientijd van een hoogsp",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Dankzij de lagere energietarieven op hoogspanningsvoorzieningen betalen deze investeringen zich sneller terug dan je zou denken.",
+            "length": 16,
+            "hook": "Dankzij de lagere energietarieven op hoogspanningsvoorzienin",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Veel klanten verdienen de kosten van een hoogspanningsstation terug in ongeveer 4 tot 5 jaar door elektriciteitsbesparingen.",
+            "length": 17,
+            "hook": "Veel klanten verdienen de kosten van een hoogspanningsstatio",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Na dat break-evenpunt blijft u besparen met elke kilowattuur, waardoor hoogspanning op lange termijn een slimme keuze is voor intensief opladen.",
+            "length": 21,
+            "hook": "Na dat break-evenpunt blijft u besparen met elke kilowattuur",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Kan ik bij Reeload terecht voor onderhoud en opvolging?",
+            "length": 9,
+            "hook": "Kan ik bij Reeload terecht voor onderhoud en opvolging?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "In welke regio’s is Reeload actief en wie zijn jullie klanten?",
+            "length": 11,
+            "hook": "In welke regio’s is Reeload actief en wie zijn jullie klante",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Wij bouwen mee aan de ruggengraat van de elektrificatie: van snelle laadstations voor elektrische voertuigen tot hoogspanningsaansluitingen en geïntegreerde batterijopslagsystemen.",
+            "length": 20,
+            "hook": "Wij bouwen mee aan de ruggengraat van de elektrificatie: van",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Vanaf de eerste ontwerpstudie tot de uiteindelijke ingebruikname nemen wij het volledige traject in eigen beheer – inclusief engineering, uitvoering én het onderhoud van uw installaties Waarom is Reeload de beste keuze voor mijn laadproject?",
+            "length": 35,
+            "hook": "Vanaf de eerste ontwerpstudie tot de uiteindelijke ingebruik",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Heb ik echt een hoogspanningsstation nodig om laadpalen te plaatsen?",
+            "length": 10,
+            "hook": "Heb ik echt een hoogspanningsstation nodig om laadpalen te p",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Reeload installeert de infrastructuur die je site live krijgt en houdt.",
+            "length": 11,
+            "hook": "Reeload installeert de infrastructuur die je site live krijg",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          }
+        ],
+        "themes": [
+          "techniek",
+          "klantverhaal",
+          "duurzaamheid"
+        ],
+        "tone": "53% familiaar",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "ontdek/bekijk",
+          "vraag/contact"
+        ],
+        "n_items": 28,
+        "source": "website"
       }
     },
     {
@@ -388,6 +631,345 @@
           "facebook"
         ],
         "n_real_posts": 16
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "Daarom helpen wij particulieren en bedrijven in België met duurzame energie, van advies tot installatie en opvolging.",
+            "length": 17,
+            "hook": "Daarom helpen wij particulieren en bedrijven in België met d",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Particulieren Bedrijven IQ Solar schenkt zonnepanelen aan vijf Gentse gezinnen Bij IQ Solar geloven we dat duurzame energie voor iedereen toegankelijk moet zijn.",
+            "length": 23,
+            "hook": "Particulieren Bedrijven IQ Solar schenkt zonnepanelen aan vi",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Daarom schonken we ter gelegenheid van ons vijfjarig bestaan vijf Gentse gezinnen een volledige zonnepaneleninstallatie, een jaarlijks engagement dat we willen blijven herhalen.",
+            "length": 23,
+            "hook": "Daarom schonken we ter gelegenheid van ons vijfjarig bestaan",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Zo helpen we gezinnen die het financieel moeilijk hebben hun energiefactuur te verlagen, meer zekerheid op te bouwen en hun wooncomfort te verbeteren.",
+            "length": 23,
+            "hook": "Zo helpen we gezinnen die het financieel moeilijk hebben hun",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Want verduurzamen gaat voor ons niet alleen over technologie, maar vooral over mensen.",
+            "length": 13,
+            "hook": "Want verduurzamen gaat voor ons niet alleen over technologie",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Ons engagement Met steun van Stad Gent en de Vlaamse minister van Energie Ons initiatief werd gesteund door zowel de Stand Gent als de Vlaamse minister van Energie, Melissa Depraetere.",
+            "length": 30,
+            "hook": "Ons engagement Met steun van Stad Gent en de Vlaamse ministe",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Bovendien woonde de minister persoonlijk de installatie van één van de gezinnen bij.",
+            "length": 13,
+            "hook": "Bovendien woonde de minister persoonlijk de installatie van ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Daarnaast gaat het om meer dan technologie: het creëert kansen en draagt bij aan een duurzame toekomst voor iedereen.",
+            "length": 19,
+            "hook": "Daarnaast gaat het om meer dan technologie: het creëert kans",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Zoals minister Depraetere benadrukte: “We kunnen pas ambitieus zijn voor ons klimat als iedereen kan meedoen.",
+            "length": 16,
+            "hook": "Zoals minister Depraetere benadrukte: “We kunnen pas ambitie",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Dit initiatief van IQ Solar helpt gezinnen investeren in de energie van de toekomst en versterkt tegelijk hun koopkracht.” Laten we vrijblijvend kennis maken Jouw totaalpartner voor hernieuwbare energie IQ Solar ontstond vanuit de passie voor hernieuwbare energie en haar vele voordelen.",
+            "length": 42,
+            "hook": "Dit initiatief van IQ Solar helpt gezinnen investeren in de ",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "De voorbije jaren kenden we een mooie groei en vandaag mogen we onszelf totaalpartner noemen op het vlak van groene energie.",
+            "length": 21,
+            "hook": "De voorbije jaren kenden we een mooie groei en vandaag mogen",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "We ontzorgen onze klant van het eerste advies tot de installatie en dienst na verkoop.",
+            "length": 15,
+            "hook": "We ontzorgen onze klant van het eerste advies tot de install",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Onze klant staat altijd op de eerste plaats!",
+            "length": 8,
+            "hook": "Onze klant staat altijd op de eerste plaats!",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Samen gaan we voor de slimste strategie op maat van jouw wensen en behoeften.",
+            "length": 14,
+            "hook": "Samen gaan we voor de slimste strategie op maat van jouw wen",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Van een op maat gemaakte offerte en gratis adviesgesprek tot vakkundige installatie – wij maken je overstap zorgeloos.",
+            "length": 18,
+            "hook": "Van een op maat gemaakte offerte en gratis adviesgesprek tot",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "0+ Onafhankelijke gezinnen 0+ MW energie Top 3 Installateurs van België Afspraken netjes op tijd, topadvies en professionele plaatsing door vakmannen.",
+            "length": 21,
+            "hook": "0+ Onafhankelijke gezinnen 0+ MW energie Top 3 Installateurs",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "| Pelt Meer reviews Zonnepanelen en energieoplossingen voor bedrijven Elke besparing telt voor jouw onderneming!",
+            "length": 15,
+            "hook": "| Pelt Meer reviews Zonnepanelen en energieoplossingen voor ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Laat de zon jouw energie opwekken en bespaar aanzienlijk op je energiefactuur.",
+            "length": 12,
+            "hook": "Laat de zon jouw energie opwekken en bespaar aanzienlijk op ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Bovendien vergroot dit de winst van je bedrijf en bereidt je tegelijkertijd voor op een duurzame toekomst.",
+            "length": 17,
+            "hook": "Bovendien vergroot dit de winst van je bedrijf en bereidt je",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Nood aan deskundig advies op maat van jouw onderneming?",
+            "length": 9,
+            "hook": "Nood aan deskundig advies op maat van jouw onderneming?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "IQ Solar is jouw betrouwbare partner voor zonnepanelen, energie-audits, laadstations en de monitoring van jouw installaties.",
+            "length": 16,
+            "hook": "IQ Solar is jouw betrouwbare partner voor zonnepanelen, ener",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Samen realiseren we duurzame oplossingen op maat.",
+            "length": 7,
+            "hook": "Samen realiseren we duurzame oplossingen op maat.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Lees meer zonnepanelen en energieoplossingen voor particulieren Hernieuwbare energie is de toekomst.",
+            "length": 12,
+            "hook": "Lees meer zonnepanelen en energieoplossingen voor particulie",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Daardoor wek je met zonnepanelen je eigen stroom op en verlaag je je energiekosten.",
+            "length": 14,
+            "hook": "Daardoor wek je met zonnepanelen je eigen stroom op en verla",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Wil je jouw opgewekte energie optimaal benutten?",
+            "length": 7,
+            "hook": "Wil je jouw opgewekte energie optimaal benutten?",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Dan kunnen thuisbatterijen en laadpalen een uitstekende aanvulling zijn.",
+            "length": 9,
+            "hook": "Dan kunnen thuisbatterijen en laadpalen een uitstekende aanv",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Wij bieden advies dat bij jouw behoeften past.",
+            "length": 8,
+            "hook": "Wij bieden advies dat bij jouw behoeften past.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Lees meer Waarom zijn wij jouw ideale partner?",
+            "length": 8,
+            "hook": "Lees meer Waarom zijn wij jouw ideale partner?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "3.000+ plaatsingen & tevreden klanten De afgelopen jaren hebben we tal van klanten begeleid in hun energietransitie.",
+            "length": 17,
+            "hook": "3.000+ plaatsingen & tevreden klanten De afgelopen jaren heb",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Momenteel hebben we meer dan 3.000 installaties gerealiseerd.",
+            "length": 8,
+            "hook": "Momenteel hebben we meer dan 3.000 installaties gerealiseerd",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Benieuwd naar wat we voor jou kunnen betekenen?",
+            "length": 8,
+            "hook": "Benieuwd naar wat we voor jou kunnen betekenen?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Laten we kennismaken Binnen 3-4 weken geïnstalleerd Zodra je de knoop hebt doorgehakt en de vele voordelen van zonnepanelen kent, wil je ze het liefst vandaag nog op je dak.",
+            "length": 30,
+            "hook": "Laten we kennismaken Binnen 3-4 weken geïnstalleerd Zodra je",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Dat begrijpen wij volledig, en daarom garanderen wij een installatie binnen 3-4 weken na goedkeuring van je offerte.",
+            "length": 18,
+            "hook": "Dat begrijpen wij volledig, en daarom garanderen wij een ins",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Boek jouw kennismakingsgesprek Bespaar fors op jouw energiefactuur Met zonnepanelen verlaag je je energiekosten aanzienlijk.",
+            "length": 15,
+            "hook": "Boek jouw kennismakingsgesprek Bespaar fors op jouw energief",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Gemiddeld verdien je die binnen 5 jaar terug!",
+            "length": 8,
+            "hook": "Gemiddeld verdien je die binnen 5 jaar terug!",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Vertrouw op de zon voor je eigen groene stroom en kies voor IQ Solar om je energie optimaal te benutten!",
+            "length": 20,
+            "hook": "Vertrouw op de zon voor je eigen groene stroom en kies voor ",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Vraag je offerte aan Kwaliteit gegarandeerd Leverancier van topmerken en hoogwaardige producten Bij IQ Solar kiezen we uitsluitend voor topmerken en hoogwaardige producten.",
+            "length": 23,
+            "hook": "Vraag je offerte aan Kwaliteit gegarandeerd Leverancier van ",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Zo garanderen we de beste kwaliteit en haal jij het maximale uit je installatie.",
+            "length": 14,
+            "hook": "Zo garanderen we de beste kwaliteit en haal jij het maximale",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Jouw betrouwbare partner: van het eerste contact tot de installatie Bij IQ Solar installeren we niet zomaar producten.",
+            "length": 18,
+            "hook": "Jouw betrouwbare partner: van het eerste contact tot de inst",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Aan onze installaties gaat steeds een grondige analyse vooraf en advies op maat van jouw wensen en behoeften.",
+            "length": 18,
+            "hook": "Aan onze installaties gaat steeds een grondige analyse voora",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          }
+        ],
+        "themes": [
+          "duurzaamheid",
+          "techniek",
+          "klantverhaal"
+        ],
+        "tone": "86% familiaar",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "vraag/contact",
+          "ontdek/bekijk"
+        ],
+        "n_items": 40,
+        "source": "website"
       }
     },
     {
@@ -563,6 +1145,78 @@
           "youtube"
         ],
         "n_real_posts": 14
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "Aller au contenu Facebook Linkedin Youtube Search ...",
+            "length": 8,
+            "hook": "Aller au contenu Facebook Linkedin Youtube Search ...",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Récemment, la presse a mis en LIRE LA SUITE » 02/06/2026 ACTUALITÉS Ceratec : 40 Ans d’Innovation et d’Ingénierie au Service de l’Industrie Depuis sa fondation en 1986, le groupe Ceratec a connu une évolution technologique majeure.",
+            "length": 37,
+            "hook": "Récemment, la presse a mis en LIRE LA SUITE » 02/06/2026 ACT",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "service"
+          },
+          {
+            "text": "Initialement structurée comme une entreprise familiale orientée vers des solutions mécaniques LIRE LA SUITE » 28/04/2026 ACTUALITÉS Ceratec nominée pour le Family Business Award !",
+            "length": 25,
+            "hook": "Initialement structurée comme une entreprise familiale orien",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Ceratec fait partie des quatre finalistes du Family Business Award of Excellence®, présenté par EY.",
+            "length": 15,
+            "hook": "Ceratec fait partie des quatre finalistes du Family Business",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Ce conseil offre des conseils stratégiques et fait office de sparring-partner pour LIRE LA SUITE » 20/11/2025 Ressentez l’énorme force chez Ceratec.",
+            "length": 22,
+            "hook": "Ce conseil offre des conseils stratégiques et fait office de",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "En tant que société familiale dynamique, nous recevons l’énergie de nos 500 collaborateurs enthousiastes.",
+            "length": 14,
+            "hook": "En tant que société familiale dynamique, nous recevons l’éne",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Nos spécialistes partagent leur passion pour la technique, la qualité et l’innovation.",
+            "length": 12,
+            "hook": "Nos spécialistes partagent leur passion pour la technique, l",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          }
+        ],
+        "themes": [
+          "service"
+        ],
+        "tone": "neutraal",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "ontdek/bekijk"
+        ],
+        "n_items": 7,
+        "source": "website"
       }
     },
     {
@@ -704,6 +1358,152 @@
           "linkedin"
         ],
         "n_real_posts": 9
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "ZONNEPARKEN Elektrische laadinfrastructuur als directe gebruiker van uw geproduceerde zonne-energie.",
+            "length": 10,
+            "hook": "ZONNEPARKEN Elektrische laadinfrastructuur als directe gebru",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "LAADINFRASTRUCTUUR Oplossingen op maat van KMO’s, productiebedrijven, retail, landbouw,… SECTOREN Optimizing your energy Als professionele partner ontwerpt, bouwt en onderhoudt ExtraPower zonne-energie installaties op maat.",
+            "length": 25,
+            "hook": "LAADINFRASTRUCTUUR Oplossingen op maat van KMO’s, productieb",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Vanuit onze kennis en expertise begeleiden wij grote en kleine bedrijven naar een rendabel en duurzaam energiebeleid.",
+            "length": 17,
+            "hook": "Vanuit onze kennis en expertise begeleiden wij grote en klei",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "ExtraPower draagt veiligheid hoog in het vaandel!",
+            "length": 7,
+            "hook": "ExtraPower draagt veiligheid hoog in het vaandel!",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "In ons bedrijf beseffen we heel goed dat veiligheid op de werf een absolute must is.",
+            "length": 16,
+            "hook": "In ons bedrijf beseffen we heel goed dat veiligheid op de we",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "We zijn dan ook heel trots recent het VCA**-certificaat te hebben behaald.",
+            "length": 12,
+            "hook": "We zijn dan ook heel trots recent het VCA**-certificaat te h",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Hiermee leggen we zowel onszelf als onze onderaannemers strenge veiligheidsnormen op.",
+            "length": 11,
+            "hook": "Hiermee leggen we zowel onszelf als onze onderaannemers stre",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "VCA**-CERTIFICAAT STUWT EXTRAPOWER NAAR HOGER NIVEAU Opportunities in power!",
+            "length": 9,
+            "hook": "VCA**-CERTIFICAAT STUWT EXTRAPOWER NAAR HOGER NIVEAU Opportu",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Commscope Leuven Leuven UZ Gent Gent Vandemoortele Ghislenghien UZ Jette - Menapy Jette CGK GROUP Gullegem Wijnegem Shopping Center Wijnegem ALLE PROJECTEN 22 okt 2025 Nieuw filiaal in Duitsland versterkt pan-Europese groei Sinds begin oktober beschikt ExtraPower over een eigen vestiging artikel lezen 21 aug 2025 Bio-Dynamics en ExtraPower slaan de handen in elkaar.",
+            "length": 54,
+            "hook": "Commscope Leuven Leuven UZ Gent Gent Vandemoortele Ghislengh",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Wij, bij ExtraPower bouwen graag mee aan een duurzame toekomst!",
+            "length": 10,
+            "hook": "Wij, bij ExtraPower bouwen graag mee aan een duurzame toekom",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "artikel lezen 19 mrt 2025 ExtraPower heeft het certificaat aannemersklasse 5 behaald We kondigen met trots aan dat we, naast een VCA** en Rescert artikel lezen 22 nov 2024 ExtraPower en EMLODA huldigen samen de batterij in de Vaartdijk Business Center.",
+            "length": 41,
+            "hook": "artikel lezen 19 mrt 2025 ExtraPower heeft het certificaat a",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Onze tevreden klanten ExtraPower Industriepark Oost 27 8730 Beernem T.",
+            "length": 10,
+            "hook": "Onze tevreden klanten ExtraPower Industriepark Oost 27 8730 ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Functionele cookies Cookies die nodig zijn om de website normaal te laten functioneren.",
+            "length": 13,
+            "hook": "Functionele cookies Cookies die nodig zijn om de website nor",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Deze gegevens helpen ons om onze website beter te doen werken.",
+            "length": 11,
+            "hook": "Deze gegevens helpen ons om onze website beter te doen werke",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Marketing cookies Cookies die ons helpen op u relevante inhoud te tonen.",
+            "length": 12,
+            "hook": "Marketing cookies Cookies die ons helpen op u relevante inho",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Voorkeuren opslaan ALLE COOKIES ACCEPTEREN",
+            "length": 5,
+            "hook": "Voorkeuren opslaan ALLE COOKIES ACCEPTEREN",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          }
+        ],
+        "themes": [
+          "duurzaamheid",
+          "techniek",
+          "klantverhaal"
+        ],
+        "tone": "71% familiaar",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "vraag/contact"
+        ],
+        "n_items": 16,
+        "source": "website"
       }
     },
     {
@@ -970,6 +1770,121 @@
           "youtube"
         ],
         "n_real_posts": 30
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "Ook delen we informatie over uw gebruik van onze site met onze partners voor social media, adverteren en analyse.",
+            "length": 19,
+            "hook": "Ook delen we informatie over uw gebruik van onze site met on",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Deze partners kunnen deze gegevens combineren met andere informatie die u aan ze heeft verstrekt of die ze hebben verzameld op basis van uw gebruik van hun services.",
+            "length": 28,
+            "hook": "Deze partners kunnen deze gegevens combineren met andere inf",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "De wereld van groene energie ontwikkelt zich razendsnel, en met onze expertise helpen wij je maximaal te profiteren van deze evoluties.",
+            "length": 21,
+            "hook": "De wereld van groene energie ontwikkelt zich razendsnel, en ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Naast energieopwekking kan overtollige energie worden opgeslagen of gebruikt worden om het bedrijfswagenpark op te laden.",
+            "length": 16,
+            "hook": "Naast energieopwekking kan overtollige energie worden opgesl",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Voeg daar een geavanceerd energiemanagementsysteem aan toe, en je beschikt over een compleet geïntegreerd ecosysteem dat jouw bedrijf versterkt.",
+            "length": 19,
+            "hook": "Voeg daar een geavanceerd energiemanagementsysteem aan toe, ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Jouw bedrijf voorzien van een betrouwbaar, efficiënt en toekomstbestendig energiesysteem dat bijdraagt aan jouw succes op de lange termijn.",
+            "length": 19,
+            "hook": "Jouw bedrijf voorzien van een betrouwbaar, efficiënt en toek",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Laten we samen een duurzame stap vooruit zetten.",
+            "length": 8,
+            "hook": "Laten we samen een duurzame stap vooruit zetten.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Zo ziet het bedrijf van morgen eruit Maak jouw bedrijf future proof De weg naar duurzaam ondernemen Start hier Subsidies & Wetgeving Meer info Onderhoud & Garantie Meer info Advies nodig?",
+            "length": 31,
+            "hook": "Zo ziet het bedrijf van morgen eruit Maak jouw bedrijf futur",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Zonnepanelen met industriële batterij en EMS.",
+            "length": 6,
+            "hook": "Zonnepanelen met industriële batterij en EMS.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Industriële projecten Karel Sterckx Bekijk de video LCL Data Centers Bekijk de video Codipack Bekijk de video Dovy Keukens Bekijk de video Brouwerij Vanhonsebrouck Bekijk de video Floren Bekijk de video Arco Bekijk de video Onze partners garanderen topkwaliteit: MR Solar, trotse sponsor van Lotto Cycling Team.",
+            "length": 47,
+            "hook": "Industriële projecten Karel Sterckx Bekijk de video LCL Data",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Trap je met ons mee richting duurzame energie?",
+            "length": 8,
+            "hook": "Trap je met ons mee richting duurzame energie?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "#volvermogen⚡ #pleinepuissance⚡#peakpower⚡ MR Solar en Lotto Cycling Team Vertrouw op 15 jaar ervaring en meer dan 40.000 installaties Contacteer onze experten: +32 56 90 00 00 info@mrsolar.be We zijn bereikbaar van 9:00-12:00 en 13:00-16:30 uur.",
+            "length": 35,
+            "hook": "#volvermogen⚡ #pleinepuissance⚡#peakpower⚡ MR Solar en Lotto",
+            "emoji_count": 3,
+            "cta": "ja",
+            "theme": "klantverhaal"
+          }
+        ],
+        "themes": [
+          "duurzaamheid",
+          "techniek",
+          "service"
+        ],
+        "tone": "55% formeel",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "ontdek/bekijk",
+          "vraag/contact"
+        ],
+        "n_items": 12,
+        "source": "website"
       }
     },
     {
@@ -1081,6 +1996,71 @@
           "facebook"
         ],
         "n_real_posts": 5
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "zorgt ervoor dat je slim en ecologisch omgaat met energie.",
+            "length": 10,
+            "hook": "zorgt ervoor dat je slim en ecologisch omgaat met energie.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "0 We worden verdeler van Hoxter inbouwhaarden, Paterno pelletkachels, DAN SKAN en Lohberger houtkachels allen met optie tot ondersteuning van centrale verwarming en sanitair warm water.",
+            "length": 26,
+            "hook": "0 We worden verdeler van Hoxter inbouwhaarden, Paterno pelle",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "We openen in het najaar een toonzaal in Volpenswege 56A, Sleidinge.",
+            "length": 11,
+            "hook": "We openen in het najaar een toonzaal in Volpenswege 56A, Sle",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Meer over ons NIEUWS moutainbiken voor beter onderwijs in Afrika met Vélo Afrique Werken tijdens corona-maatregelen CERGA kwaliteitslabel voor gasinstallateurs.",
+            "length": 20,
+            "hook": "Meer over ons NIEUWS moutainbiken voor beter onderwijs in Af",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Eindejaarsperiode Onze diensten INSTALLATIE ZONNEPANELEN VERWARMING EN WARM WATER ELEKTRICITEIT EN DOMOTICA Onze producten Installatie Zonnepanelen ZONNEPANELEN LG SOLAR Elektriciteit en domotica LAADPALEN Verwarming en warm water HOXTER INBOUWHAARDEN Contacteer ons vrijblijvend voor meer informatie en prijzen CONTACTFORMULIER Moerman Torre Technieken B.V.",
+            "length": 42,
+            "hook": "Eindejaarsperiode Onze diensten INSTALLATIE ZONNEPANELEN VER",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "duurzaamheid"
+          },
+          {
+            "text": "Copyright © 1997 - 2026 Installatie Zonnepanelen Verwarming en warm water Elektriciteit en domotica Algemene voorwaarden",
+            "length": 16,
+            "hook": "Copyright © 1997 - 2026 Installatie Zonnepanelen Verwarming ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "duurzaamheid"
+          }
+        ],
+        "themes": [
+          "duurzaamheid",
+          "techniek"
+        ],
+        "tone": "100% familiaar",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "vraag/contact"
+        ],
+        "n_items": 6,
+        "source": "website"
       }
     },
     {
@@ -1299,6 +2279,321 @@
           "linkedin"
         ],
         "n_real_posts": 22
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "NL Download de app De Electra-laadpas is er!",
+            "length": 8,
+            "hook": "NL Download de app De Electra-laadpas is er!",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Bestel nu de jouwe en krijg toegang tot opladen in heel Europa.",
+            "length": 12,
+            "hook": "Bestel nu de jouwe en krijg toegang tot opladen in heel Euro",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "Ontdekken Het grootste laadnetwerk voor elektrische voertuigen Snelle laadpunten overal in Europa Vind een laadstation Ervaar de vrijheid van moeiteloos opladen.",
+            "length": 21,
+            "hook": "Ontdekken Het grootste laadnetwerk voor elektrische voertuig",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "Geen wachtrijen, geen gedoe, alleen maar magie.",
+            "length": 7,
+            "hook": "Geen wachtrijen, geen gedoe, alleen maar magie.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Onze oplaadervaring 20min voor 400km, vertrek in een mum van tijd Plug in en ontspan, wij vertellen u wanneer u terug moet komen Autocharge, routeplanner...",
+            "length": 25,
+            "hook": "Onze oplaadervaring 20min voor 400km, vertrek in een mum van",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "en nog veel meer met de Electra-app Reeds bij u in de buurt of bijna Al onze stations in je broekzak 4.5/5 in de app stores Download 773 Beschikbare stations 65 Komende stations Ergens anders opladen?",
+            "length": 36,
+            "hook": "en nog veel meer met de Electra-app Reeds bij u in de buurt ",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "Met de Electra-laadpas laad je naast onze stations op elk netwerk in heel Europa.",
+            "length": 14,
+            "hook": "Met de Electra-laadpas laad je naast onze stations op elk ne",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Eén pas om op te laden en te betalen, tegen een eerlijke prijs.",
+            "length": 13,
+            "hook": "Eén pas om op te laden en te betalen, tegen een eerlijke pri",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Ontdek de Electra-pas Wij zijn Electra en wij brengen u verder We herdenken het opladen van voertuigen om betrouwbaarder te zijn op een manier waarbij u steeds op de eerste plaats staat.",
+            "length": 32,
+            "hook": "Ontdek de Electra-pas Wij zijn Electra en wij brengen u verd",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "Ons doel is om de lat steeds hoger te leggen zodanig dat alles beter voor u werkt.",
+            "length": 17,
+            "hook": "Ons doel is om de lat steeds hoger te leggen zodanig dat all",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Over Electra Voordeliger laden met het Electra+ laadabonnement Twee flexibele formules zonder vaste looptijd om minder te betalen bij elk snellaadstation in ons Europese netwerk.",
+            "length": 25,
+            "hook": "Over Electra Voordeliger laden met het Electra+ laadabonneme",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "Beheer je laadabonnement eenvoudig via de app.",
+            "length": 7,
+            "hook": "Beheer je laadabonnement eenvoudig via de app.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "Bied het supersnelle opladen van Electra aan.",
+            "length": 7,
+            "hook": "Bied het supersnelle opladen van Electra aan.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Host een station en genereer nieuwe inkomsten.",
+            "length": 7,
+            "hook": "Host een station en genereer nieuwe inkomsten.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Samenwerken Ontdek onze wereld Electra’s snellaadstations: snel, eenvoudig en betrouwbaar Wat is een snellaadstation?",
+            "length": 14,
+            "hook": "Samenwerken Ontdek onze wereld Electra’s snellaadstations: s",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Een snellaadstation is ontworpen om uw leven eenvoudiger te maken en tijd te besparen.",
+            "length": 14,
+            "hook": "Een snellaadstation is ontworpen om uw leven eenvoudiger te ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Met een vermogen van 50 tot 150 kW kunnen onze stations uw voertuig in minder dan 30 minuten opladen.",
+            "length": 19,
+            "hook": "Met een vermogen van 50 tot 150 kW kunnen onze stations uw v",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "Dit is de ideale optie voor lange ritten of een snelle oplaadbeurt tijdens een pauze.",
+            "length": 15,
+            "hook": "Dit is de ideale optie voor lange ritten of een snelle oplaa",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Geen wachttijden meer – u bent in een mum van tijd weer op weg.",
+            "length": 14,
+            "hook": "Geen wachttijden meer – u bent in een mum van tijd weer op w",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Waar vind ik de laadstations van Electra?",
+            "length": 7,
+            "hook": "Waar vind ik de laadstations van Electra?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Onze laadstations zijn strategisch geplaatst om u overal te ondersteunen.",
+            "length": 10,
+            "hook": "Onze laadstations zijn strategisch geplaatst om u overal te ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Of u zich nu in een grote stad, op de snelweg of bij belangrijke locaties zoals winkelcentra bevindt, er is altijd een Electra-station in de buurt.",
+            "length": 26,
+            "hook": "Of u zich nu in een grote stad, op de snelweg of bij belangr",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Gebruik onze interactieve kaart op onze website of in onze app om eenvoudig het dichtstbijzijnde station te vinden en te genieten van een soepele laadervaring.",
+            "length": 25,
+            "hook": "Gebruik onze interactieve kaart op onze website of in onze a",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Hoeveel kost een snellaadbeurt bij Electra?",
+            "length": 6,
+            "hook": "Hoeveel kost een snellaadbeurt bij Electra?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Bij Electra geloven we in eenvoudige en transparante prijzen.",
+            "length": 9,
+            "hook": "Bij Electra geloven we in eenvoudige en transparante prijzen",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "De kosten van uw laadsessie hangen af van het gekozen vermogen en de laadtijd.",
+            "length": 14,
+            "hook": "De kosten van uw laadsessie hangen af van het gekozen vermog",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Alle details vindt u op onze speciale prijspagina.",
+            "length": 8,
+            "hook": "Alle details vindt u op onze speciale prijspagina.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Met Electra beheert u uw budget terwijl u profiteert van de snelste en meest betrouwbare laadervaring.",
+            "length": 16,
+            "hook": "Met Electra beheert u uw budget terwijl u profiteert van de ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "Welke voertuigen kunnen gebruik maken van de Electra-laadstations?",
+            "length": 8,
+            "hook": "Welke voertuigen kunnen gebruik maken van de Electra-laadsta",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Electra-laadstations zijn compatibel met alle elektrische voertuigen, van compacte stadsauto’s tot SUV’s en de nieuwste elektrische modellen.",
+            "length": 17,
+            "hook": "Electra-laadstations zijn compatibel met alle elektrische vo",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Met een vermogen tot 400 kW bieden onze laders een snelle en efficiënte oplossing voor elke batterij en elk type bestuurder.",
+            "length": 21,
+            "hook": "Met een vermogen tot 400 kW bieden onze laders een snelle en",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Hoe snel kan ik laden bij een Electra-station?",
+            "length": 8,
+            "hook": "Hoe snel kan ik laden bij een Electra-station?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Electra zet een nieuwe standaard voor snelladen.",
+            "length": 7,
+            "hook": "Electra zet een nieuwe standaard voor snelladen.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Onze stations, met een vermogen tot 400 kW, maken het mogelijk om tot 400 km actieradius te herstellen in slechts 20 minuten.",
+            "length": 22,
+            "hook": "Onze stations, met een vermogen tot 400 kW, maken het mogeli",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Dankzij functies zoals Autocharge en automatische voertuigherkenning is opladen nog nooit zo eenvoudig en snel geweest.",
+            "length": 16,
+            "hook": "Dankzij functies zoals Autocharge en automatische voertuighe",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Als medeoprichter van ChargeLeague zet Electra zich in om de nieuwe standaarden te bepalen voor de laadsector.",
+            "length": 17,
+            "hook": "Als medeoprichter van ChargeLeague zet Electra zich in om de",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Wettelijke informatie Gebruiksvoorwaarden Privacy",
+            "length": 4,
+            "hook": "Wettelijke informatie Gebruiksvoorwaarden Privacy",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          }
+        ],
+        "themes": [
+          "techniek",
+          "prijs/aanbod",
+          "klantverhaal"
+        ],
+        "tone": "67% familiaar",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "ontdek/bekijk",
+          "vraag/contact"
+        ],
+        "n_items": 37,
+        "source": "website"
       }
     },
     {
@@ -1556,6 +2851,343 @@
           "tiktok"
         ],
         "n_real_posts": 29
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "Locations Charging About Stories Support EN Charge faster, ‍enjoy more.‍ Enabling electric driving for everyone.",
+            "length": 15,
+            "hook": "Locations Charging About Stories Support EN Charge faster, ‍",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "Find nearest location Our charging network Explore now 880 Locations 24 Countries 69 Building The road to tomorrow, today.",
+            "length": 19,
+            "hook": "Find nearest location Our charging network Explore now 880 L",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "We make fast charging and electric driving across Europe a reality.",
+            "length": 11,
+            "hook": "We make fast charging and electric driving across Europe a r",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Plan your next adventure Fast charging at fair rates Select country United Kingdom PAY MONTHLY PAY ANNUALLY MOST USED SUBSCRIPTION APP IONITY Power currently from 47p/kWh plus £10.50 per month Subscribe MORE INFORMATION Our lowest monthly per-kWh rate.",
+            "length": 38,
+            "hook": "Plan your next adventure Fast charging at fair rates Select ",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "This plan saves you money after only two charging sessions per month, and you benefit from our lowest monthly charging prices per kWh.",
+            "length": 23,
+            "hook": "This plan saves you money after only two charging sessions p",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "Enjoy the flexibility and save even more.",
+            "length": 7,
+            "hook": "Enjoy the flexibility and save even more.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "This plan saves you money after your first charging session per month, and you benefit from low monthly charging prices per kWh.",
+            "length": 22,
+            "hook": "This plan saves you money after your first charging session ",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "techniek"
+          },
+          {
+            "text": "The easiest way to lock in savings – subscribe and pay less.",
+            "length": 12,
+            "hook": "The easiest way to lock in savings – subscribe and pay less.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "‍ Monthly subscription Subscribe within the IONITY App Charging prices vary by charging point and may be higher than the displayed minimum price Minimum prices and charging prices may be adjusted from time to time Upgrade to IONITY Power available Cancel anytime to next billing date‍ APP IONITY App currently from 79p/kWh Enjoy cheaper charging using the IONITY App.",
+            "length": 59,
+            "hook": "‍ Monthly subscription Subscribe within the IONITY App Charg",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "IONITY App MORE INFORMATION Pay less from your first session.",
+            "length": 10,
+            "hook": "IONITY App MORE INFORMATION Pay less from your first session",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Enjoy a lower charging price per kWh with the IONITY App.",
+            "length": 11,
+            "hook": "Enjoy a lower charging price per kWh with the IONITY App.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Register once, start saving – and explore everything IONITY has to offer.",
+            "length": 12,
+            "hook": "Register once, start saving – and explore everything IONITY ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "‍ No registration required No subscription or monthly fees Payment via IONITY App or QR code Charging prices vary by charging point and may be higher than the displayed minimum price Minimum prices and charging prices may be adjusted from time to time Switch to IONITY Subscriptions anytime NO APP OR SIGN-UP IONITY Direct currently from 83p/kWh Charge on-site and pay contactless.",
+            "length": 62,
+            "hook": "‍ No registration required No subscription or monthly fees P",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Get started MORE INFORMATION Charge instantly, no sign-up needed.",
+            "length": 9,
+            "hook": "Get started MORE INFORMATION Charge instantly, no sign-up ne",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "No commitment, just a great first charge.",
+            "length": 7,
+            "hook": "No commitment, just a great first charge.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Scan the QR code on the charger, add your payment details, and start charging fast.",
+            "length": 15,
+            "hook": "Scan the QR code on the charger, add your payment details, a",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Or use the IONITY App for a smarter charge.",
+            "length": 9,
+            "hook": "Or use the IONITY App for a smarter charge.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "‍ No subscription or monthly fees Sign up and save with the IONITY App Benefit from a slightly lower price per kWh Charging prices vary by charging point and may be higher than the displayed minimum price Minimum prices and charging prices may be adjusted from time to time Switch to IONITY Subscriptions anytime All prices are the current minimum prices and may be adjusted by IONITY at any time.",
+            "length": 70,
+            "hook": "‍ No subscription or monthly fees Sign up and save with the ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "The charging price at the charging station may be higher.",
+            "length": 10,
+            "hook": "The charging price at the charging station may be higher.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "All prices include local VAT and other price components.",
+            "length": 9,
+            "hook": "All prices include local VAT and other price components.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "View ChargeLeague charging station prices here.",
+            "length": 6,
+            "hook": "View ChargeLeague charging station prices here.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "The IONITY App unlocks all smart features for seamless EV driving in 24 European countries for you.",
+            "length": 17,
+            "hook": "The IONITY App unlocks all smart features for seamless EV dr",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Get started Find locations with ease Availability in real-time Charge hassle-free DOWNLOAD THE APP NOW Charging for all We’re open for all battery electric vehicles, no matter the brand.",
+            "length": 29,
+            "hook": "Get started Find locations with ease Availability in real-ti",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Enjoy fast, reliable, and accessible high-power charging across 24 European countries.",
+            "length": 11,
+            "hook": "Enjoy fast, reliable, and accessible high-power charging acr",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Discover more Backed by renowned industry leaders Partner with us to win customers.",
+            "length": 13,
+            "hook": "Discover more Backed by renowned industry leaders Partner wi",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Learn more about IONITY, our mission, partners and memberships.",
+            "length": 9,
+            "hook": "Learn more about IONITY, our mission, partners and membershi",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "It’s never been more exciting to be part of IONITY.",
+            "length": 10,
+            "hook": "It’s never been more exciting to be part of IONITY.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Join us Awarded for quality: Our charging network leads the way We are the 'Efficiency King' in the elvah Charging Market Report: Stations located every 120 kilometers across Europe.",
+            "length": 29,
+            "hook": "Join us Awarded for quality: Our charging network leads the ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "IONITY is recognized by AUTO BILD and eMobility Excellence as the CPO the highest charging point quality.",
+            "length": 17,
+            "hook": "IONITY is recognized by AUTO BILD and eMobility Excellence a",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "IONITY secured first place among all tested fast charging providers in 2024.",
+            "length": 12,
+            "hook": "IONITY secured first place among all tested fast charging pr",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Electrifying all the way The IONITY Summer 2025 Hot List Where did EV drivers charge most often during summer 2025?",
+            "length": 20,
+            "hook": "Electrifying all the way The IONITY Summer 2025 Hot List Whe",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "We analysed charging data from across the IONITY Network to uncover the five most-visited charging stops of the season.",
+            "length": 19,
+            "hook": "We analysed charging data from across the IONITY Network to ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Read more Elderbrook's top 5 charging stops across Europe Between festival appearances, studio sessions and long drives, Elderbrook recently completed the European leg of his tour in an electric Mercedes-Benz GLB.",
+            "length": 31,
+            "hook": "Read more Elderbrook's top 5 charging stops across Europe Be",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Read more Why are charging prices changing across Europe?",
+            "length": 9,
+            "hook": "Read more Why are charging prices changing across Europe?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Recent geopolitical developments are putting pressure on European energy markets and are a key factor behind our price adjustments from 1 July.",
+            "length": 22,
+            "hook": "Recent geopolitical developments are putting pressure on Eur",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Read more 5 tips for smoother EV charging this summer Summer journeys should feel relaxed, so we’re sharing our top tips for smoother EV charging across Europe.",
+            "length": 27,
+            "hook": "Read more 5 tips for smoother EV charging this summer Summer",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Read more How we set pricing for ultra-fast charging We often hear drivers express concern about the lack of transparency around public charging prices.",
+            "length": 24,
+            "hook": "Read more How we set pricing for ultra-fast charging We ofte",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "In this story, we're sharing more information about how our pricing works and explaining some factors that influence the price per kWh you see at our charging points.",
+            "length": 28,
+            "hook": "In this story, we're sharing more information about how our ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Read more 3 easy ways to achieve the fastest charging speeds Achieving the fastest charging speed for your EV is easy when you know how all the pieces of the charging ecosystem fit together.",
+            "length": 34,
+            "hook": "Read more 3 easy ways to achieve the fastest charging speeds",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Read more IONITY in the spotlight across Europe Let’s keep in touch.",
+            "length": 12,
+            "hook": "Read more IONITY in the spotlight across Europe Let’s keep i",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          }
+        ],
+        "themes": [
+          "techniek",
+          "service"
+        ],
+        "tone": "neutraal",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "ontdek/bekijk"
+        ],
+        "n_items": 40,
+        "source": "website"
       }
     }
   ],
