@@ -166,6 +166,7 @@
     <button class="sec" onclick="showSection('pillars')">Waarmee we ons onderscheiden</button>
     <button class="sec" onclick="showSection('weaknesses')">Waar zij bloeden</button>
     <button class="sec" onclick="showSection('action')">Onze zet</button>
+    <button class="sec" onclick="showSection('contentstrategie')">Hun contentstrategie</button>
     <a class="sec analyse-link" href="analyse.html" target="_blank" rel="noopener" style="text-decoration:none">Analyse-hoofdstukken →</a>
   </div>
 
@@ -208,13 +209,19 @@
     <div id="acOut" style="margin-top:12px"></div>
   </section>
 
+  <section id="contentstrategie">
+    <h2>Hun contentstrategie</h2>
+    <p class="explain">Per concurrent: hoe ze op hun website communiceren — thema's, toon, CTA en waar Powerland een gat kan slaan. (Gegenereerd uit website-analyse, geen socials.)</p>
+    <div id="csOut" style="margin-top:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px"></div>
+  </section>
+
 
 <script>
 let DATA=null;
 async function load(){
   try{const r=await fetch('data.json');DATA=await r.json();}
   catch(e){document.getElementById('cards').innerHTML='<p class="note">Kon data.json niet laden.</p>';return;}
-  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderWaaromWij();renderAction();renderExplain();
+  renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderWaaromWij();renderAction();renderContentStrategy();renderExplain();
 }
 function renderExplain(){
   document.querySelectorAll('.explain').forEach(el=>{
@@ -344,12 +351,26 @@ function renderAction(){
   html+=`<div class="strip" style="margin-top:10px;margin-bottom:0">${r.caveat}</div></div>`;
   document.getElementById('acOut').innerHTML=html;
 }
+function renderContentStrategy(){
+  const cs=DATA.competitors.filter(c=>c.content_strategy).map(c=>{
+    const s=c.content_strategy;
+    return `<div class="card">
+      <h3><a href="content_raw/strategy/${c.id}.md" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${c.name} ↗</a></h3>
+      <div class="row"><b>Toon:</b> ${s.tone||'-'}</div>
+      <div class="row"><b>Thema's:</b> ${(s.themes||[]).join(', ')||'-'}</div>
+      <div class="row"><b>CTA:</b> ${(s.cta_types||[]).join(', ')||'-'}</div>
+      <div class="row"><b>Items:</b> ${s.n_items||0}</div>
+      <div class="strip" style="margin-top:8px">${s.whitespace||''}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('csOut').innerHTML=cs||'<p class="note">Nog geen contentstrategie gegenereerd.</p>';
+}
 function renderRoadmap(){
   const rm=DATA.analysis.roadmap||[];
   document.getElementById('roadmap').innerHTML=rm.map(s=>`<div class="rs"><div class="n">ZET ${s.step}</div><div class="t">${s.tab}</div><div class="a">${s.answers}</div></div>`).join('');
 }
 function showSection(id){
-  ['competitors','whitespace','pillars','weaknesses','waaromwij','action'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
+  ['competitors','whitespace','pillars','weaknesses','waaromwij','action','contentstrategie'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
 }
 document.getElementById('fCat').addEventListener('change',renderCards);
 showSection('competitors');

@@ -442,6 +442,21 @@
         ],
         "n_items": 28,
         "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 28,
+        "themes": [
+          "techniek",
+          "klantverhaal",
+          "duurzaamheid"
+        ],
+        "tone": "53% familiaar",
+        "cta_types": [
+          "ontdek/bekijk",
+          "vraag/contact"
+        ],
+        "rotation": "klantverhaal (7), techniek (7), algemeen (6), duurzaamheid (5), prijs/aanbod (2), service (1)",
+        "whitespace": "Technisch/productspecifiek — Powerland kan op toegankelijkheid/begrijpelijkheid winnen."
       }
     },
     {
@@ -970,6 +985,21 @@
         ],
         "n_items": 40,
         "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 40,
+        "themes": [
+          "duurzaamheid",
+          "techniek",
+          "klantverhaal"
+        ],
+        "tone": "86% familiaar",
+        "cta_types": [
+          "vraag/contact",
+          "ontdek/bekijk"
+        ],
+        "rotation": "duurzaamheid (18), algemeen (11), techniek (6), prijs/aanbod (3), klantverhaal (2)",
+        "whitespace": "Duurzaamheid centraal — Powerland moet scherper op concrete CO2-impact of lokale verankering."
       }
     },
     {
@@ -1217,6 +1247,18 @@
         ],
         "n_items": 7,
         "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 7,
+        "themes": [
+          "service"
+        ],
+        "tone": "neutraal",
+        "cta_types": [
+          "ontdek/bekijk"
+        ],
+        "rotation": "algemeen (6), service (1)",
+        "whitespace": "Service/onderhoud als hoeksteen — Powerland kan proactief beheer-monitoring uitlichten."
       }
     },
     {
@@ -1504,6 +1546,20 @@
         ],
         "n_items": 16,
         "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 16,
+        "themes": [
+          "duurzaamheid",
+          "techniek",
+          "klantverhaal"
+        ],
+        "tone": "71% familiaar",
+        "cta_types": [
+          "vraag/contact"
+        ],
+        "rotation": "algemeen (10), duurzaamheid (3), klantverhaal (2), techniek (1)",
+        "whitespace": "Duurzaamheid centraal — Powerland moet scherper op concrete CO2-impact of lokale verankering."
       }
     },
     {
@@ -1885,6 +1941,21 @@
         ],
         "n_items": 12,
         "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 12,
+        "themes": [
+          "duurzaamheid",
+          "techniek",
+          "service"
+        ],
+        "tone": "55% formeel",
+        "cta_types": [
+          "ontdek/bekijk",
+          "vraag/contact"
+        ],
+        "rotation": "duurzaamheid (7), algemeen (2), klantverhaal (2), service (1)",
+        "whitespace": "Duurzaamheid centraal — Powerland moet scherper op concrete CO2-impact of lokale verankering."
       }
     },
     {
@@ -2061,6 +2132,19 @@
         ],
         "n_items": 6,
         "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 6,
+        "themes": [
+          "duurzaamheid",
+          "techniek"
+        ],
+        "tone": "100% familiaar",
+        "cta_types": [
+          "vraag/contact"
+        ],
+        "rotation": "duurzaamheid (3), algemeen (3)",
+        "whitespace": "Duurzaamheid centraal — Powerland moet scherper op concrete CO2-impact of lokale verankering."
       }
     },
     {
@@ -2594,6 +2678,21 @@
         ],
         "n_items": 37,
         "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 37,
+        "themes": [
+          "techniek",
+          "prijs/aanbod",
+          "klantverhaal"
+        ],
+        "tone": "67% familiaar",
+        "cta_types": [
+          "ontdek/bekijk",
+          "vraag/contact"
+        ],
+        "rotation": "algemeen (19), techniek (11), prijs/aanbod (4), klantverhaal (2), service (1)",
+        "whitespace": "Technisch/productspecifiek — Powerland kan op toegankelijkheid/begrijpelijkheid winnen."
       }
     },
     {
@@ -3188,6 +3287,19 @@
         ],
         "n_items": 40,
         "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 40,
+        "themes": [
+          "techniek",
+          "service"
+        ],
+        "tone": "neutraal",
+        "cta_types": [
+          "ontdek/bekijk"
+        ],
+        "rotation": "algemeen (31), techniek (8), service (1)",
+        "whitespace": "Technisch/productspecifiek — Powerland kan op toegankelijkheid/begrijpelijkheid winnen."
       }
     }
   ],

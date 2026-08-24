@@ -77,6 +77,16 @@ def main():
     if ab.startswith("__"):
         bad.append(("analyse", "/analyse.html", ab[:60]))
 
+    # 6. contentstrategie-tab + per-concurrent strategie-dossier
+    idx = get("/index.html")
+    if "contentstrategie" not in idx:
+        bad.append(("ui", "/index.html", "tab 'contentstrategie' ontbreekt"))
+    for c in d["competitors"]:
+        sd = f"/content_raw/strategy/{c['id']}.md"
+        sdb = get(sd)
+        if sdb.startswith("__"):
+            bad.append((c["id"], sd, sdb[:60]))
+
     print(f"getest: {len(d['competitors'])} concurrenten | kapot: {len(bad)}")
     for x in bad:
         print("  ", x)

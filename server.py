@@ -116,6 +116,15 @@ class Handler(BaseHTTPRequestHandler):
                 with open(p, "rb") as f:
                     return self._send(200, f.read(), "text/markdown")
             self._send(404, b"not found")
+        elif u.path.startswith("/content_raw/"):
+            # serve strategie-dossiers e.d. uit content_raw/ (geneste paden behouden)
+            rel = u.path[len("/content_raw/"):].lstrip("/")
+            p = os.path.join(BASE, "content_raw", rel)
+            if os.path.isfile(p):
+                ctype = "text/markdown" if p.endswith(".md") else "application/octet-stream"
+                with open(p, "rb") as f:
+                    return self._send(200, f.read(), ctype)
+            self._send(404, b"not found")
         elif u.path == "/api/competitors":
             self._send(200, json.dumps(load_data().get("competitors", []), ensure_ascii=False))
         elif u.path.startswith("/assets/"):
