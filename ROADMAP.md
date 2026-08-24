@@ -44,7 +44,8 @@ Mijlpaal M3: dashboard blijft "levend" zonder handwerk.
 - Vandotec: wacht op user-input (geen domeinen verzinnen).
 - Live-zetten Powerland: pas bij expliciete "ja / pushen".
 
-## Niet doen
-- Geen auto-push naar GitHub.
-- Geen concurrent-domeinen raden.
-- Geen .planning/ naar Pages (al geblokkeerd via .gitignore).
+## Taalbeleid
+Zie `COPY-CONVENTIES.md` — door ons geschreven tekst = altijd correct NL;
+concurrent-eigen bron-quotes (positionering) worden onteerd weergegeven
+(inclusief EN/taalfouten), nooit vertaald of verwijderd. Vandotec/monitoring
+volgen hetzelfde beleid.

@@ -462,7 +462,7 @@
       ],
       "battlecard": {
         "their_weak": "Breed maar niet diep in zonne/batterij/EMS",
-        "our_play": "Claim het geïntegreerde opwek+stockeer+beheer-verhaal; Ceratec is eerder elektro-huis",
+        "our_play": "Claim het geïntegreerde opwek+stockeert+beheer-verhaal; Ceratec is eerder elektrotechnisch bedrijf",
         "type": "interpretation",
         "confidence": "midden",
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
@@ -1613,7 +1613,7 @@
       {
         "id": "w1",
         "title": "Energiemanagement als kernverhaal (niet als optie)",
-        "detail": "MR Solar en anderen hebben EMS wél in hun stack, maar als bijproduct. Niemand claimt 'wij sturen je hele energieflow' als primair verhaal. Dat is het witte vak: EMS als hoofdrol, niet als vinkje. Powerland haar stack (opwekken·stockeren·beheren·opladen) leent zich er wel voor — maar moet marktproof gemaakt worden.",
+        "detail": "MR Solar en anderen hebben EMS wél in hun stack, maar als bijproduct. Niemand claimt 'wij sturen je hele energieflow' als primair verhaal. Dat is het witte vak: EMS als hoofdrol, niet als vinkje. Powerlands ecosysteem (opwekken·stockeren·beheren·opladen) leent zich er wel voor — maar moet marktproof gemaakt worden.",
         "open": "als primair verhaal (niet als aanwezigheid)"
       },
       {
