@@ -2157,7 +2157,7 @@
         "laadinfrastructuur"
       ],
       "services": [
-        "Laadnetwerk-operator (768 stations beschikbaar, 65 in aanbouw)",
+        "Laadnetwerk-operator (774 stations beschikbaar, 64 in aanbouw)",
         "Electra-laadpas",
         "Electra+ abonnement",
         "App (routeplanner, Autocharge)",
@@ -2203,7 +2203,7 @@
       "sources": [
         "raw/powerland/electra.md"
       ],
-      "_refreshed_at": "2026-08-12T07:16:49Z",
+      "_refreshed_at": "2026-08-25T12:27:45Z",
       "evidence": [
         {
           "claim": "Positionering volgens eigen site",
@@ -2705,7 +2705,7 @@
         "laadinfrastructuur"
       ],
       "services": [
-        "Europees snellaadnetwerk (880 locaties, 24 landen, 66 in aanbouw)",
+        "Europees snellaadnetwerk (887 locaties, 24 landen, 74 in aanbouw)",
         "Abonnementen IONITY Power 365 / Motion 365",
         "IONITY App",
         "IONITY Direct",
@@ -2756,7 +2756,7 @@
       "sources": [
         "raw/powerland/ionity.md"
       ],
-      "_refreshed_at": "2026-08-12T07:16:49Z",
+      "_refreshed_at": "2026-08-25T12:27:45Z",
       "evidence": [
         {
           "claim": "Positionering volgens eigen site",
