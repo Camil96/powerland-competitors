@@ -275,9 +275,9 @@ def render_detail(c):
 
     parts.append('<h2>Waarom wij (onze tegenzet)</h2>')
     parts.append('<div class="card">')
-    parts.append(f"<div class='row'><b>Hun zwakte → ons spel:</b> {battlecard_text(battlecard, 'their_weakness')}</div>")
-    parts.append(f"<div class='row'><b>Ons spel:</b> {battlecard_text(battlecard, 'our_play')}</div>")
-    parts.append(f"<div class='row'><b>Confidence:</b> {battlecard_text(battlecard, 'confidence')}</div>")
+    parts.append(f"<div class='row'><b>Waar zij bloeden (zwaktes):</b> {battlecard_text(battlecard, 'their_weakness')}</div>")
+    parts.append(f"<div class='row'><b>Waar wij winnen:</b> {battlecard_text(battlecard, 'our_play')}</div>")
+    parts.append(f"<div class='row'><b>Vertrouwen:</b> {battlecard_text(battlecard, 'confidence')}</div>")
     parts.append('</div>')
 
     parts.append('<h2>Bewijs</h2>')

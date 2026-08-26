@@ -131,6 +131,9 @@
     @media(max-width:1100px){
         .mainnav.open{display:flex}
       }
+    /* tab-overflow responsive: horizontaal scrollbaar zonder kant-afkap */
+    .mainnav{overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+    .mainnav::-webkit-scrollbar{display:none}
 </style>
 </head>
 <body>
