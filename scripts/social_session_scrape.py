@@ -5,9 +5,9 @@ Gebruikt CAMIL's eigen Firefox-profile (uleqsbna.default) met ingelogde
 FB/IG/LinkedIn-sessie. Geen API-key, geen derde partij, geen maandbedrag.
 Draait headless; stoort Camil niet (profile is apart van zijn hoofd-profile).
 
-ToS-kanttekening (Camil geaccepteerd 2026-08-25): sessie-scraping schendt
-FB/IG/LinkedIn voorwaarden; risico op account-beperking is de prijs van
-"permanent gratis". Camil weegt dat af en aanvaardt het.
+ToS-kanttekening (OPEN BESLISSING — nog niet geaccepteerd door Camil):
+sessie-scraping schendt FB/IG/LinkedIn voorwaarden; risico op account-beperking
+is de prijs van "permanent gratis". Camil weegt dit af vóórdat 5.2 mag draaien.
 
 Gebruik: python social_session_scrape.py [--cid <id>]  (alle als geen cid)
 """
