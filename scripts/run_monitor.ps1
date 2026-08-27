@@ -12,9 +12,12 @@
 # Vereist: Hermes-venv (Playwright zit daarin). Scripts herstarten zichzelf onder die venv
 # via self-reexec, maar we roepen ze direct onder de venv aan voor zekerheid.
 
-$ErrorActionPreference = "Stop"
-
 $PUBLISH = "C:\Users\camil.sahnoune\competitive-intel\publish"
+
+# Schakelaar: $true = Firecrawl keyless adapter (geen key/account, 1k credits/maand)
+#             $false = eigen content_scan.py (Playwright, onderhoud jij)
+# Default false zoals afgesproken — Firecrawl is klaar als optie, niet de default.
+$USE_FIRECRAWL = $false
 $VENV_PY = "C:\Users\camil.sahnoune\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe"
 $DATE = Get-Date -Format "yyyyMMdd-HHmm"
 $LOG = Join-Path $PUBLISH "monitor-log-$DATE.txt"
@@ -42,12 +45,22 @@ try {
 }
 
 # 2) Verse content-scans (publieke site + RSS, geen login)
-Log ">> content_scan.py ..."
-try {
-    & $VENV_PY (Join-Path $PUBLISH "scripts\content_scan.py") 2>&1 | ForEach-Object { Log "   content: $_" }
-    Log "<< content_scan.py klaar (exit $LASTEXITCODE)"
-} catch {
-    Log "FOUT in content_scan.py: $_"
+if ($USE_FIRECRAWL) {
+    Log ">> firecrawl_adapter.py (keyless) ..."
+    try {
+        & $VENV_PY (Join-Path $PUBLISH "scripts\firecrawl_adapter.py") 2>&1 | ForEach-Object { Log "   firecrawl: $_" }
+        Log "<< firecrawl_adapter.py klaar (exit $LASTEXITCODE)"
+    } catch {
+        Log "FOUT in firecrawl_adapter.py: $_"
+    }
+} else {
+    Log ">> content_scan.py ..."
+    try {
+        & $VENV_PY (Join-Path $PUBLISH "scripts\content_scan.py") 2>&1 | ForEach-Object { Log "   content: $_" }
+        Log "<< content_scan.py klaar (exit $LASTEXITCODE)"
+    } catch {
+        Log "FOUT in content_scan.py: $_"
+    }
 }
 
 # data.json integriteit-check (mag niet veranderd zijn)

@@ -1,0 +1,23 @@
+2026-08-27 16:47:46  === Powerland monitor-pipe start ===
+2026-08-27 16:47:46  werkmap: C:\Users\camil.sahnoune\competitive-intel\publish
+2026-08-27 16:47:46  >> powerland_capture.py ...
+2026-08-27 16:48:20     capture: Totaal: 8 | veranderd: 4 | gefaald: 0
+2026-08-27 16:48:20     capture:   VERANDERD: reeload
+2026-08-27 16:48:20     capture:   VERANDERD: mr-solar
+2026-08-27 16:48:20     capture:   VERANDERD: electra
+2026-08-27 16:48:20     capture:   VERANDERD: ionity
+2026-08-27 16:48:20  << powerland_capture.py klaar (exit 0)
+2026-08-27 16:48:20  >> content_scan.py ...
+2026-08-27 16:48:34     content:   reeload: website 5522 chars | feed-items 0
+2026-08-27 16:48:40     content:   iq-solar: website 8987 chars | feed-items 0
+2026-08-27 16:48:44     content:   ceratec: website 3202 chars | feed-items 0
+2026-08-27 16:48:50     content:   extrapower: website 2911 chars | feed-items 0
+2026-08-27 16:48:55     content:   mr-solar: website 3286 chars | feed-items 0
+2026-08-27 16:49:00     content:   torre: website 1337 chars | feed-items 0
+2026-08-27 16:49:03     content:   electra: website 4938 chars | feed-items 0
+2026-08-27 16:49:09     content:   ionity: website 6193 chars | feed-items 0
+2026-08-27 16:49:09     content: content_scan klaar
+2026-08-27 16:49:09  << content_scan.py klaar (exit 0)
+2026-08-27 16:49:09  data.json last-write: 08/25/2026 14:27:45  (moet gelijk blijven aan voor de run)
+2026-08-27 16:49:09  === Powerland monitor-pipe einde ===
+2026-08-27 16:49:09  Bekijk snapshots/ en content_raw/ voor verse data. Curatie van data.json gebeurt met de hand (refresh.py --one).
