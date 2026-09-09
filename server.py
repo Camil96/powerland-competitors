@@ -61,6 +61,12 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(200, b"<h1>dashboard.html nog niet gebouwd</h1><p>Start de scrape, dan bouw ik het.</p>", "text/html")
         elif u.path == "/data.json":
             self._send(200, json.dumps(load_data(), ensure_ascii=False))
+        elif u.path == "/monitor/last-run.json":
+            mp = os.path.join(BASE, "monitor", "last-run.json")
+            if os.path.isfile(mp):
+                with open(mp, encoding="utf-8") as f:
+                    return self._send(200, f.read(), "application/json")
+            self._send(404, b"monitor data niet gevonden")
         elif u.path == "/analyse":
             self._send(200, render_analysis(load_data()), "text/html")
         elif u.path.startswith("/concurrent/"):

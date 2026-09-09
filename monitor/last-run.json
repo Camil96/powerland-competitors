@@ -1,0 +1,14 @@
+{
+  "run_at": "2026-09-09T09:40:00+02:00",
+  "frequency": "weekly",
+  "script": "powerland_capture.py",
+  "competitor_count": 8,
+  "changed": [
+    {"id": "reeload", "name": "Reeload"},
+    {"id": "electra", "name": "Electra"},
+    {"id": "ionity", "name": "Ionity"}
+  ],
+  "failed": [],
+  "report_file": "capture-report.txt",
+  "note": "Verandering = body-text verschil t.o.v. vorige snapshot (ruwe diff). Curateer via refresh.py --one."
+}

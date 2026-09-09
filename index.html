@@ -134,6 +134,18 @@
     /* tab-overflow responsive: horizontaal scrollbaar zonder kant-afkap */
     .mainnav{overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
     .mainnav::-webkit-scrollbar{display:none}
+
+  /* ===== RECENTE VERANDERINGEN ===== */
+  #recent-changes{display:block}
+  #rc-out{margin-top:12px}
+  .rc-head{display:flex;align-items:baseline;gap:16px;margin-bottom:10px}
+  .rc-head span:first-child{font-size:15px;font-weight:700;color:var(--pl-blue)}
+  .rc-date{font-size:12px;color:var(--muted)}
+  .rc-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+  .rc-item{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--pl-teal);border-radius:8px;padding:10px 14px;display:flex;flex-direction:column;gap:4px}
+  .rc-cat{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--pl-teal)}
+  .rc-name{font-size:14px;font-weight:700;color:var(--text)}
+  .rc-date{font-size:11.5px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -175,6 +187,12 @@
 
   <!-- ROADMAP: de keten maakt de 'waarom' zichtbaar -->
   <div class="roadmap" id="roadmap"></div>
+
+  <section id="recent-changes" style="display:none">
+    <h2>Recente veranderingen</h2>
+    <p class="sub">Wekelijks gescande concurrenten — wat veranderde er sinds de laatste run?</p>
+    <div id="rc-out"></div>
+  </section>
 
   <section id="competitors">
     <h2>Concurrenten</h2>
@@ -225,6 +243,7 @@ async function load(){
   try{const r=await fetch('data.json');DATA=await r.json();}
   catch(e){document.getElementById('cards').innerHTML='<p class="note">Kon data.json niet laden.</p>';return;}
   renderStats();renderCards();renderRoadmap();renderWhitespace();renderPillars();renderWeaknesses();renderWaaromWij();renderAction();renderContentStrategy();renderExplain();
+  loadMonitor();
 }
 function renderExplain(){
   document.querySelectorAll('.explain').forEach(el=>{
@@ -371,6 +390,23 @@ function renderContentStrategy(){
 function renderRoadmap(){
   const rm=DATA.analysis.roadmap||[];
   document.getElementById('roadmap').innerHTML=rm.map(s=>`<div class="rs"><div class="n">ZET ${s.step}</div><div class="t">${s.tab}</div><div class="a">${s.answers}</div></div>`).join('');
+}
+function loadMonitor(){
+  fetch('/monitor/last-run.json')
+    .then(r=>r.ok?r.json():null)
+    .then(data=>{
+      if(!data || !data.changed || !data.changed.length){return;}
+      const out=document.getElementById('recent-changes');
+      if(!out){return;}
+      const d=new Date(data.run_at);
+      const date=d.toLocaleDateString('nl-BE',{day:'2-digit',month:'short',year:'numeric'});
+      const items=data.changed.map(c=>{
+        const name=c.name||c.id;
+        return `<div class="rc-item"><span class="rc-cat">${data.frequency||'wekelijks'}</span><span class="rc-name">${name}</span><span class="rc-date">${date}</span></div>`;
+      }).join('');
+      out.innerHTML=`<div class="rc-head"><span>${items.length} concurrent(en) veranderd</span><span class="rc-date">${date}</span></div><div class="rc-list">${items}</div>`;
+    })
+    .catch(()=>{});
 }
 function showSection(id){
   ['competitors','whitespace','pillars','weaknesses','waaromwij','action','contentstrategie'].forEach(s=>{document.getElementById(s).style.display=(s===id)?'block':'none';});
