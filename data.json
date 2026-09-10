@@ -3301,6 +3301,89 @@
         "rotation": "algemeen (31), techniek (8), service (1)",
         "whitespace": "Technisch/productspecifiek — Powerland kan op toegankelijkheid/begrijpelijkheid winnen."
       }
+    },
+    {
+      "id": "certipower",
+      "name": "Certipower",
+      "domain": "https://certipower.be/en/",
+      "parent_brand": "powerland",
+      "category": "direct",
+      "sectors": [
+        "laadinfrastructuur",
+        "energiemanagement"
+      ],
+      "services": [
+        "Laadpalen (AC/DC) — installatie",
+        "Charge Point Management (CPO) / 24/7 monitoring",
+        "Split billing (thuisladen werknemers)",
+        "Publieke laadpas (500.000+ laadpunten Europa)",
+        "Service & onderhoud",
+        "Smart load balancing"
+      ],
+      "positioning": "Certipower plaatst, beheert en rekent af. Voor vloten, bedrijfssites, mede-eigendommen, publieke parkings en thuis.",
+      "target_audience": [
+        "bedrijven",
+        "vloten",
+        "VME",
+        "publieke parkings",
+        "particulieren"
+      ],
+      "social_channels": {
+        "website": {
+          "present": true,
+          "url": "https://certipower.be/en/"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://www.linkedin.com/company/certipower-bv/"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/certipower"
+        }
+      },
+      "strengths": [
+        "6.000+ geïnstalleerde laadpunten, 98% klanttevredenheid",
+        "Eigen CPO-platform met 24/7 monitoring en smart load balancing",
+        "Twee vestigingen (Roeselare/Hooglede en Genk)"
+      ],
+      "weaknesses": [
+        "Geen eigen zonnepanelen/batterij-installatie — enkel adviescontent over PV+batterij+laden",
+        "Geen hoogspanning/industriële zwaarte",
+        "Geen EMS-verhaal buiten laadinfrastructuur"
+      ],
+      "overlap_score_powerland": 4,
+      "sources": [
+        "https://certipower.be/en/",
+        "https://www.certipower.be/nl/",
+        "https://www.certipower.be/nl/zonnepanelen-batterijen",
+        "https://certipower.be/en/services/"
+      ],
+      "_refreshed_at": "2026-09-10T00:00:00Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://www.certipower.be/nl/",
+          "retrieved": "2026-09-10",
+          "quote": "Certipower plaatst, beheert en rekent af. Voor vloten, bedrijfssites, mede-eigendommen, publieke parkings en thuis.",
+          "type": "fact"
+        },
+        {
+          "claim": "Positionering zon+batterij+laden content",
+          "source_url": "https://www.certipower.be/nl/zonnepanelen-batterijen",
+          "retrieved": "2026-09-10",
+          "quote": "Zonnepanelen + slim laden + batterij wordt vaak voorgesteld als de heilige drie-eenheid van duurzame mobiliteit.",
+          "type": "fact"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Zon/batterij is bij Certipower enkel adviescontent, geen eigen installatie — laadinfrastructuur is hun enige kernproduct",
+        "our_play": "Positioneer Powerland als de partij die zon+batterij+laad+beheer ZELF integreert en installeert, niet enkel adviseert",
+        "type": "interpretation",
+        "confidence": "midden",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": "Toegevoegd op verzoek van Camil, 2026-09-10 — enkel website-onderzoek, geen social-scan uitgevoerd."
+      }
     }
   ],
   "analysis": {
