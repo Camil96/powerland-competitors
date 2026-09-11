@@ -3,26 +3,24 @@
 > Gegenereerd uit website-analyse (Optie 2: geen socials, geen login). Bron: https://www.mrsolar.be
 
 ## 1. Overzicht
-- Aantal geanalyseerde content-items: **12**
-- Belangrijkste thema's: **duurzaamheid, techniek, service**
-- Tone-of-voice: **55% formeel**
-- Call-to-action-stijl: **ontdek/bekijk, vraag/contact**
+- Aantal geanalyseerde content-items: **9**
+- Belangrijkste thema's: **duurzaamheid, service, techniek**
+- Tone-of-voice: **67% formeel**
+- Call-to-action-stijl: **ontdek/bekijk**
 
 ## 2. Thema-rotatie
-- duurzaamheid: 7 items
+- duurzaamheid: 6 items
 - algemeen: 2 items
-- klantverhaal: 2 items
 - service: 1 items
 
 ## 3. Tone-of-voice
-55% formeel. De toon is zakelijk/formeel.
+67% formeel. De toon is zakelijk/formeel.
 
 ## 4. Call-to-action-patronen
 - ontdek/bekijk
-- vraag/contact
 
 ## 5. Visuele signalen
-- Emoji-gebruik in tekst: ja
+- Emoji-gebruik in tekst: nee/minimaal
 - Opvallend: website-gedreven content, geen socials- of image-diepte beschikbaar in deze (login-vrije) capture.
 
 ## 6. Whitespace voor Powerland

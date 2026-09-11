@@ -1900,61 +1900,35 @@
             "emoji_count": 0,
             "cta": "nee",
             "theme": "duurzaamheid"
-          },
-          {
-            "text": "Industriële projecten Karel Sterckx Bekijk de video LCL Data Centers Bekijk de video Codipack Bekijk de video Dovy Keukens Bekijk de video Brouwerij Vanhonsebrouck Bekijk de video Floren Bekijk de video Arco Bekijk de video Onze partners garanderen topkwaliteit: MR Solar, trotse sponsor van Lotto Cycling Team.",
-            "length": 47,
-            "hook": "Industriële projecten Karel Sterckx Bekijk de video LCL Data",
-            "emoji_count": 0,
-            "cta": "ja",
-            "theme": "klantverhaal"
-          },
-          {
-            "text": "Trap je met ons mee richting duurzame energie?",
-            "length": 8,
-            "hook": "Trap je met ons mee richting duurzame energie?",
-            "emoji_count": 0,
-            "cta": "nee",
-            "theme": "duurzaamheid"
-          },
-          {
-            "text": "#volvermogen⚡ #pleinepuissance⚡#peakpower⚡ MR Solar en Lotto Cycling Team Vertrouw op 15 jaar ervaring en meer dan 40.000 installaties Contacteer onze experten: +32 56 90 00 00 info@mrsolar.be We zijn bereikbaar van 9:00-12:00 en 13:00-16:30 uur.",
-            "length": 35,
-            "hook": "#volvermogen⚡ #pleinepuissance⚡#peakpower⚡ MR Solar en Lotto",
-            "emoji_count": 3,
-            "cta": "ja",
-            "theme": "klantverhaal"
           }
         ],
         "themes": [
           "duurzaamheid",
-          "techniek",
-          "service"
+          "service",
+          "techniek"
         ],
-        "tone": "55% formeel",
+        "tone": "67% formeel",
         "formats": [
           "website-tekst"
         ],
         "cta_types": [
-          "ontdek/bekijk",
-          "vraag/contact"
+          "ontdek/bekijk"
         ],
-        "n_items": 12,
+        "n_items": 9,
         "source": "website"
       },
       "content_strategy": {
-        "n_items": 12,
+        "n_items": 9,
         "themes": [
           "duurzaamheid",
-          "techniek",
-          "service"
+          "service",
+          "techniek"
         ],
-        "tone": "55% formeel",
+        "tone": "67% formeel",
         "cta_types": [
-          "ontdek/bekijk",
-          "vraag/contact"
+          "ontdek/bekijk"
         ],
-        "rotation": "duurzaamheid (7), algemeen (2), klantverhaal (2), service (1)",
+        "rotation": "duurzaamheid (6), algemeen (2), service (1)",
         "whitespace": "Duurzaamheid centraal — Powerland moet scherper op concrete CO2-impact of lokale verankering."
       }
     },
@@ -2407,7 +2381,7 @@
             "theme": "klantverhaal"
           },
           {
-            "text": "en nog veel meer met de Electra-app Reeds bij u in de buurt of bijna Al onze stations in je broekzak 4.5/5 in de app stores Download 773 Beschikbare stations 65 Komende stations Ergens anders opladen?",
+            "text": "en nog veel meer met de Electra-app Reeds bij u in de buurt of bijna Al onze stations in je broekzak 4.5/5 in de app stores Download 781 Beschikbare stations 68 Komende stations Ergens anders opladen?",
             "length": 36,
             "hook": "en nog veel meer met de Electra-app Reeds bij u in de buurt ",
             "emoji_count": 0,
@@ -2962,9 +2936,9 @@
             "theme": "service"
           },
           {
-            "text": "Find nearest location Our charging network Explore now 880 Locations 24 Countries 69 Building The road to tomorrow, today.",
+            "text": "Find nearest location Our charging network Explore now 889 Locations 24 Countries 78 Building The road to tomorrow, today.",
             "length": 19,
-            "hook": "Find nearest location Our charging network Explore now 880 L",
+            "hook": "Find nearest location Our charging network Explore now 889 L",
             "emoji_count": 0,
             "cta": "nee",
             "theme": "algemeen"
@@ -3266,9 +3240,9 @@
             "theme": "algemeen"
           },
           {
-            "text": "Read more IONITY in the spotlight across Europe Let’s keep in touch.",
-            "length": 12,
-            "hook": "Read more IONITY in the spotlight across Europe Let’s keep i",
+            "text": "Read more IONITY in the spotlight across Europe IONITY is a proud founding member of ChargeLeague.",
+            "length": 16,
+            "hook": "Read more IONITY in the spotlight across Europe IONITY is a ",
             "emoji_count": 0,
             "cta": "nee",
             "theme": "algemeen"
@@ -3354,10 +3328,7 @@
       ],
       "overlap_score_powerland": 4,
       "sources": [
-        "https://certipower.be/en/",
-        "https://www.certipower.be/nl/",
-        "https://www.certipower.be/nl/zonnepanelen-batterijen",
-        "https://certipower.be/en/services/"
+        "raw/powerland/certipower.md"
       ],
       "_refreshed_at": "2026-09-10T00:00:00Z",
       "evidence": [
@@ -3366,14 +3337,16 @@
           "source_url": "https://www.certipower.be/nl/",
           "retrieved": "2026-09-10",
           "quote": "Certipower plaatst, beheert en rekent af. Voor vloten, bedrijfssites, mede-eigendommen, publieke parkings en thuis.",
-          "type": "fact"
+          "type": "fact",
+          "snapshot": "snapshots/certipower/20260911-1148.md"
         },
         {
           "claim": "Positionering zon+batterij+laden content",
           "source_url": "https://www.certipower.be/nl/zonnepanelen-batterijen",
           "retrieved": "2026-09-10",
           "quote": "Zonnepanelen + slim laden + batterij wordt vaak voorgesteld als de heilige drie-eenheid van duurzame mobiliteit.",
-          "type": "fact"
+          "type": "fact",
+          "snapshot": "snapshots/certipower/20260911-1148.md"
         }
       ],
       "battlecard": {
@@ -3383,6 +3356,354 @@
         "confidence": "midden",
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
         "note": "Toegevoegd op verzoek van Camil, 2026-09-10 — enkel website-onderzoek, geen social-scan uitgevoerd."
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "Manage consent To provide the best experiences, we use technologies such as cookies to store and/or access information about your device.",
+            "length": 21,
+            "hook": "Manage consent To provide the best experiences, we use techn",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "By agreeing to these technologies, we can process data such as browsing behavior or unique IDs on this site.",
+            "length": 19,
+            "hook": "By agreeing to these technologies, we can process data such ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "If you do not give consent or withdraw your consent, this may adversely affect certain functions and features.",
+            "length": 18,
+            "hook": "If you do not give consent or withdraw your consent, this ma",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Certipower handles installation, billing, monitoring, and optimization.",
+            "length": 7,
+            "hook": "Certipower handles installation, billing, monitoring, and op",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "Request a quote → Our solutions Ik ben: Fleet/HR Businesses Real Estate/VME Individuals 6000+ Charging points installed 40% Savings through home charging 24/7 Monitoring & support 98% Customer satisfaction OUR SERVICES Complete charging solutions tailored to your needs From home charging to corporate charging hubs – Certipower is your full-service partner for all aspects of electric charging.",
+            "length": 57,
+            "hook": "Request a quote → Our solutions Ik ben: Fleet/HR Businesses ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "More info Charging points on corporate sites Smart load balancing prevents peak costs.",
+            "length": 13,
+            "hook": "More info Charging points on corporate sites Smart load bala",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "event"
+          },
+          {
+            "text": "From charging stations to complete charging hubs.",
+            "length": 7,
+            "hook": "From charging stations to complete charging hubs.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "More info Split billing Automatic reimbursement of charging costs to employees.",
+            "length": 11,
+            "hook": "More info Split billing Automatic reimbursement of charging ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "More info Public charging card One charging card for all of Europe.",
+            "length": 12,
+            "hook": "More info Public charging card One charging card for all of ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "500,000+ charging points with transparent rates.",
+            "length": 6,
+            "hook": "500,000+ charging points with transparent rates.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "More info Charging Point Management (CPO) Complete peace of mind: monitoring, rate management, reporting, and 24/7 support.",
+            "length": 17,
+            "hook": "More info Charging Point Management (CPO) Complete peace of ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "More info WHY CERTIPOWER Your reliable partner for charging infrastructure No empty promises, but concrete benefits that have a direct impact on your company and employees.",
+            "length": 26,
+            "hook": "More info WHY CERTIPOWER Your reliable partner for charging ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "One monthly overview for your entire fleet Clear monthly billing with detailed consumption per employee.",
+            "length": 15,
+            "hook": "One monthly overview for your entire fleet Clear monthly bil",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Up to 40% cheaper through home charging Employees charge at home rates.",
+            "length": 12,
+            "hook": "Up to 40% cheaper through home charging Employees charge at ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "prijs/aanbod"
+          },
+          {
+            "text": "Direct cost savings compared to public charging.",
+            "length": 7,
+            "hook": "Direct cost savings compared to public charging.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Smart load balancing Automatic distribution of charging capacity.",
+            "length": 8,
+            "hook": "Smart load balancing Automatic distribution of charging capa",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "24/7 monitoring & support We monitor all charging points and intervene immediately where necessary.",
+            "length": 14,
+            "hook": "24/7 monitoring & support We monitor all charging points and",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "OUR PROCESS In 3 steps to smart charging A clear process from start to finish.",
+            "length": 15,
+            "hook": "OUR PROCESS In 3 steps to smart charging A clear process fro",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Analysis We map out your situation: vehicles, locations, consumption, and grid capacity.",
+            "length": 12,
+            "hook": "Analysis We map out your situation: vehicles, locations, con",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Installation Our certified technicians install everything.",
+            "length": 6,
+            "hook": "Installation Our certified technicians install everything.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Management Monitoring, rates, reporting, and 24/7 support – complete peace of mind.",
+            "length": 12,
+            "hook": "Management Monitoring, rates, reporting, and 24/7 support – ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "Schedule a call PROJECTS What we have achieved Concrete results for companies and individuals with smart charging solutions.",
+            "length": 18,
+            "hook": "Schedule a call PROJECTS What we have achieved Concrete resu",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "All projects Companies Verhelst Group 56 charging points across 14 locations, supplemented by home charging.",
+            "length": 15,
+            "hook": "All projects Companies Verhelst Group 56 charging points acr",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "klantverhaal"
+          },
+          {
+            "text": "14 locations throughout Flanders Public access with discounted rates available Split billing for home charging Companies AQUALEX Total solution: from infrastructure analysis to installation.",
+            "length": 24,
+            "hook": "14 locations throughout Flanders Public access with discount",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Complete infrastructure analysis in advance Advice on meter capacity Complete peace of mind Companies Potrell Four Smappee EV Base units at the parking lot in Izegem.",
+            "length": 26,
+            "hook": "Complete infrastructure analysis in advance Advice on meter ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "8 simultaneous charging points Designer charging stations Smart energy management FAQ Frequently asked questions Quick answers to the most frequently asked questions about charging solutions.",
+            "length": 25,
+            "hook": "8 simultaneous charging points Designer charging stations Sm",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "All questions How much does it cost to install a charging station?",
+            "length": 12,
+            "hook": "All questions How much does it cost to install a charging st",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Costs vary from €1,200 to €3,500 depending on the type of charging station and the required modifications.",
+            "length": 17,
+            "hook": "Costs vary from €1,200 to €3,500 depending on the type of ch",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "What is split billing and how does it work?",
+            "length": 9,
+            "hook": "What is split billing and how does it work?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Split billing automatically calculates how much employees charge at home and handles the reimbursement.",
+            "length": 14,
+            "hook": "Split billing automatically calculates how much employees ch",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "What is the difference between smart and normal charging?",
+            "length": 9,
+            "hook": "What is the difference between smart and normal charging?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Smart charging automatically adjusts the charging power based on energy prices and grid load.",
+            "length": 14,
+            "hook": "Smart charging automatically adjusts the charging power base",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Do I need to upgrade my electrical connection?",
+            "length": 8,
+            "hook": "Do I need to upgrade my electrical connection?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Thanks to smart load balancing, we can often install multiple charging points without grid reinforcement.",
+            "length": 15,
+            "hook": "Thanks to smart load balancing, we can often install multipl",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "A standard home installation takes 2–4 hours.",
+            "length": 7,
+            "hook": "A standard home installation takes 2–4 hours.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Business installations within 2–4 weeks.",
+            "length": 5,
+            "hook": "Business installations within 2–4 weeks.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Ready to manage your charging infrastructure professionally?",
+            "length": 7,
+            "hook": "Ready to manage your charging infrastructure professionally?",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Schedule a consultation with our experts.",
+            "length": 6,
+            "hook": "Schedule a consultation with our experts.",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "We will analyze your situation and provide concrete advice – with no obligation.",
+            "length": 13,
+            "hook": "We will analyze your situation and provide concrete advice –",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Schedule a call Our solutions Response within 24 hours • No-obligation advice • Local experts in Roeselare & Genk Ready to get started?",
+            "length": 23,
+            "hook": "Schedule a call Our solutions Response within 24 hours • No-",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          }
+        ],
+        "themes": [
+          "service",
+          "prijs/aanbod",
+          "klantverhaal"
+        ],
+        "tone": "neutraal",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [],
+        "n_items": 40,
+        "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 40,
+        "themes": [
+          "service",
+          "prijs/aanbod",
+          "klantverhaal"
+        ],
+        "tone": "neutraal",
+        "cta_types": [],
+        "rotation": "algemeen (31), service (4), prijs/aanbod (2), klantverhaal (2), event (1)",
+        "whitespace": "Service/onderhoud als hoeksteen — Powerland kan proactief beheer-monitoring uitlichten."
       }
     },
     {
@@ -3440,9 +3761,7 @@
       ],
       "overlap_score_powerland": 4,
       "sources": [
-        "https://www.battery4industry.com/en",
-        "https://www.battery4industry.com/en/nieuws/great-grandson-meli-founder-puts-innovative-battery-company-map",
-        "https://www.battery4industry.com/en/contact"
+        "raw/powerland/battery4industry.md"
       ],
       "_refreshed_at": "2026-09-11T00:00:00Z",
       "evidence": [
@@ -3451,14 +3770,16 @@
           "source_url": "https://www.battery4industry.com/en",
           "retrieved": "2026-09-11",
           "quote": "We optimise your energy",
-          "type": "fact"
+          "type": "fact",
+          "snapshot": "snapshots/battery4industry/20260911-1148.md"
         },
         {
           "claim": "Werkwijze volgens nieuwsartikel op eigen site",
           "source_url": "https://www.battery4industry.com/en/nieuws/great-grandson-meli-founder-puts-innovative-battery-company-map",
           "retrieved": "2026-09-11",
           "quote": "From study and design to installation and maintenance, every step is handled internally.",
-          "type": "fact"
+          "type": "fact",
+          "snapshot": "snapshots/battery4industry/20260911-1148.md"
         }
       ],
       "battlecard": {
@@ -3468,6 +3789,134 @@
         "confidence": "midden",
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
         "note": "Toegevoegd op verzoek van Camil, 2026-09-11 — enkel website-onderzoek, geen social-scan uitgevoerd. Opgericht via samenwerking Batimont Solar + Afschrift + Karel Florizoone (ex-Meli)."
+      },
+      "content_analysis": {
+        "items": [
+          {
+            "text": "Door op ‘Alles accepteren’ te klikken, stemt u in met ons gebruik van cookies.",
+            "length": 14,
+            "hook": "Door op ‘Alles accepteren’ te klikken, stemt u in met ons ge",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "We optimise energy use, reduce costs, and unlock new revenue.",
+            "length": 10,
+            "hook": "We optimise energy use, reduce costs, and unlock new revenue",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "We collaborate with EMS providers that grant access to the most innovative revenue models and ensure flexibility for a range of applications and energy suppliers.",
+            "length": 25,
+            "hook": "We collaborate with EMS providers that grant access to the m",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Below is a brief overview of some key applications of a battery system: Afbeelding Self-Consumption Store surplus energy from your PV system to use later and maximize the return on your solar investment.",
+            "length": 33,
+            "hook": "Below is a brief overview of some key applications of a batt",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Afbeelding Peak Shaving Reduce your power demand and minimize the risk of being charged the capacity tariff by flattening peaks.",
+            "length": 20,
+            "hook": "Afbeelding Peak Shaving Reduce your power demand and minimiz",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Make full use of your grid connection as an alternative to grid reinforcement.",
+            "length": 13,
+            "hook": "Make full use of your grid connection as an alternative to g",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Afbeelding Day-Ahead Energy Trading Take advantage of the volatility in the variable energy market, purchasing energy (kWh) during low-price hours to use later.",
+            "length": 23,
+            "hook": "Afbeelding Day-Ahead Energy Trading Take advantage of the vo",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Afbeelding Imbalance Energy Trading Capitalize on the fluctuations in the imbalance market, buying and selling energy (kWh) at highly volatile prices.",
+            "length": 21,
+            "hook": "Afbeelding Imbalance Energy Trading Capitalize on the fluctu",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "techniek"
+          },
+          {
+            "text": "Afbeelding Grid Services Provide flexible power (kW) to Elia, the high-voltage grid operator, in exchange for a compensation.",
+            "length": 18,
+            "hook": "Afbeelding Grid Services Provide flexible power (kW) to Elia",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "service"
+          },
+          {
+            "text": "MORE ABOUT ENERGY MANAGEMENT Image High-performance battery systems driven by the latest cutting-edge technology We install only top-tier hardware and stay at the forefront of the latest advancements in battery technology.",
+            "length": 31,
+            "hook": "MORE ABOUT ENERGY MANAGEMENT Image High-performance battery ",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          },
+          {
+            "text": "Our battery systems are liquid-cooled and sourced from publicly listed manufacturers recognized on the Bloomberg NEF TIER 1 list, synonymous with quality, solvency, and reliable warranties.",
+            "length": 26,
+            "hook": "Our battery systems are liquid-cooled and sourced from publi",
+            "emoji_count": 0,
+            "cta": "ja",
+            "theme": "algemeen"
+          },
+          {
+            "text": "After an in-depth consultation and analysis, we present practical solutions that align with your specific needs and investment potential.",
+            "length": 19,
+            "hook": "After an in-depth consultation and analysis, we present prac",
+            "emoji_count": 0,
+            "cta": "nee",
+            "theme": "algemeen"
+          }
+        ],
+        "themes": [
+          "techniek",
+          "service"
+        ],
+        "tone": "100% familiaar",
+        "formats": [
+          "website-tekst"
+        ],
+        "cta_types": [
+          "ontdek/bekijk",
+          "vraag/contact"
+        ],
+        "n_items": 12,
+        "source": "website"
+      },
+      "content_strategy": {
+        "n_items": 12,
+        "themes": [
+          "techniek",
+          "service"
+        ],
+        "tone": "100% familiaar",
+        "cta_types": [
+          "ontdek/bekijk",
+          "vraag/contact"
+        ],
+        "rotation": "algemeen (9), techniek (2), service (1)",
+        "whitespace": "Technisch/productspecifiek — Powerland kan op toegankelijkheid/begrijpelijkheid winnen."
       }
     }
   ],

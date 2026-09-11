@@ -116,5 +116,30 @@
         "https://www.tiktok.com/@ionity.official"
       ]
     }
+  },
+  "certipower": {
+    "website": "https://certipower.be/en/",
+    "channels": {
+      "linkedin": [
+        "https://www.linkedin.com/company/certipower-bv/"
+      ],
+      "facebook": [
+        "https://www.facebook.com/certipower"
+      ]
+    }
+  },
+  "battery4industry": {
+    "website": "https://www.battery4industry.com/en",
+    "channels": {
+      "linkedin": [
+        "https://www.linkedin.com/company/battery4industry"
+      ],
+      "facebook": [
+        "https://www.facebook.com/profile.php?id=61585306323847"
+      ],
+      "instagram": [
+        "https://www.instagram.com/battery_4_industry/"
+      ]
+    }
   }
 }
