@@ -3384,6 +3384,91 @@
         "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
         "note": "Toegevoegd op verzoek van Camil, 2026-09-10 — enkel website-onderzoek, geen social-scan uitgevoerd."
       }
+    },
+    {
+      "id": "battery4industry",
+      "name": "Battery 4 Industry",
+      "domain": "https://www.battery4industry.com/en",
+      "parent_brand": "powerland",
+      "category": "direct",
+      "sectors": [
+        "batterijopslag",
+        "energiemanagement"
+      ],
+      "services": [
+        "Industriële batterijopslag (200 kWh – 5 MWh), liquid-cooled TIER 1-systemen",
+        "Officieel Belgisch invoerder van de batterijsystemen",
+        "Energy Management System (EMS) — zelfconsumptie, peak shaving, day-ahead & imbalance trading, grid services",
+        "Volledig traject intern: studie, ontwerp, installatie, onderhoud",
+        "Eigen schakelkasten / aansluitpanelen op maat"
+      ],
+      "positioning": "We optimise your energy — industrial battery storage with intelligent Energy Management, from study to installation and maintenance.",
+      "target_audience": [
+        "industrie",
+        "bedrijven",
+        "supermarkten",
+        "bouwbedrijven",
+        "laadpuntoperatoren (CPO's)"
+      ],
+      "social_channels": {
+        "website": {
+          "present": true,
+          "url": "https://www.battery4industry.com/en"
+        },
+        "linkedin": {
+          "present": true,
+          "url": "https://www.linkedin.com/company/battery4industry"
+        },
+        "facebook": {
+          "present": true,
+          "url": "https://www.facebook.com/profile.php?id=61585306323847"
+        },
+        "instagram": {
+          "present": true,
+          "url": "https://www.instagram.com/battery_4_industry/"
+        }
+      },
+      "strengths": [
+        "Officieel Belgisch invoerder van TIER 1 liquid-cooled batterijsystemen (200 kWh–5 MWh)",
+        "Volledig traject intern (studie, ontwerp, installatie, onderhoud) + eigen schakelkasten",
+        "Sterke partnerships: zon (Batimont Solar), hoogspanning (Afschrift), energiehandel-achtergrond (Florizoone/Meli)"
+      ],
+      "weaknesses": [
+        "Geen eigen zonnepanelen- of laadpaal-installatie — zon enkel via partner Batimont Solar, geen laadinfra-aanbod zichtbaar",
+        "Puur grootschalig industrieel (200 kWh–5 MWh) — geen residentiële of lichte KMO-oplossingen",
+        "Jong bedrijf, opgericht via recente samenwerking tussen drie partijen — beperkt trackrecord t.o.v. gevestigde spelers"
+      ],
+      "overlap_score_powerland": 4,
+      "sources": [
+        "https://www.battery4industry.com/en",
+        "https://www.battery4industry.com/en/nieuws/great-grandson-meli-founder-puts-innovative-battery-company-map",
+        "https://www.battery4industry.com/en/contact"
+      ],
+      "_refreshed_at": "2026-09-11T00:00:00Z",
+      "evidence": [
+        {
+          "claim": "Positionering volgens eigen site",
+          "source_url": "https://www.battery4industry.com/en",
+          "retrieved": "2026-09-11",
+          "quote": "We optimise your energy",
+          "type": "fact"
+        },
+        {
+          "claim": "Werkwijze volgens nieuwsartikel op eigen site",
+          "source_url": "https://www.battery4industry.com/en/nieuws/great-grandson-meli-founder-puts-innovative-battery-company-map",
+          "retrieved": "2026-09-11",
+          "quote": "From study and design to installation and maintenance, every step is handled internally.",
+          "type": "fact"
+        }
+      ],
+      "battlecard": {
+        "their_weak": "Zuivere batterij+EMS-speler zonder eigen zon- of laadaanbod; zon enkel via externe partner (Batimont Solar)",
+        "our_play": "Positioneer Powerland als de partij die batterij+EMS combineert met eigen zon- én laadinfrastructuur onder één dak, zonder externe partner nodig te hebben",
+        "type": "interpretation",
+        "confidence": "midden",
+        "based_on": "zwaktes[] + Powerland stack (geïntegreerd ecosysteem)",
+        "note": "Toegevoegd op verzoek van Camil, 2026-09-11 — enkel website-onderzoek, geen social-scan uitgevoerd. Opgericht via samenwerking Batimont Solar + Afschrift + Karel Florizoone (ex-Meli)."
+      }
     }
   ],
   "analysis": {
